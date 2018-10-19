@@ -16,7 +16,7 @@ This is the official API documentation for mocoapp.com.
 ## General
 
 * Data to MOCO is sent as JSON (Content-Type: application/json) and also represented as JSON
-* All requests have to be [authenticated](#authentication) with a user-specific key.
+* All requests have to be [authenticated](#authentication) with a user-specific key
 * Example responses showcase the happy case, i.e. usually the `200 OK` response
 * Collections are usually [paginated](#pagination)
 * Zapier triggers are **not** triggered for API requests
@@ -82,7 +82,6 @@ If there is not Link header with `rel="next"`, the current page is the last page
 
 ## Sorting
 
-Sortierung
 Sorting is controlled by the `sort_by` query parameter. Its value is the field name that should be sorted, followed by an optional sorting order (`asc` or `desc`, default is `asc`).
 
 Example:
@@ -142,7 +141,7 @@ curl -X POST \
 
 ## WebHooks
 
-Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. Whenever an event triggers, MOCO sends and HTTPS `POST` payload to the WebHook's configured URL with a SHA265 signature. This way, MOCOs integrity as a leigimate sender of this information can be verified. Additional headers provide context for the sent payload.
+Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. Whenever an event triggers, MOCO sends and HTTPS `POST` payload to the WebHook's configured URL with a SHA265 signature. This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context for the sent payload.
 
 * **X-Moco-Target** – Activity, Customer, Project, ...
 * **X-Moco-Event** – create, update, delete, archive, ...
@@ -161,4 +160,4 @@ X-Moco-Signature: f457bffc50e9b63f455ab107c55f2f61956550aa5525c2cfe07f574014bd8a
 
 * We recommend https://requestb.in for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
 * WebHooks are only provided to customers after the trial phase
-* WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case.
+* WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case

@@ -130,7 +130,7 @@ The invoice representation contains among standard fields also:
             "due_date": "2017-05-28",
             "fee": 0,
             "salutation": "<div>Sehr geehrte Damen und Herren<br><br>Bei der Kontrolle unserer Buchhaltung ist uns aufgefallen, dass wir für folgende Rechnung noch keinen Zahlungseingang verbuchen konnten:</div>",
-            "footer": "<div>Sicherlich handelt es sich hierbei um ein Versehen. Wir bitten Sie höflich, uns den Betrag in den nächsten Tagen auf unser Bankkonto zu überweisen. Sollte sich Ihre Zahlung mit diesem Schreiben gekreuzt haben, betrachten Sie diese Erinnerung als gegenstandslos.<br><br>Kontoverbindung:&nbsp;<br>Zürcher Kantonalbank<br>IBAN: CH31 0070 0110 0064 2620 6.<br><br>Herzlichen Dank.</div>",
+            "footer": "<div>Sicherlich handelt es sich hierbei um ein Versehen. Wir bitten Sie höflich, uns den Betrag in den nächsten Tagen auf unser Bankkonto zu überweisen. Sollte sich Ihre Zahlung mit diesem Schreiben gekreuzt haben, betrachten Sie diese Erinnerung als gegenstandslos.<br><br>Kontoverbindung:&nbsp;<br>Zürcher Kantonalbank<br>IBAN: CH00 0000 0000 0000 0000 0.<br><br>Herzlichen Dank.</div>",
             "created_on": "2017-05-18",
             "updated_on": "2017-05-18"
         }

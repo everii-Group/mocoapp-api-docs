@@ -7,14 +7,14 @@ Assigning staff to a project is defined in Moco as a "contract".
 
 ```json
 {       
-        "id": 760253573,
-        "user_id": 938487474,
-        "firstname": "Nicola",
-        "lastname": "Piccinini",
-        "billable": true,
-        "active": true,
-        "budget": 9900,
-        "hourly_rate": 110
+    "id": 760253573,
+    "user_id": 938487474,
+    "firstname": "Nicola",
+    "lastname": "Piccinini",
+    "billable": true,
+    "active": true,
+    "budget": 9900,
+    "hourly_rate": 110
 }
 ```
 

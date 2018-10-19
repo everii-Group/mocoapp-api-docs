@@ -81,7 +81,7 @@ Mandatory fields are marked with a star (*):
 * **unit_id*** – 123 (team ID)
 * **active** – true/false (activated/deactivated)
 * **external** – true/false (external employee / contractor)
-* **language** – "de", "de-AT", "de-CH", "en", "it" oder "fr"
+* **language** – "de", "de-AT", "de-CH", "en", "it" or "fr"
 * **mobile_phone** – "+41 79 123 45 67"
 * **work_phone** – "+41 44 123 45 67"
 * **home_address** – "Peter Müller\nBeispielstrasse 123\nBeispielstadt"

@@ -97,7 +97,7 @@ Mandatory fields are marked with a star (*):
 * **deal_category_id*** – 456
 * **company_id** – 789
 * **info** – "Information for this lead..."
-* **status** – "potential", "pending", "won", "lost" oder "dropped" (default: "pending")
+* **status** – "potential", "pending", "won", "lost" or "dropped" (default: "pending")
 
 ## PUT /deals/{id}
 
