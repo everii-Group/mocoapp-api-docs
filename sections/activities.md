@@ -65,6 +65,16 @@ The following parameters can be supplied:
 * **user_id** – 123
 * **project_id** – 345
 
+## GET /activities/{id}
+
+Retrieve a single activity:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/activities/{id}' \
+  -H 'Authorization: Token token={api-key}'
+```
+
 ## POST /activities
 
 Create an activity:
