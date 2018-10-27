@@ -61,7 +61,7 @@ This returns an array of all activities.
 The following parameters can be supplied:
 
 * **from*** – "2018-06-01"
-* **to*** – "2018-06-30" (max. 30 day date span)
+* **to*** – "2018-06-30"
 * **user_id** – 123
 * **project_id** – 345
 
