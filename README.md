@@ -33,6 +33,7 @@ All the entities exposed via the API can be found in their respective sections.
 * [Invoices](sections/invoices.md)
 * [Invoice Payments](sections/invoice_payments.md)
 * [Offers](sections/offers.md)
+* [Presences](sections/presences.md)
 * [Projects](sections/projects.md)
 * [Project Contracts](sections/project_contracts.md)
 * [Project Expenses](sections/project_expenses.md)
