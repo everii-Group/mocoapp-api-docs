@@ -34,8 +34,7 @@ This returns an array of all presences.
 
 The following parameters can be supplied:
 
-* **from** – "2018-06-01"
-* **to** – "2018-06-30"
+* **from, to** – "2018-06-01", "2018-06-30" (from and to have to be provided together)
 * **user_id** – 123
 
 
