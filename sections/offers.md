@@ -116,6 +116,12 @@ curl -X GET \
   -H 'Authorization: Token token={api-key}'
 ```
 
+Additionally, these parameters can be supplied:
+
+* **status** – ("created", "sent", "accepted", "billed", "archived")
+* **date_from** – "2018-01-01"
+* **date_to** – "2018-01-31"
+
 
 ## GET /offers/{id}
 
@@ -128,3 +134,20 @@ curl -X GET \
 ```
 
 This returns a single offer representation, including positions.
+
+
+## GET /offers/{id}.pdf
+
+Retrieve a single offer document:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/offers/{id}.pdf' \
+  -H 'Authorization: Token token={api-key}'
+```
+
+Additionally, the following parameters can be supplied:
+
+* **letter_paper_id** – (letter paper ID, default: White)
+
+This returns this offers's PDF document.
