@@ -1,4 +1,4 @@
-# Presences
+# User Presences
 German: "Arbeitszeiten"
 
 ## Attributes
@@ -20,13 +20,13 @@ Presences contain among the standard fields also:
 }
 ```
 
-## GET /presences
+## GET /users/presences
 
 Retrieve all presences:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/presences?from=2018-06-01&to=2018-06-30' \
+  'https://{domain}.mocoapp.com/api/v1/users/presences?from=2018-06-01&to=2018-06-30' \
   -H 'Authorization: Token token={api-key}'
 ```
 
@@ -38,17 +38,17 @@ The following parameters can be supplied:
 * **user_id** – 123
 
 
-## GET /presences/{id}
+## GET /users/presences/{id}
 
 Retrieve a single presence:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/presences/{id}' \
+  'https://{domain}.mocoapp.com/api/v1/users/presences/{id}' \
   -H 'Authorization: Token token={api-key}'
 ```
 
-## POST /presences
+## POST /users/presences
 
 Create a presence:
 
@@ -56,7 +56,7 @@ Every presence is created for the user that the API key belongs to.
 
 ```bash
 curl -X POST \
-  'https://{domain}.mocoapp.com/api/v1/presences' \
+  'https://{domain}.mocoapp.com/api/v1/users/presences' \
   -H 'Authorization: Token token={api-key}' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -72,13 +72,13 @@ Mandatory fields are marked with a star (*):
 * **from*** – "08:00" (Start time, also: "0800" or "8")
 * **to** – "12:30" (End time, can be left blank)
 
-## PUT /presences/{id}
+## PUT /users/presences/{id}
 
 Update a presence.
 
 ```bash
 curl -X PUT \
-  'https://{domain}.mocoapp.com/api/v1/presences/{id}' \
+  'https://{domain}.mocoapp.com/api/v1/users/presences/{id}' \
   -H 'Authorization: Token token={api-key}' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -88,13 +88,13 @@ curl -X PUT \
 
 All fields are analogous to the POST request.
 
-## DELETE /presences/{id}
+## DELETE /users/presences/{id}
 
 Delete a presence.
 
 ```bash
 curl -X DELETE \
-  'https://{domain}.mocoapp.com/api/v1/presences/{id}' \
+  'https://{domain}.mocoapp.com/api/v1/users/presences/{id}' \
   -H 'Authorization: Token token={api-key}'
 ```
 
