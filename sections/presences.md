@@ -60,7 +60,7 @@ curl -X POST \
   -H 'Authorization: Token token={api-key}' \
   -H 'Content-Type: application/json' \
   -d '{
-        "date": "2017-06-11",
+        "date": "2018-06-11",
         "from": "08:00",
         "to": "10:00"
       }'
@@ -68,8 +68,8 @@ curl -X POST \
 
 Mandatory fields are marked with a star (*):
 
-* **date*** – "2017-06-11"
-* **from*** – "08:00" (Start time, also: "0800" or "8")
+* **date*** – "2018-06-11"
+* **from*** – "08:00"
 * **to** – "12:30" (End time, can be left blank)
 
 ## PUT /users/presences/{id}
