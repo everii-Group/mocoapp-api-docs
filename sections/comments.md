@@ -12,7 +12,7 @@ The representation contains, among the standard fields, also:
     "id": 123,
     "commentable_id": 12345,
     "commentable_type": "Project",
-    "text": "Project was ordered on 1.10.2017.",
+    "text": "<div>Project was ordered on <strong>1.10.2017</strong></div>.",
     "manual": true,
     "created_at": "2018-10-17 09:33:46 +0100",
     "updated_at": "2018-10-17 09:33:46 +0100",
@@ -23,6 +23,8 @@ The representation contains, among the standard fields, also:
     }
 }
 ```
+
+The text must be valid HTML.
 
 ## GET /comments
 
@@ -67,7 +69,7 @@ curl -X POST \
   -d '{
         "commentable_id": 123,
         "commentable_type": "Project",
-        "text": "Project was ordered."
+        "text": "<div>Project was ordered on <strong>1.10.2017</strong></div>."
       }'
 ```
 
@@ -87,7 +89,7 @@ curl -X PUT \
   -H 'Authorization: Token token={api-key}' \
   -H 'Content-Type: application/json' \
   -d '{
-        "text": "Project is paused for now.",
+        "text": "<div>Project is paused for now.</div>.",
       }'
 ```
 
