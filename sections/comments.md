@@ -24,7 +24,7 @@ The representation contains, among the standard fields, also:
 }
 ```
 
-The text must be valid HTML.
+The text must be "plain text" or valid HTML.
 
 ## GET /comments
 
