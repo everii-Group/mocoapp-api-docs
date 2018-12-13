@@ -24,7 +24,7 @@ The representation contains, among the standard fields, also:
 }
 ```
 
-The text must be "plain text" or valid HTML.
+The text must be "plain text" or valid HTML. MOCO removes all HTML-tags, except for `['div', 'strong', 'em', 'u', 'pre', 'ul', 'ol', 'li', 'br']`.
 
 ## GET /comments
 
