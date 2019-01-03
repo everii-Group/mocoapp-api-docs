@@ -6,9 +6,10 @@ German: "Personal"
 ```json
 {
     "id": 123,
-    "active": true,
     "firstname": "Max",
     "lastname": "Muster",
+    "active": true,
+    "external": false,
     "email": "max.muster@beispiel.de",
     "mobile_phone": "+49 177 123 45 67",
     "work_phone": "+49 40 123 45 67",
