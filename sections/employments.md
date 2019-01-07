@@ -40,10 +40,10 @@ The following parameters can be supplied:
 
 ## GET /users/employments/{id}
 
-Retrieve a single presence:
+Retrieve a single employment:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/users/presences/{id}' \
+  'https://{domain}.mocoapp.com/api/v1/users/employments/{id}' \
   -H 'Authorization: Token token={api-key}'
 ```
