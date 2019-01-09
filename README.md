@@ -160,6 +160,7 @@ X-Moco-Timestamp: 1527170410463
 X-Moco-Signature: f457bffc50e9b63f455ab107c55f2f61956550aa5525c2cfe07f574014bd8a9e
 ```
 
-* We recommend https://requestb.in for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
+* We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
 * WebHooks are only provided to customers after the trial phase
 * WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case
+* The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 16 character hexadecimal string displayed in the web hook overview.
