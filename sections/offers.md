@@ -25,6 +25,10 @@ The offer representation contains among the standard fields:
     "updated_on": "2016-04-12",
     "salutation": "Hallo Peter<br><br>Folgende Aufwände schätzen wir für die Umsetzung der Komponenten:",
     "footer": "Für Rückfragen stehe ich dir jederzeit gerne zur Verfügung.<br><br>Viele Grüsse<br><br>Tobias",
+    "company": {
+        "id": 1234,
+        "name": "Acme Corp."
+    },
     "items": [
         {
             "id": 29,
