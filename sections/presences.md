@@ -98,3 +98,22 @@ curl -X DELETE \
   -H 'Authorization: Token token={api-key}'
 ```
 
+
+## POST /users/presences/touch
+
+Touch a presence. This request creates a new presence starting from the current time or terminates an existing
+open presence at the current time.
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/users/presences/touch' \
+  -H 'Authorization: Token token={api-key}'
+```
+
+For example a first request at 9:30 AM creates an open presence `[9:30,)`, a second request at 11:30 AM sets the upper
+bound of the previous presence: `[9:30,11:20)`.
+
+There are two special situations to take into consideration:
+1. if a presence is started and stopped by `touch` within the same minute, then it is discarded;
+2. if a `touch` conflicts with an existing presence, then the request is refused and the server response code
+is `423 Locked`.
