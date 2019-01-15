@@ -75,8 +75,7 @@ Mandatory fields are marked with a star (*):
 
 ## POST /users/presences/touch
 
-This request creates a new presence starting from the current time or terminates an existing
-open presence at the current time. Can be used to implement a time clock system (e.g. RFID).
+This request creates a new presence for the user with the corresponding API-Key starting from the current time or terminates an existing open presence at the current time. Can be used to implement a time clock system (e.g. RFID).
 
 ```bash
 curl -X POST \
@@ -86,7 +85,7 @@ curl -X POST \
 
 A first request at 9:30 AM creates a presence with `from="09:30"`, a second request at 11:30 AM sets `to="11:30"` of the previous presence.
 
-⚡ There are two special situations to take into consideration:
+⚠ There are two special situations to take into consideration:
 1. If a presence is started and stopped by `touch` within the same minute, then it is discarded.
 2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
 is `423 Locked`.
