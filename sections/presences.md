@@ -72,6 +72,26 @@ Mandatory fields are marked with a star (*):
 * **from*** – "08:00"
 * **to** – "12:30" (End time, can be left blank)
 
+
+## POST /users/presences/touch
+
+This request creates a new presence starting from the current time or terminates an existing
+open presence at the current time. Can be used to implement a time clock system (e.g. RFID).
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/users/presences/touch' \
+  -H 'Authorization: Token token={api-key}'
+```
+
+A first request at 9:30 AM creates a presence with `from="09:30"`, a second request at 11:30 AM sets `to="11:30"` of the previous presence.
+
+⚡ There are two special situations to take into consideration:
+1. If a presence is started and stopped by `touch` within the same minute, then it is discarded.
+2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
+is `423 Locked`.
+
+
 ## PUT /users/presences/{id}
 
 Update a presence.
@@ -97,23 +117,3 @@ curl -X DELETE \
   'https://{domain}.mocoapp.com/api/v1/users/presences/{id}' \
   -H 'Authorization: Token token={api-key}'
 ```
-
-
-## POST /users/presences/touch
-
-Touch a presence. This request creates a new presence starting from the current time or terminates an existing
-open presence at the current time.
-
-```bash
-curl -X POST \
-  'https://{domain}.mocoapp.com/api/v1/users/presences/touch' \
-  -H 'Authorization: Token token={api-key}'
-```
-
-For example a first request at 9:30 AM creates an open presence `[9:30,)`, a second request at 11:30 AM sets the upper
-bound of the previous presence: `[9:30,11:20)`.
-
-There are two special situations to take into consideration:
-1. if a presence is started and stopped by `touch` within the same minute, then it is discarded;
-2. if a `touch` conflicts with an existing presence, then the request is refused and the server response code
-is `423 Locked`.
