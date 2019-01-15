@@ -143,7 +143,7 @@ curl -X POST \
 
 ## WebHooks
 
-Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. Whenever an event triggers, MOCO sends and HTTPS `POST` payload to the WebHook's configured URL with a SHA265 signature. This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context for the sent payload.
+Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. Whenever an event triggers, MOCO sends and HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature. This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context for the sent payload.
 
 * **X-Moco-Target** – Activity, Customer, Project, ...
 * **X-Moco-Event** – create, update, delete, archive, ...
