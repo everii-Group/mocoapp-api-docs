@@ -148,7 +148,8 @@ Using WebHooks, integrating any system in real time becomes possible. Events in 
 * **X-Moco-Target** – Activity, Customer, Project, ...
 * **X-Moco-Event** – create, update, delete, archive, ...
 * **X-Moco-Timestamp** – Timestamp for this event
-* **X-Moco-Signature**
+* **X-Moco-Signature** – The signature fo this request, see comment below for details
+* **X-Moco-User-Id** – The user ID that triggered this hook
 * The receiver has to process the request within 10 seconds
 
 The following example shows a WebHook triggered by an activity creation.
@@ -158,6 +159,7 @@ X-Moco-Target: Activity
 X-Moco-Event: create
 X-Moco-Timestamp: 1527170410463
 X-Moco-Signature: f457bffc50e9b63f455ab107c55f2f61956550aa5525c2cfe07f574014bd8a9e
+X-Moco-User-Id: 933613686
 ```
 
 * We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
