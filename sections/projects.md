@@ -64,7 +64,7 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
                 "user_id": 933590696,
                 "firstname": "Michael",
                 "lastname": "Mustermann",
-                "billable": true,                
+                "billable": true,
                 "active": true,
                 "budget": null,
                 "hourly_rate": 0
@@ -98,11 +98,12 @@ This returns an array with complete project information (see Attributes).
 The following parameters can be supplied:
 
 * **include_archived** – true/false
+* **include_company** – true/false (returns a complete company instead of just ID and name)
+* **leader_id** – 123456 (project leader user ID)
 * **created_from** – "2018-01-01"
 * **created_to** – "2018-12-31"
 * **updated_from** – "2018-01-01"
 * **updated_to** – "2018-12-31"
-* **include_company** – true/false (returns a complete company instead of just ID and name)
 
 ## GET /projects/{id}
 
