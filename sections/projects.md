@@ -261,6 +261,10 @@ returns
     "name": "Application",
     "active": false,
     "billable": true,
+    "customer": {
+      "id":4567,
+      "name":"A Company"
+    },
     "tasks": [
       {
         "id":573383,
