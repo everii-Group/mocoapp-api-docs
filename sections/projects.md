@@ -238,3 +238,42 @@ This returns the most important project business indicators:
     ]
 }
 ```
+
+## GET /projects/assigned
+
+It's possible to get a list of projects assigned to the user with the request `projects/assigned`. It is not
+necessary to have access to the projects area to use this call and it returns a restricted
+set of data. Example:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/projects/assigned' \
+  -H 'Authorization: Token token={api-key}'
+```
+
+returns
+
+```json
+[
+  {
+    "id": 1234,
+    "identifier": "P1900",
+    "name": "Application",
+    "active": false,
+    "billable": true,
+    "tasks": [
+      {
+        "id":573383,
+        "name": "Integrations",
+        "active": true,
+        "billable": true
+      }
+    ]
+  }
+]
+```
+
+It's possible to filter active or not active projects using the parameter `active=true/false`.
+
+This call is especially useful for time tracking: project and task ids can then be utilized to create user's
+activities.
