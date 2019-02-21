@@ -9,6 +9,7 @@ This is the official API documentation for mocoapp.com.
 * [Authentication](#authentication)
 * [Rate Limiting](#rate-limiting)
 * [Pagination](#pagination)
+* [Errors and HTTP status codes](#errors-and-http-status-codes)
 * [Sorting](#sorting)
 * [Custom Fields](#custom-fields)
 * [WebHooks](#webhooks)
@@ -81,6 +82,19 @@ Responses are paginated with a common default of 100 entries per page. In the HT
 * **Link** – `<https://{domain}.mocoapp.com/api/v1/projects.json?page=4>; rel="next"`
 
 If there is not Link header with `rel="next"`, the current page is the last page.
+
+## Errors and HTTP status codes
+
+The MOCO-API is mostly conformant with the [general HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+
+Here are the most comment errors you will see:
+
+* **401 Unauthorized** - Check the error message in the response body
+* **403 Forbidden** - Check your [Authentication](#authentication) or your MOCO user permission
+* **404 Not Found** - Check that resource exists (maybe it was deleted in the meantime)
+* **422 Unprocessable Entity** - Check the provided error message in the response body
+* **429 Too Many Requests** - Check [Rate Limiting](#rate-limiting)
+
 
 ## Sorting
 
