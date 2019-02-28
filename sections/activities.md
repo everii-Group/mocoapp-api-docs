@@ -104,7 +104,7 @@ Mandatory fields are marked with a star (*):
 * **hours*** – 1.0
 * **billable** – true/false (default: `true` or dependent on project configuration)
 * **tag** – "RMT-123" (any tag as a string)
-* **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite")
+* **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite", "github", "youtrack")
 * **remote_id** – PRJ-2342
 * **remote_url** – https://jira.meinefirma.de/browse/PRJ-2342
 
