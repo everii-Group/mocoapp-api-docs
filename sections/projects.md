@@ -100,6 +100,7 @@ The following parameters can be supplied:
 * **include_archived** – true/false
 * **include_company** – true/false (returns a complete company instead of just ID and name)
 * **leader_id** – 123456 (project leader user ID)
+* **company_id** – 123456 (company ID)
 * **created_from** – "2018-01-01"
 * **created_to** – "2018-12-31"
 * **updated_from** – "2018-01-01"
