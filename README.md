@@ -190,6 +190,4 @@ irb(main):003:0> signature_key = "1d608b9d72219b90ff2393a1d3ee0ac0"
 => "1d608b9d72219b90ff2393a1d3ee0ac0"
 irb(main):004:0> payload_signature = OpenSSL::HMAC.hexdigest("SHA256", signature_key, payload)
 => "09f9ebc0adeb597cb7cb37fd72b20be0caeca6bd9fb67416b663606bd7f89183"
-
-
 ```
