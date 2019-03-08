@@ -179,4 +179,17 @@ X-Moco-User-Id: 933613686
 * We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
 * WebHooks are only provided to customers after the trial phase
 * WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case
-* The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 16 character hexadecimal string displayed in the web hook overview.
+* The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters hexadecimal string displayed in the web hook overview.
+
+Sample code (Ruby) to calculate the payload signature:
+
+```ruby
+irb(main):002:0> payload = '{id: 111, description: "a description"}'
+=> "{id: 111, description: \"a description\"}"
+irb(main):003:0> signature_key = "1d608b9d72219b90ff2393a1d3ee0ac0"
+=> "1d608b9d72219b90ff2393a1d3ee0ac0"
+irb(main):004:0> payload_signature = OpenSSL::HMAC.hexdigest("SHA256", signature_key, payload)
+=> "09f9ebc0adeb597cb7cb37fd72b20be0caeca6bd9fb67416b663606bd7f89183"
+
+
+```
