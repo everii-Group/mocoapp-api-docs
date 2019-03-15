@@ -4,46 +4,47 @@ This is the official API documentation for mocoapp.com.
 
 ## Table of Contents
 
-* [General](#general)
-* [Entities](#entities)
-* [Authentication](#authentication)
-* [Rate Limiting](#rate-limiting)
-* [Pagination](#pagination)
-* [Errors and HTTP status codes](#errors-and-http-status-codes)
-* [Sorting](#sorting)
-* [Custom Fields](#custom-fields)
-* [WebHooks](#webhooks)
+- [General](#general)
+- [Entities](#entities)
+- [Authentication](#authentication)
+- [Rate Limiting](#rate-limiting)
+- [Pagination](#pagination)
+- [Errors and HTTP status codes](#errors-and-http-status-codes)
+- [Sorting](#sorting)
+- [Custom Fields](#custom-fields)
+- [WebHooks](#webhooks)
 
 ## General
 
-* Data to MOCO is sent as JSON (Content-Type: application/json) and also represented as JSON
-* All requests have to be [authenticated](#authentication) with a user-specific key
-* Example responses showcase the happy case, i.e. usually the `200 OK` response
-* Collections are usually [paginated](#pagination)
-* Zapier triggers are **not** triggered for API requests
+- Data to MOCO is sent as JSON (Content-Type: application/json) and also represented as JSON
+- All requests have to be [authenticated](#authentication) with a user-specific key
+- Example responses showcase the happy case, i.e. usually the `200 OK` response
+- Collections are usually [paginated](#pagination)
+- Zapier triggers are **not** triggered for API requests
 
 ## Entities
 
 All the entities exposed via the API can be found in their respective sections.
 
-* [Activities](sections/activities.md)
-* [Comments](sections/comments.md)
-* [Companies](sections/companies.md)
-* [Contacts](sections/contacts.md)
-* [Deals / Leads](sections/deals.md)
-* [Invoices](sections/invoices.md)
-* [Invoice Payments](sections/invoice_payments.md)
-* [Offers](sections/offers.md)
-* [Projects](sections/projects.md)
-* [Project Contracts](sections/project_contracts.md)
-* [Project Expenses](sections/project_expenses.md)
-* [Project Recurring Expenses](sections/project_recurring_expenses.md)
-* [Project Tasks](sections/project_tasks.md)
-* [Schedules](sections/schedules.md)
-* [Units / Teams](sections/units.md)
-* [Users](sections/users.md)
-* [User Employments](sections/employments.md)
-* [User Presences](sections/presences.md)
+- [Activities](sections/activities.md)
+- [Comments](sections/comments.md)
+- [Companies](sections/companies.md)
+- [Contacts](sections/contacts.md)
+- [Deals / Leads](sections/deals.md)
+- [Invoices](sections/invoices.md)
+- [Invoice Payments](sections/invoice_payments.md)
+- [Offers](sections/offers.md)
+- [Projects](sections/projects.md)
+- [Project Contracts](sections/project_contracts.md)
+- [Project Expenses](sections/project_expenses.md)
+- [Project Recurring Expenses](sections/project_recurring_expenses.md)
+- [Project Tasks](sections/project_tasks.md)
+- [Schedules](sections/schedules.md)
+- [Units / Teams](sections/units.md)
+- [Users](sections/users.md)
+- [User Employments](sections/employments.md)
+- [User Holidays](sections/holidays.md)
+- [User Presences](sections/presences.md)
 
 ## Authentication
 
@@ -76,10 +77,10 @@ You can expect to be able to fire 15 requests within a time frame of 15 seconds.
 
 Responses are paginated with a common default of 100 entries per page. In the HTTP response header, the current page, the entries per page and the number of total entries is reported. There is also a link header to links to the consecutive page.
 
-* **X-Page** – 3
-* **X-Per-Page** – 100
-* **X-Total** – 415
-* **Link** – `<https://{domain}.mocoapp.com/api/v1/projects.json?page=4>; rel="next"`
+- **X-Page** – 3
+- **X-Per-Page** – 100
+- **X-Total** – 415
+- **Link** – `<https://{domain}.mocoapp.com/api/v1/projects.json?page=4>; rel="next"`
 
 If there is not Link header with `rel="next"`, the current page is the last page.
 
@@ -89,12 +90,11 @@ The MOCO-API is mostly conformant with the [general HTTP status codes](https://e
 
 Here are the most comment errors you will see:
 
-* **401 Unauthorized** - Check the error message in the response body
-* **403 Forbidden** - Check your [Authentication](#authentication) or your MOCO user permission
-* **404 Not Found** - Check that resource exists (maybe it was deleted in the meantime)
-* **422 Unprocessable Entity** - Check the provided error message in the response body
-* **429 Too Many Requests** - Check [Rate Limiting](#rate-limiting)
-
+- **401 Unauthorized** - Check the error message in the response body
+- **403 Forbidden** - Check your [Authentication](#authentication) or your MOCO user permission
+- **404 Not Found** - Check that resource exists (maybe it was deleted in the meantime)
+- **422 Unprocessable Entity** - Check the provided error message in the response body
+- **429 Too Many Requests** - Check [Rate Limiting](#rate-limiting)
 
 ## Sorting
 
@@ -102,7 +102,7 @@ Sorting is controlled by the `sort_by` query parameter. Its value is the field n
 
 Example:
 
-* `https://{domain}.mocoapp.com/api/v1/offers?sort_by=title desc`
+- `https://{domain}.mocoapp.com/api/v1/offers?sort_by=title desc`
 
 ## Custom Fields
 
@@ -114,7 +114,6 @@ MOCO supports adding custom fields to many of its resources. These custom fields
     "Branche": "Automotive"
 },
 ```
-
 
 Parameters are sent with their name as key:
 
@@ -146,12 +145,12 @@ curl -X POST \
       }'
 ```
 
-* Single-line input – "Automotive"
-* Mehrzeilige Eingabe – "A multiline input..."
-* Link – "https://www..."
-* Yes/No – "0", "1" (0 = No, 1 = Yes)
-* Single choice – "Value"
-* Multiple choice – ["Value 1", "Value 2"]
+- Single-line input – "Automotive"
+- Mehrzeilige Eingabe – "A multiline input..."
+- Link – "https://www..."
+- Yes/No – "0", "1" (0 = No, 1 = Yes)
+- Single choice – "Value"
+- Multiple choice – ["Value 1", "Value 2"]
 
 ⚡ **WARNING** ⚡: If you use custom fields, all of them have to be provided. If not, any that are not transmitted will be removed.
 
@@ -159,12 +158,12 @@ curl -X POST \
 
 Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. Whenever an event triggers, MOCO sends an HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature. This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context for the sent payload.
 
-* **X-Moco-Target** – Activity, Customer, Project, ...
-* **X-Moco-Event** – create, update, delete, archive, ...
-* **X-Moco-Timestamp** – Timestamp for this event
-* **X-Moco-Signature** – The signature fo this request, see comment below for details
-* **X-Moco-User-Id** – The user ID that triggered this hook
-* The receiver has to process the request within 10 seconds
+- **X-Moco-Target** – Activity, Customer, Project, ...
+- **X-Moco-Event** – create, update, delete, archive, ...
+- **X-Moco-Timestamp** – Timestamp for this event
+- **X-Moco-Signature** – The signature fo this request, see comment below for details
+- **X-Moco-User-Id** – The user ID that triggered this hook
+- The receiver has to process the request within 10 seconds
 
 The following example shows a WebHook triggered by an activity creation.
 
@@ -176,10 +175,10 @@ X-Moco-Signature: f457bffc50e9b63f455ab107c55f2f61956550aa5525c2cfe07f574014bd8a
 X-Moco-User-Id: 933613686
 ```
 
-* We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
-* WebHooks are only provided to customers after the trial phase
-* WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case
-* The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters hexadecimal string displayed in the web hook overview.
+- We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
+- WebHooks are only provided to customers after the trial phase
+- WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case
+- The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters hexadecimal string displayed in the web hook overview.
 
 Sample code (Ruby) to calculate the payload signature:
 
