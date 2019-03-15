@@ -1,6 +1,6 @@
 # User Holidays
 
-German: "Urlaub"
+German: "Urlaubsanspruch"
 
 ## Attributes
 
@@ -21,6 +21,8 @@ Holidays contain among the standard fields also:
   }
 }
 ```
+
+Holiday credits have to be set in hours. There is a setting in the holiday section in MOCO to adjust this per user per year depending on the daily hours of a regular working day. 10 days at 5h/day = 50 hours and 10 days at 8h/day = 80 hours.
 
 ## GET /users/holidays
 
