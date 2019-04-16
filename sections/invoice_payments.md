@@ -1,4 +1,5 @@
 # Invoice Payments
+
 German: "Rechnungen / Zahlungen"
 
 ## Attributes
@@ -7,16 +8,18 @@ The invoice payment representation contains among standard fields also shortened
 
 ```json
 {
-    "id": 123,
-    "date": "2017-10-01",
-    "invoice": {
-        "id": 12345,
-        "identifier": "R1710-001",
-        "title": "Invoice – Website"
-    },
-    "paid_total": "17999.00",
-    "paid_total_in_account_currency": "17999.00",
-    "currency": "EUR"
+  "id": 123,
+  "date": "2017-10-01",
+  "invoice": {
+    "id": 12345,
+    "identifier": "R1710-001",
+    "title": "Invoice – Website"
+  },
+  "paid_total": "17999.00",
+  "paid_total_in_account_currency": "17999.00",
+  "currency": "EUR",
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -57,12 +60,12 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **date*** – "2017-10-20"
-* **invoice_id*** – 12345
-* **paid_total*** – 1000
-* **currency** – "EUR"
+- **date\*** – "2017-10-20"
+- **invoice_id\*** – 12345
+- **paid_total\*** – 1000
+- **currency** – "EUR"
 
 ## POST /invoices/payments/bulk
 
@@ -91,12 +94,12 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **date*** – "2018-10-20"
-* **invoice_id*** – 12345
-* **paid_total*** – 1000
-* **currency** – "EUR"
+- **date\*** – "2018-10-20"
+- **invoice_id\*** – 12345
+- **paid_total\*** – 1000
+- **currency** – "EUR"
 
 ## PUT invoices/payments/{id}
 

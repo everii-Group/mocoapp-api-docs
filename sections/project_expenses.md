@@ -1,32 +1,35 @@
 # Project Expenses
+
 German: "Projekte / Zusatzleistungen"
 
 ## Attributes
 
 The representation contains, among the standard fields, also the following fields:
 
-* Custom properties
+- Custom properties
 
 ```json
 {
-    "id": 47266,
-    "date": "2017-07-07",
-    "title": "Hosting XS",
-    "description": "<div>Hosting, Monitoring und Backup</div>",
-    "quantity": 3,
-    "unit": "Monat",
-    "unit_price": 29,
-    "unit_cost": 19,
-    "price": 87,
-    "cost": 57,
-    "currency": "CHF",
-    "budget_relevant": true,
-    "billable": true,
-    "billed": false,
-    "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
-    "custom_properties": {
-        "Type": "Website"
-    },
+  "id": 47266,
+  "date": "2017-07-07",
+  "title": "Hosting XS",
+  "description": "<div>Hosting, Monitoring und Backup</div>",
+  "quantity": 3,
+  "unit": "Monat",
+  "unit_price": 29,
+  "unit_cost": 19,
+  "price": 87,
+  "cost": 57,
+  "currency": "CHF",
+  "budget_relevant": true,
+  "billable": true,
+  "billed": false,
+  "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
+  "custom_properties": {
+    "Type": "Website"
+  },
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -71,18 +74,18 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **date*** – "2017-04-12"
-* **title*** – "Hosting XS"
-* **quantity*** – 3
-* **unit*** – "months"
-* **unit_price*** – 29
-* **unit_cost*** – 19
-* **description** – "Hosting, Monitoring, Backup"
-* **billable** – true/false (default: true)
-* **budget_relevant** – true/false (default: false)
-* **custom_properties** – {"Type": "Website"}
+- **date\*** – "2017-04-12"
+- **title\*** – "Hosting XS"
+- **quantity\*** – 3
+- **unit\*** – "months"
+- **unit_price\*** – 29
+- **unit_cost\*** – 19
+- **description** – "Hosting, Monitoring, Backup"
+- **billable** – true/false (default: true)
+- **budget_relevant** – true/false (default: false)
+- **custom_properties** – {"Type": "Website"}
 
 ## POST /projects/{id}/expenses/bulk
 
@@ -115,17 +118,17 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **date*** – "2017-04-12"
-* **title*** – "Hosting XS"
-* **quantity*** – 3
-* **unit*** – "months"
-* **unit_price*** – 29
-* **unit_cost*** – 19
-* **description** – "Hosting, Monitoring, Backup"
-* **billable** – true/false (default: true)
-* **budget_relevant** – true/false (default: false)
+- **date\*** – "2017-04-12"
+- **title\*** – "Hosting XS"
+- **quantity\*** – 3
+- **unit\*** – "months"
+- **unit_price\*** – 29
+- **unit_cost\*** – 19
+- **description** – "Hosting, Monitoring, Backup"
+- **billable** – true/false (default: true)
+- **budget_relevant** – true/false (default: false)
 
 ## PUT /projects/{id}/expenses/{id}
 
@@ -170,7 +173,7 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **reason*** – "Courtesy services, as discussed"
-* **expense_ids*** – [1234, 5678]
+- **reason\*** – "Courtesy services, as discussed"
+- **expense_ids\*** – [1234, 5678]

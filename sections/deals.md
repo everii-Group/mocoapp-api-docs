@@ -1,46 +1,49 @@
 # Deals / Leads
+
 German: "Leads"
 
 ## Attributes
 
 The lead representation contains among standard fields also:
 
-* Custom properties, if set
-* User (representative)
-* Customer – DEPRECATED
-* Company
-* Category
-* Status ("potential", "pending", "won", "lost", "dropped")
+- Custom properties, if set
+- User (representative)
+- Customer – DEPRECATED
+- Company
+- Category
+- Status ("potential", "pending", "won", "lost", "dropped")
 
 The company is optional. The category is only important in status "pending".
 
 ```json
 {
-    "id": 123,
-    "name": "Website V2",
-    "status": "pending",
-    "reminder_date": "2017-05-19",
-    "money": 61000,
-    "currency": "CHF",
-    "info": "Interesting Lead!",
-    "custom_properties": {
-        "Type": "Website"
-    },
-    "user": {
-        "id": 933593033,
-        "firstname": "Nicola",
-        "lastname": "Piccinini"
-    },
-    "company": {
-        "id": 760260535,
-        "name": "Beispiel AG",
-        "type": "Customer"
-    },
-    "category": {
-        "id": 12,
-        "name": "Angebot",
-        "probability": 30
-    }
+  "id": 123,
+  "name": "Website V2",
+  "status": "pending",
+  "reminder_date": "2017-05-19",
+  "money": 61000,
+  "currency": "CHF",
+  "info": "Interesting Lead!",
+  "custom_properties": {
+    "Type": "Website"
+  },
+  "user": {
+    "id": 933593033,
+    "firstname": "Nicola",
+    "lastname": "Piccinini"
+  },
+  "company": {
+    "id": 760260535,
+    "name": "Beispiel AG",
+    "type": "Customer"
+  },
+  "category": {
+    "id": 12,
+    "name": "Angebot",
+    "probability": 30
+  },
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -56,7 +59,7 @@ curl -X GET \
 
 Additionally, these parameters can be supplied:
 
-* **status** – "potential", "pending", "won", "lost" or "dropped"
+- **status** – "potential", "pending", "won", "lost" or "dropped"
 
 This returns an array with complete lead information (see attributes).
 
@@ -91,17 +94,17 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **name*** – "Beispiel AG / Website Relaunch"
-* **currency*** – "EUR"
-* **money*** – 25000
-* **reminder_date*** – "2017-08-15"
-* **user_id*** – 123
-* **deal_category_id*** – 456
-* **company_id** – 789
-* **info** – "Information for this lead..."
-* **status** – "potential", "pending", "won", "lost" or "dropped" (default: "pending")
+- **name\*** – "Beispiel AG / Website Relaunch"
+- **currency\*** – "EUR"
+- **money\*** – 25000
+- **reminder_date\*** – "2017-08-15"
+- **user_id\*** – 123
+- **deal_category_id\*** – 456
+- **company_id** – 789
+- **info** – "Information for this lead..."
+- **status** – "potential", "pending", "won", "lost" or "dropped" (default: "pending")
 
 ## PUT /deals/{id}
 

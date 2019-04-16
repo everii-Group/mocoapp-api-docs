@@ -1,4 +1,5 @@
 # Project Contracts
+
 German: "Projekte / Personal"
 
 ## Attributes
@@ -6,15 +7,17 @@ German: "Projekte / Personal"
 Assigning staff to a project is defined in Moco as a "contract".
 
 ```json
-{       
-    "id": 760253573,
-    "user_id": 938487474,
-    "firstname": "Nicola",
-    "lastname": "Piccinini",
-    "billable": true,
-    "active": true,
-    "budget": 9900,
-    "hourly_rate": 110
+{
+  "id": 760253573,
+  "user_id": 938487474,
+  "firstname": "Nicola",
+  "lastname": "Piccinini",
+  "billable": true,
+  "active": true,
+  "budget": 9900,
+  "hourly_rate": 110,
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -55,13 +58,13 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **user_id*** – 123456
-* **billable** – true/false
-* **active** – true/false
-* **budget** – 9900
-* **hourly_rate** – 120
+- **user_id\*** – 123456
+- **billable** – true/false
+- **active** – true/false
+- **budget** – 9900
+- **hourly_rate** – 120
 
 ## PUT /projects/{id}/contracts/{id}
 

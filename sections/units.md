@@ -1,28 +1,31 @@
 # Units / Teams
+
 German: "Teams"
 
 ## Attributes
 
 The representation contains among the standard fields also:
 
-* users (staff assigned to this team)
+- users (staff assigned to this team)
 
 ```json
 {
-    "id": 909147861,
-    "name": "C Office",
-    "users": [
-        {
-            "id": 933590158,
-            "firstname": "Tobias",
-            "lastname": "Miesel"
-        },
-        {
-            "id": 933589599,
-            "firstname": "Sabine",
-            "lastname": "Schäuble"
-        }
-    ]
+  "id": 909147861,
+  "name": "C Office",
+  "users": [
+    {
+      "id": 933590158,
+      "firstname": "Tobias",
+      "lastname": "Miesel"
+    },
+    {
+      "id": 933589599,
+      "firstname": "Sabine",
+      "lastname": "Schäuble"
+    }
+  ],
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 

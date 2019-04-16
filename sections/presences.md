@@ -1,22 +1,26 @@
 # User Presences
+
 German: "Arbeitszeiten"
 
 ## Attributes
 
 Presences contain among the standard fields also:
-* User (creator)
+
+- User (creator)
 
 ```json
 {
-    "id": 982237015,
-    "date": "2018-07-03",
-    "from": "07:30",
-    "to": "13:15",
-    "user": {
-        "id": 933590696,
-        "firstname": "John",
-        "lastname": "Doe"
-    }
+  "id": 982237015,
+  "date": "2018-07-03",
+  "from": "07:30",
+  "to": "13:15",
+  "user": {
+    "id": 933590696,
+    "firstname": "John",
+    "lastname": "Doe"
+  },
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -34,9 +38,8 @@ This returns an array of all presences.
 
 The following parameters can be supplied:
 
-* **from, to** – "2018-06-01", "2018-06-30" (from and to have to be provided together)
-* **user_id** – 123
-
+- **from, to** – "2018-06-01", "2018-06-30" (from and to have to be provided together)
+- **user_id** – 123
 
 ## GET /users/presences/{id}
 
@@ -66,12 +69,11 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **date*** – "2018-06-11"
-* **from*** – "08:00"
-* **to** – "12:30" (End time, can be left blank)
-
+- **date\*** – "2018-06-11"
+- **from\*** – "08:00"
+- **to** – "12:30" (End time, can be left blank)
 
 ## POST /users/presences/touch
 
@@ -86,10 +88,10 @@ curl -X POST \
 A first request at 9:30 AM creates a presence with `from="09:30"`, a second request at 11:30 AM sets `to="11:30"` of the previous presence.
 
 ⚠ There are two special situations to take into consideration:
+
 1. If a presence is started and stopped by `touch` within the same minute, then it is discarded.
 2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
-is `423 Locked`.
-
+   is `423 Locked`.
 
 ## PUT /users/presences/{id}
 

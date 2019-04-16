@@ -1,16 +1,19 @@
 # Project Tasks
+
 German: "Projekte / Leistungen"
 
 ## Attributes
 
 ```json
-{       
-        "id": 760253573,
-        "name": "Projektleitung",
-        "billable": true,
-        "active": true,
-        "budget": 2900,
-        "hourly_rate": 120
+{
+  "id": 760253573,
+  "name": "Projektleitung",
+  "billable": true,
+  "active": true,
+  "budget": 2900,
+  "hourly_rate": 120,
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -52,13 +55,13 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **name*** – "Design / UX"
-* **billable** – true/false
-* **active** – true/false
-* **budget** – 5000
-* **hourly_rate** – 120
+- **name\*** – "Design / UX"
+- **billable** – true/false
+- **active** – true/false
+- **budget** – 5000
+- **hourly_rate** – 120
 
 ## PUT /projects/{id}/tasks/{id}
 

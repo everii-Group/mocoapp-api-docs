@@ -18,7 +18,9 @@ Holidays contain among the standard fields also:
     "id": 933590696,
     "firstname": "John",
     "lastname": "Doe"
-  }
+  },
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 

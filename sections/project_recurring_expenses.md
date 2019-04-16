@@ -1,33 +1,36 @@
 # Project Recurring Expenses
+
 German: "Projekte / Wiederkehrende Zusatzleistungen"
 
 ## Attributes
 
 The representation contains, among the standard fields, also:
 
-* Custom properties
+- Custom properties
 
 ```json
 {
-    "id": 47266,
-    "start_date": "2017-07-01",
-    "finish_date": "2017-12-31",
-    "recur_next_date": "2017-09-01",
-    "period": "monthly",
-    "title": "Hosting XS",
-    "description": "<div>Hosting, Monitoring und Backup</div>",
-    "quantity": 1,
-    "unit": "Server",
-    "unit_price": 29,
-    "unit_cost": 19,
-    "price": 29,
-    "cost": 19,
-    "currency": "CHF",
-    "budget_relevant": true,
-    "billable": true,
-    "custom_properties": {
-        "Type": "Website"
-    },
+  "id": 47266,
+  "start_date": "2017-07-01",
+  "finish_date": "2017-12-31",
+  "recur_next_date": "2017-09-01",
+  "period": "monthly",
+  "title": "Hosting XS",
+  "description": "<div>Hosting, Monitoring und Backup</div>",
+  "quantity": 1,
+  "unit": "Server",
+  "unit_price": 29,
+  "unit_cost": 19,
+  "price": 29,
+  "cost": 19,
+  "currency": "CHF",
+  "budget_relevant": true,
+  "billable": true,
+  "custom_properties": {
+    "Type": "Website"
+  },
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -73,20 +76,20 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **start_date*** – "2018-07-01"
-* **period*** – "weekly", "biweekly", "monthly", "quarterly", "biannual" or "annual"
-* **title*** – "Hosting XS"
-* **quantity*** – 1
-* **unit*** – "Server"
-* **unit_price*** – 29
-* **unit_cost*** – 19
-* **finish_date** – "2018-12-31" (if empty: unlimited)
-* **description** – "Hosting, Monitoring, Backup"
-* **billable** – true/false (default: true)
-* **budget_relevant** – true/false (default: false)
-* **custom_properties** – {"Type": "Website"}
+- **start_date\*** – "2018-07-01"
+- **period\*** – "weekly", "biweekly", "monthly", "quarterly", "biannual" or "annual"
+- **title\*** – "Hosting XS"
+- **quantity\*** – 1
+- **unit\*** – "Server"
+- **unit_price\*** – 29
+- **unit_cost\*** – 19
+- **finish_date** – "2018-12-31" (if empty: unlimited)
+- **description** – "Hosting, Monitoring, Backup"
+- **billable** – true/false (default: true)
+- **budget_relevant** – true/false (default: false)
+- **custom_properties** – {"Type": "Website"}
 
 ## PUT /projects/{id}/recurring_expenses/{id}
 

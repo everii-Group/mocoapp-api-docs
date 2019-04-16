@@ -1,29 +1,32 @@
 # Users
+
 German: "Personal"
 
 ## Attributes
 
 ```json
 {
-    "id": 123,
-    "firstname": "Max",
-    "lastname": "Muster",
-    "active": true,
-    "external": false,
-    "email": "max.muster@beispiel.de",
-    "mobile_phone": "+49 177 123 45 67",
-    "work_phone": "+49 40 123 45 67",
-    "home_address": "",
-    "info": "",
-    "birthday": "1970-01-01",
-    "avatar_url": "https//meinefirma.mocoapp.com/.../profil.jpg",
-    "custom_properties": {
-        "Starting Month": "January 2015"
-    },
-    "unit": {
-        "id": 456,
-        "name": "Geschäftsleitung"
-    }
+  "id": 123,
+  "firstname": "Max",
+  "lastname": "Muster",
+  "active": true,
+  "external": false,
+  "email": "max.muster@beispiel.de",
+  "mobile_phone": "+49 177 123 45 67",
+  "work_phone": "+49 40 123 45 67",
+  "home_address": "",
+  "info": "",
+  "birthday": "1970-01-01",
+  "avatar_url": "https//meinefirma.mocoapp.com/.../profil.jpg",
+  "custom_properties": {
+    "Starting Month": "January 2015"
+  },
+  "unit": {
+    "id": 456,
+    "name": "Geschäftsleitung"
+  },
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -41,7 +44,7 @@ This returns an array with complete staff information (see Attributes).
 
 The following parameters can be supplied:
 
-* **include_archived** – true/false (deactivated users)
+- **include_archived** – true/false (deactivated users)
 
 ## GET /users/{id}
 
@@ -73,23 +76,23 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **firstname*** – "Peter"
-* **lastname*** – "Müller"
-* **email*** – "peter.mueller@meinefirma.de"
-* **password*** – "dAfsdf88fw8fKjtD28f293!"
-* **unit_id*** – 123 (team ID)
-* **active** – true/false (activated/deactivated)
-* **external** – true/false (external employee / contractor)
-* **language** – "de", "de-AT", "de-CH", "en", "it" or "fr"
-* **mobile_phone** – "+41 79 123 45 67"
-* **work_phone** – "+41 44 123 45 67"
-* **home_address** – "Peter Müller\nBeispielstrasse 123\nBeispielstadt"
-* **bday** – "1975-01-17"
-* **work_phone** – "+41 44 123 45 67"
-* **custom_properties** – {"Starting Month": "01.01.2016"}
-* **info** – "Info for this person..."
+- **firstname\*** – "Peter"
+- **lastname\*** – "Müller"
+- **email\*** – "peter.mueller@meinefirma.de"
+- **password\*** – "dAfsdf88fw8fKjtD28f293!"
+- **unit_id\*** – 123 (team ID)
+- **active** – true/false (activated/deactivated)
+- **external** – true/false (external employee / contractor)
+- **language** – "de", "de-AT", "de-CH", "en", "it" or "fr"
+- **mobile_phone** – "+41 79 123 45 67"
+- **work_phone** – "+41 44 123 45 67"
+- **home_address** – "Peter Müller\nBeispielstrasse 123\nBeispielstadt"
+- **bday** – "1975-01-17"
+- **work_phone** – "+41 44 123 45 67"
+- **custom_properties** – {"Starting Month": "01.01.2016"}
+- **info** – "Info for this person..."
 
 ## PUT /users/{id}
 

@@ -1,48 +1,52 @@
 # Activities
+
 German: "Zeiteinträge"
 
 ## Attributes
 
 Activities contain among the standard fields also:
-* Project
-* Customer
-* Task (on the project)
-* User (creator)
+
+- Project
+- Customer
+- Task (on the project)
+- User (creator)
 
 Attributes `remote_service`, `remote_id` und `remote_url` are set by the MOCO Browser extension and represent a ticket in an external system (Trello, Jira, etc.) that this activity's time was spent on.
 
 ```json
 {
-    "id": 982237015,
-    "date": "2018-07-03",
-    "hours": 1.25,
-    "description": "Analysis context and dependencies",
-    "billed": false,
-    "billable": false,
-    "tag": "",
-    "remote_service": "trello",
-    "remote_id": "9qzOS8AA",
-    "remote_url": "https://trello.com/c/9qzOS8AA/123-analyse",
-    "project": {
-        "id": 944587499,
-        "name": "Website Relaunch",
-        "billable": false
-    },
-    "task": {
-        "id": 658636,
-        "name": "Concept",
-        "billable": false
-    },
-    "customer": {
-        "id": 760253684,
-        "name": "Example Inc."
-    },
-    "user": {
-        "id": 933590696,
-        "firstname": "John",
-        "lastname": "Doe"
-    },
-    "hourly_rate": 150
+  "id": 982237015,
+  "date": "2018-07-03",
+  "hours": 1.25,
+  "description": "Analysis context and dependencies",
+  "billed": false,
+  "billable": false,
+  "tag": "",
+  "remote_service": "trello",
+  "remote_id": "9qzOS8AA",
+  "remote_url": "https://trello.com/c/9qzOS8AA/123-analyse",
+  "project": {
+    "id": 944587499,
+    "name": "Website Relaunch",
+    "billable": false
+  },
+  "task": {
+    "id": 658636,
+    "name": "Concept",
+    "billable": false
+  },
+  "customer": {
+    "id": 760253684,
+    "name": "Example Inc."
+  },
+  "user": {
+    "id": 933590696,
+    "firstname": "John",
+    "lastname": "Doe"
+  },
+  "hourly_rate": 150,
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -60,10 +64,10 @@ This returns an array of all activities.
 
 The following parameters can be supplied:
 
-* **from*** – "2018-06-01"
-* **to*** – "2018-06-30"
-* **user_id** – 123
-* **project_id** – 345
+- **from\*** – "2018-06-01"
+- **to\*** – "2018-06-30"
+- **user_id** – 123
+- **project_id** – 345
 
 ## GET /activities/{id}
 
@@ -95,18 +99,18 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **date*** – "2017-06-11"
-* **description*** – "Analysis context and dependencies"
-* **project_id*** – 123456
-* **task_id*** – 234567
-* **hours*** – 1.0
-* **billable** – true/false (default: `true` or dependent on project configuration)
-* **tag** – "RMT-123" (any tag as a string)
-* **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite", "github", "youtrack")
-* **remote_id** – PRJ-2342
-* **remote_url** – https://jira.meinefirma.de/browse/PRJ-2342
+- **date\*** – "2017-06-11"
+- **description\*** – "Analysis context and dependencies"
+- **project_id\*** – 123456
+- **task_id\*** – 234567
+- **hours\*** – 1.0
+- **billable** – true/false (default: `true` or dependent on project configuration)
+- **tag** – "RMT-123" (any tag as a string)
+- **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite", "github", "youtrack")
+- **remote_id** – PRJ-2342
+- **remote_url** – https://jira.meinefirma.de/browse/PRJ-2342
 
 ## PUT /activities/{id}
 
@@ -151,9 +155,9 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **reason*** – "Courtesy service as agreed"
-* **activity_ids*** – [123, 234, 345]
-* **customer_id*** – 123456 (customer ID these activities belong to)
-* **project_id** – 234567 (project ID these activities belong to)
+- **reason\*** – "Courtesy service as agreed"
+- **activity_ids\*** – [123, 234, 345]
+- **customer_id\*** – 123456 (customer ID these activities belong to)
+- **project_id** – 234567 (project ID these activities belong to)

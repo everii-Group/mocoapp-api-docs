@@ -1,45 +1,47 @@
 # Companies
-German: "Firmen"
 
+German: "Firmen"
 
 ## Attributes
 
 The company representation contains among default fields the following features:
 
-* Type ("customer", "supplier", "organization")
-* Labels
-* Custom properties
-* Projects (shortened)
+- Type ("customer", "supplier", "organization")
+- Labels
+- Custom properties
+- Projects (shortened)
 
 ```json
 {
-    "id": 760253573,
-    "type": "customer",
-    "name": "Beispiel AG",
-    "website": "www.beispiel-ag.com",
-    "email": "info@beispiel-ag.com",
-    "phone": "+49 30 123 45 67",
-    "fax": "+49 30 123 45 66",
-    "address": "Beispiel AG\nBeispielstrasse 123\n12345 Beispielstadt",
-    "labels": ["Netzwerk", "Druckerei"],
-    "info": "",
-    "custom_properties": {
-        "UID": "1234-UID-4567"
-    },
-    "identifier": "36",
-    "intern": false,
-    "billing_tax": 0,
-    "currency": "CHF",
-    "default_invoice_due_days": 30,
-    "projects": [
-        {
-            "id": 944504145,
-            "identifier": "46",
-            "name": "Layoutanpassung",
-            "active": false,
-            "billable": true
-        }
-    ]
+  "id": 760253573,
+  "type": "customer",
+  "name": "Beispiel AG",
+  "website": "www.beispiel-ag.com",
+  "email": "info@beispiel-ag.com",
+  "phone": "+49 30 123 45 67",
+  "fax": "+49 30 123 45 66",
+  "address": "Beispiel AG\nBeispielstrasse 123\n12345 Beispielstadt",
+  "labels": ["Netzwerk", "Druckerei"],
+  "info": "",
+  "custom_properties": {
+    "UID": "1234-UID-4567"
+  },
+  "identifier": "36",
+  "intern": false,
+  "billing_tax": 0,
+  "currency": "CHF",
+  "default_invoice_due_days": 30,
+  "projects": [
+    {
+      "id": 944504145,
+      "identifier": "46",
+      "name": "Layoutanpassung",
+      "active": false,
+      "billable": true
+    }
+  ],
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -55,7 +57,7 @@ curl -X GET \
 
 It's also possible to filter by type:
 
-* **type** ("customer", "supplier", "organization")
+- **type** ("customer", "supplier", "organization")
 
 This returns an array with the complete company information.
 
@@ -86,26 +88,25 @@ curl -X POST \
       }'
 ```
 
-Fields for all types of companies. Mandatory fields are marked with a star (*):
+Fields for all types of companies. Mandatory fields are marked with a star (\*):
 
-* **name*** – "Beispiel AG"
-* **type*** – ("customer", "supplier", "organization")
-* **website** – "http//www.lieferant.com"
-* **fax** – "+49 30 123 45 67"
-* **phone** – "+49 30 123 45 67"
-* **email** – "bestellung@lieferant.de"
-* **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
-* **info** – "Information for this company..."
-* **custom_properties** – {"UID": "123-UID-456"}
-* **labels** – ["Network", "Print"]
-
+- **name\*** – "Beispiel AG"
+- **type\*** – ("customer", "supplier", "organization")
+- **website** – "http//www.lieferant.com"
+- **fax** – "+49 30 123 45 67"
+- **phone** – "+49 30 123 45 67"
+- **email** – "bestellung@lieferant.de"
+- **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
+- **info** – "Information for this company..."
+- **custom_properties** – {"UID": "123-UID-456"}
+- **labels** – ["Network", "Print"]
 
 Additional fields just for companies of type customer:
 
-* **currency*** – "EUR"
-* **identifier*** – "K-123" (only mandatory if not automatically assigned)
-* **billing_tax** – 19.0
-* **default_invoice_due_days** – 20
+- **currency\*** – "EUR"
+- **identifier\*** – "K-123" (only mandatory if not automatically assigned)
+- **billing_tax** – 19.0
+- **default_invoice_due_days** – 20
 
 ## PUT /companies/{id}
 

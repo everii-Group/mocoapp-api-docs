@@ -1,85 +1,88 @@
 # Projects
+
 German: "Projekte"
 
 ## Attributes
 
 The project representation contains, among the standard fields, also:
 
-* custom properties
-* project leader (user)
-* customer
-* tasks (services)
-* contracts (assigned staff)
+- custom properties
+- project leader (user)
+- customer
+- tasks (services)
+- contracts (assigned staff)
 
 The attributes `hourly_rate` and `billing_variant` are linked. By choosing the billing variant "project", the hourly rate is just that. If choosing "task" (depending on the service) or "user" (depending on the staff), hourly rate becomes the mean value of hourly rates. Thus, `hourly_rate` on a `task` or `contract` only become relevant if the `billing_variant` is set accordingly.
 
 ```json
 {
-        "id": 1234567,
-        "identifier": "P001",
-        "name": "Website Support",
-        "active": true,
-        "billable": true,
-        "finish_date": "2018-12-31",
-        "currency": "EUR",
-        "billing_variant": "project",
-        "billing_address": "Beispiel AG\nHerr Maier\nBeispielstrasse...",
-        "budget": 18200,
-        "hourly_rate": 150,
-        "info": "Abrechnung jährlich",
-        "labels": ["Print", "Digital"],
-        "custom_properties": {
-            "Project Management": "https://basecamp.com/123456"
-        },
-        "leader": {
-            "id": 933590696,
-            "firstname": "Michael",
-            "lastname": "Mustermann"
-        },
-        "customer": {
-            "id": 1233434,
-            "name": "Beispiel AG"
-        },
-        "tasks": [
-            {
-                "id": 125112,
-                "name": "Project Management",
-                "billable": true,
-                "active": true,
-                "budget": null,
-                "hourly_rate": 0
-            },
-            {
-                "id": 125111,
-                "name": "Development",
-                "billable": true,
-                "active": true,
-                "budget": null,
-                "hourly_rate": 0
-            }
-        ],
-        "contracts": [
-            {
-                "id": 458639048,
-                "user_id": 933590696,
-                "firstname": "Michael",
-                "lastname": "Mustermann",
-                "billable": true,
-                "active": true,
-                "budget": null,
-                "hourly_rate": 0
-            },
-            {
-                "id": 458672097,
-                "user_id": 933589591,
-                "firstname": "Nicola",
-                "lastname": "Piccinini",
-                "billable": true,
-                "active": true,
-                "budget": null,
-                "hourly_rate": 0
-            }
-        ]
+  "id": 1234567,
+  "identifier": "P001",
+  "name": "Website Support",
+  "active": true,
+  "billable": true,
+  "finish_date": "2018-12-31",
+  "currency": "EUR",
+  "billing_variant": "project",
+  "billing_address": "Beispiel AG\nHerr Maier\nBeispielstrasse...",
+  "budget": 18200,
+  "hourly_rate": 150,
+  "info": "Abrechnung jährlich",
+  "labels": ["Print", "Digital"],
+  "custom_properties": {
+    "Project Management": "https://basecamp.com/123456"
+  },
+  "leader": {
+    "id": 933590696,
+    "firstname": "Michael",
+    "lastname": "Mustermann"
+  },
+  "customer": {
+    "id": 1233434,
+    "name": "Beispiel AG"
+  },
+  "tasks": [
+    {
+      "id": 125112,
+      "name": "Project Management",
+      "billable": true,
+      "active": true,
+      "budget": null,
+      "hourly_rate": 0
+    },
+    {
+      "id": 125111,
+      "name": "Development",
+      "billable": true,
+      "active": true,
+      "budget": null,
+      "hourly_rate": 0
+    }
+  ],
+  "contracts": [
+    {
+      "id": 458639048,
+      "user_id": 933590696,
+      "firstname": "Michael",
+      "lastname": "Mustermann",
+      "billable": true,
+      "active": true,
+      "budget": null,
+      "hourly_rate": 0
+    },
+    {
+      "id": 458672097,
+      "user_id": 933589591,
+      "firstname": "Nicola",
+      "lastname": "Piccinini",
+      "billable": true,
+      "active": true,
+      "budget": null,
+      "hourly_rate": 0
+    }
+  ],
+  "created_at": "2018-10-17 09:33:46 UTC",
+  "updated_at": "2018-10-17 09:33:46 UTC"
 }
 ```
 
@@ -97,14 +100,14 @@ This returns an array with complete project information (see Attributes).
 
 The following parameters can be supplied:
 
-* **include_archived** – true/false
-* **include_company** – true/false (returns a complete company instead of just ID and name)
-* **leader_id** – 123456 (project leader user ID)
-* **company_id** – 123456 (company ID)
-* **created_from** – "2018-01-01"
-* **created_to** – "2018-12-31"
-* **updated_from** – "2018-01-01"
-* **updated_to** – "2018-12-31"
+- **include_archived** – true/false
+- **include_company** – true/false (returns a complete company instead of just ID and name)
+- **leader_id** – 123456 (project leader user ID)
+- **company_id** – 123456 (company ID)
+- **created_from** – "2018-01-01"
+- **created_to** – "2018-12-31"
+- **updated_from** – "2018-01-01"
+- **updated_to** – "2018-12-31"
 
 ## GET /projects/assigned
 
@@ -127,12 +130,12 @@ This returns an array with limited project information.
     "active": false,
     "billable": true,
     "customer": {
-      "id":4567,
-      "name":"A Company"
+      "id": 4567,
+      "name": "A Company"
     },
     "tasks": [
       {
-        "id":573383,
+        "id": 573383,
         "name": "Integrations",
         "active": true,
         "billable": true
@@ -144,7 +147,7 @@ This returns an array with limited project information.
 
 The following parameters can be supplied:
 
-* **active** – true/false
+- **active** – true/false
 
 ## GET /projects/{id}
 
@@ -176,21 +179,21 @@ curl -X POST \
       }'
 ```
 
-Mandatory fields are marked with a star (*):
+Mandatory fields are marked with a star (\*):
 
-* **name*** – "Relaunch Website"
-* **currency*** – "EUR"
-* **finish_date*** – "2018-12-31"
-* **leader_id*** – 123456 (user ID)
-* **customer_id*** – 234567
-* **identifier*** – "P-123" (only mandatory if number ranges are manual)
-* **billing_address** – "Beispiel AG\nBeispielstrasse 123\n12345 Berlin"
-* **billing_variant** – "project", "task" or "user" (default: "project")
-* **hourly_rate** – 150
-* **budget** – 20000
-* **labels** – ["Print", "Digital"]
-* **custom_properties** – {"PO-Nummer": "123-ABC"}
-* **info** – "Info for this project"
+- **name\*** – "Relaunch Website"
+- **currency\*** – "EUR"
+- **finish_date\*** – "2018-12-31"
+- **leader_id\*** – 123456 (user ID)
+- **customer_id\*** – 234567
+- **identifier\*** – "P-123" (only mandatory if number ranges are manual)
+- **billing_address** – "Beispiel AG\nBeispielstrasse 123\n12345 Berlin"
+- **billing_variant** – "project", "task" or "user" (default: "project")
+- **hourly_rate** – 150
+- **budget** – 20000
+- **labels** – ["Print", "Digital"]
+- **custom_properties** – {"PO-Nummer": "123-ABC"}
+- **info** – "Info for this project"
 
 ## PUT /projects/{id}
 
@@ -234,7 +237,6 @@ curl -X PUT \
   -H 'Content-Type: application/json'
 ```
 
-
 ## GET /projects/{id}/report
 
 Retrieve a project report:
@@ -249,33 +251,33 @@ This returns the most important project business indicators:
 
 ```json
 {
-    "budget_total": 50000.00,
-    "budget_progress_in_percentage": 50,
-    "budget_remaining": 25.000,
-    "hours_total": 1500,
-    "hours_billable": 1340,
-    "hours_remaining": 1500,
-    "costs_expenses": "4000.0",
-    "costs_activities": "16450.0",
-    "costs_by_task": [
-        {
-            "id": 7536,
-            "name": "Project Management",
-            "hours_total": "12.50",
-            "total_costs": "725.0"
-        },
-        {
-            "id": 7239,
-            "name": "Design",
-            "hours_total": "71.98",
-            "total_costs": "5598.0"
-        },
-        {
-            "id": 573376,
-            "name": "Development",
-            "hours_total": "94.48",
-            "total_costs": "9448.0"
-        }
-    ]
+  "budget_total": 50000.0,
+  "budget_progress_in_percentage": 50,
+  "budget_remaining": 25.0,
+  "hours_total": 1500,
+  "hours_billable": 1340,
+  "hours_remaining": 1500,
+  "costs_expenses": "4000.0",
+  "costs_activities": "16450.0",
+  "costs_by_task": [
+    {
+      "id": 7536,
+      "name": "Project Management",
+      "hours_total": "12.50",
+      "total_costs": "725.0"
+    },
+    {
+      "id": 7239,
+      "name": "Design",
+      "hours_total": "71.98",
+      "total_costs": "5598.0"
+    },
+    {
+      "id": 573376,
+      "name": "Development",
+      "hours_total": "94.48",
+      "total_costs": "9448.0"
+    }
+  ]
 }
 ```
