@@ -80,6 +80,28 @@ Mandatory fields are marked with a star (\*):
 - **commentable_type\*** – "User", "Deal", "Offer", "OfferConfirmation", "Customer", "Project", "Invoice", "Contact" (object type)
 - **text\*** – "Comment text..."
 
+## POST /comments/bulk
+
+Create multiple comments in bulk:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/comments/bulk' \
+  -H 'Authorization: Token token={api-key}' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "commentable_ids": [123, 234, 345],
+        "commentable_type": "Contact",
+        "text": "Sent Newsletter RJ-2019/03"
+      }'
+```
+
+Mandatory fields are marked with a star (\*):
+
+- **commentable_ids\*** – [123, 234, ...] (object IDs)
+
+Other fields are analogous to the POST request.
+
 ## PUT /comments/{id}
 
 Update a comment:
