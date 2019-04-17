@@ -19,6 +19,7 @@ The invoice representation contains among standard fields also:
   "identifier": "R1704-013",
   "date": "2017-04-05",
   "due_date": "2017-04-25",
+  "service_period": "10/2018",
   "status": "paid",
   "reversal": false,
   "title": "Invoice",
