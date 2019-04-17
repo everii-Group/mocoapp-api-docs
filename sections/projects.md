@@ -191,7 +191,7 @@ Mandatory fields are marked with a star (\*):
 - **billing_variant** – "project", "task" or "user" (default: "project")
 - **hourly_rate** – 150
 - **budget** – 20000
-- **labels** – ["Print", "Digital"]
+- **labels** – ["Print", "Digital"] 💡name mismatch, labels/tags are used interchangeably
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
 

@@ -101,8 +101,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
 - **info** – "Information for this company..."
 - **custom_properties** – {"UID": "123-UID-456"}
-- **tags** – "Network, Print" (comma separated)
-- **labels** – ["Network", "Print"] 🚧 DEPRECATED: use tags
+- **labels** – ["Network", "Print"] 💡name mismatch, labels/tags are used interchangeably
 
 Additional fields just for companies of type customer:
 
