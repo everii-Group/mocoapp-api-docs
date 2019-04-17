@@ -60,6 +60,7 @@ curl -X GET \
 Additionally, these parameters can be supplied:
 
 - **status** – "potential", "pending", "won", "lost" or "dropped"
+- **tags** "Important, Strategic" (comma separated list)
 
 This returns an array with complete lead information (see attributes).
 

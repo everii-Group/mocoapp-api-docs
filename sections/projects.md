@@ -108,6 +108,7 @@ The following parameters can be supplied:
 - **created_to** – "2018-12-31"
 - **updated_from** – "2018-01-01"
 - **updated_to** – "2018-12-31"
+- **tags** "Important, Strategic" (comma separated list)
 
 ## GET /projects/assigned
 

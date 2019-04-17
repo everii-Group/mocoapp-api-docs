@@ -59,7 +59,7 @@ curl -X GET \
 It's also possible to filter:
 
 - **type** ("customer", "supplier", "organization")
-- **tags** (Label)
+- **tags** "Automotive, Pharma" (comma separated list)
 
 This returns an array with the complete company information.
 

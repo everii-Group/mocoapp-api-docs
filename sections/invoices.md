@@ -156,6 +156,7 @@ Additionally, these parameters can be supplied:
 - **status** – ("draft", "created", "sent", "partially_paid", "paid", "overdue", "ignored")
 - **date_from** – "2018-01-01"
 - **date_to** – "2018-01-31"
+- **tags** "Periodenfremd, Inkasso" (comma separated list)
 
 The response returns an array with all the invoice information (see attributes), except `salutation`, `footer`, `items`, `payments` and `reminders`.
 

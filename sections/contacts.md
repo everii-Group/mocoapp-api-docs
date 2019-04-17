@@ -48,7 +48,11 @@ curl -X GET \
   -H 'Authorization: Token token={api-key}'
 ```
 
-Returns an array with all contact information (see attributes), expect `info` and `tags`.
+It's also possible to filter:
+
+- **tags** "Influencer, Early Adopter" (comma separated list)
+
+Returns an array with all contact information (see attributes), expect `info`.
 
 ## GET /contacts/people/{id}
 
