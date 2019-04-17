@@ -21,7 +21,8 @@ The company representation contains among default fields the following features:
   "phone": "+49 30 123 45 67",
   "fax": "+49 30 123 45 66",
   "address": "Beispiel AG\nBeispielstrasse 123\n12345 Beispielstadt",
-  "labels": ["Netzwerk", "Druckerei"],
+  "tags": ["Netzwerk", "Druckerei"],
+  "labels": ["Netzwerk", "Druckerei"], // 🚧 DEPRECATED: use tags
   "info": "",
   "custom_properties": {
     "UID": "1234-UID-4567"
@@ -55,9 +56,10 @@ curl -X GET \
   -H 'Authorization: Token token={api-key}'
 ```
 
-It's also possible to filter by type:
+It's also possible to filter:
 
 - **type** ("customer", "supplier", "organization")
+- **tags** (Label)
 
 This returns an array with the complete company information.
 
@@ -99,7 +101,8 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
 - **info** – "Information for this company..."
 - **custom_properties** – {"UID": "123-UID-456"}
-- **labels** – ["Network", "Print"]
+- **tags** – "Network, Print" (comma separated)
+- **labels** – ["Network", "Print"] 🚧 DEPRECATED: use tags
 
 Additional fields just for companies of type customer:
 
