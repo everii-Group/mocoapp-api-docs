@@ -105,7 +105,7 @@ Mandatory fields are marked with a star (\*):
 - **description\*** – "Analysis context and dependencies"
 - **project_id\*** – 123456
 - **task_id\*** – 234567
-- **hours\*** – 1.0
+- **hours\*** – 1.0 💡passing 0 will start a timer if date is today
 - **billable** – true/false (default: `true` or dependent on project configuration)
 - **tag** – "RMT-123" (any tag as a string)
 - **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite", "github", "youtrack")
@@ -128,6 +128,30 @@ curl -X PUT \
 
 All fields are analogous to the POST request.
 
+## PATCH /activities/{id}/start_timer
+
+Start or continue a timer on an activity.
+
+```bash
+curl -X PATCH \
+  'https://{domain}.mocoapp.com/api/v1/activities/{id}/start_timer' \
+  -H 'Authorization: Token token={api-key}' \
+  -H 'Content-Type: application/json' \
+```
+
+⚠️ The timer is only available for activities on the current day. If timer cannot be started a 422 will be returned.
+
+## PATCH /activities/{id}/stop_timer
+
+Stop a timer running on an activity.
+
+```bash
+curl -X PATCH \
+  'https://{domain}.mocoapp.com/api/v1/activities/{id}/stop_timer' \
+  -H 'Authorization: Token token={api-key}' \
+  -H 'Content-Type: application/json' \
+```
+
 ## DELETE /activities/{id}
 
 Delete an activity.
@@ -138,7 +162,7 @@ curl -X DELETE \
   -H 'Authorization: Token token={api-key}'
 ```
 
-⚠ Deleting an activity is only possible if this activity has not yet been billed or locked.
+⚠️ Deleting an activity is only possible if this activity has not yet been billed or locked.
 
 ## POST /activities/disregard
 
