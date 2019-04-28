@@ -109,6 +109,7 @@ The following parameters can be supplied:
 - **updated_from** – "2018-01-01"
 - **updated_to** – "2018-12-31"
 - **tags** "Important, Strategic" (comma separated list)
+- **identifier** "P1903-003"
 
 ## GET /projects/assigned
 

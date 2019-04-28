@@ -127,6 +127,7 @@ Additionally, these parameters can be supplied:
 - **status** – ("created", "sent", "accepted", "billed", "archived")
 - **from** – "2018-01-01"
 - **to** – "2018-01-31"
+- **identifier** "A1903-003"
 
 ## GET /offers/{id}
 
