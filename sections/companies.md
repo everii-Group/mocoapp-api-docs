@@ -41,8 +41,8 @@ The company representation contains among default fields the following features:
       "billable": true
     }
   ],
-  "created_at": "2018-10-17 09:33:46 UTC",
-  "updated_at": "2018-10-17 09:33:46 UTC"
+  "created_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 

@@ -16,8 +16,8 @@ Assigning staff to a project is defined in Moco as a "contract".
   "active": true,
   "budget": 9900,
   "hourly_rate": 110,
-  "created_at": "2018-10-17 09:33:46 UTC",
-  "updated_at": "2018-10-17 09:33:46 UTC"
+  "created_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 

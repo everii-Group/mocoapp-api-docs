@@ -45,8 +45,8 @@ Attributes `remote_service`, `remote_id` und `remote_url` are set by the MOCO Br
     "lastname": "Doe"
   },
   "hourly_rate": 150,
-  "created_at": "2018-10-17 09:33:46 UTC",
-  "updated_at": "2018-10-17 09:33:46 UTC"
+  "created_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 

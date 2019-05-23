@@ -18,8 +18,8 @@ The invoice payment representation contains among standard fields also shortened
   "paid_total": "17999.00",
   "paid_total_in_account_currency": "17999.00",
   "currency": "EUR",
-  "created_at": "2018-10-17 09:33:46 UTC",
-  "updated_at": "2018-10-17 09:33:46 UTC"
+  "created_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 

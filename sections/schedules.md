@@ -28,8 +28,8 @@ The planning entry representation contains among the standard fields also:
     "firstname": "Sabine",
     "lastname": "Schäuble"
   },
-  "created_at": "2018-10-17 09:33:46 UTC",
-  "updated_at": "2018-10-17 09:33:46 UTC"
+  "created_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 
