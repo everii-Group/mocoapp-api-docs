@@ -11,7 +11,11 @@ Employments contain among the standard fields also:
 ```json
 {
   "id": 982237015,
-  "weekly_target_hours": 40.0,
+  "weekly_target_hours": 29.75,
+  "pattern": {
+    "am": [0, 4.25, 4.25, 4.25, 4.25], // Mon - Fri
+    "pm": [0, 4.25, 4.25, 4.25, 0] // Mon - Fri
+  },
   "from": "2017-01-01",
   "to": null,
   "user": {
