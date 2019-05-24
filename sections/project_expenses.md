@@ -177,3 +177,16 @@ Mandatory fields are marked with a star (\*):
 
 - **reason\*** – "Courtesy services, as discussed"
 - **expense_ids\*** – [1234, 5678]
+
+
+## GET /projects/expenses
+
+Retrieve all additional services
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/projects/expenses' \
+  -H 'Authorization: Token token={api-key}'
+```
+
+This returns an array with all additional services (see Attributes).
