@@ -178,7 +178,6 @@ Mandatory fields are marked with a star (\*):
 - **reason\*** – "Courtesy services, as discussed"
 - **expense_ids\*** – [1234, 5678]
 
-
 ## GET /projects/expenses
 
 Retrieve all additional services
@@ -190,3 +189,8 @@ curl -X GET \
 ```
 
 This returns an array with all additional services (see Attributes).
+
+Additionally, these parameters can be supplied:
+
+- **from** – "2019-01-01"
+- **to** – "2019-01-31"
