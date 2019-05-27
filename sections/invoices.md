@@ -28,6 +28,9 @@ The invoice representation contains among standard fields also:
   "net_total": 35612.5,
   "tax": 8,
   "gross_total": 38461.5,
+  "discount": 10,
+  "cash_discount": 2.5,
+  "cash_discount_days": 5,
   "created_on": "2017-04-04", // 🚧 DEPRECATED: use created_at
   "updated_on": "2017-07-10", // 🚧 DEPRECATED: use updated_at
   "debit_number": null,
@@ -255,15 +258,11 @@ curl -X POST \
         "customer_id": 123456,
         "project_id": 654321,
         "recipient_address": "Mein Kunde\nHauptstrasse 1\n8000 Zürich",
-        "change_address": "invoice",
         "date": "2018-09-17",
         "due_date": "2018-10-16",
         "title": "Invoice",
-        "salutation": "",
         "tax": 8.0,
-        "discount": 0.0,
         "currency": "CHF",
-        "footer": "",
         "service_period": "Aug 18",
         "items": [
           {
@@ -302,19 +301,20 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **customer_id\*** – 123456
-- **project_id\*** – 654321 (ID of the assigned project)
+- **customer_id\*** – 123456 (ID of the assigned client)
 - **recipient_address\*** – "My customer..."
-- **change_address\*** – Take over this address ("invoice", "project", "customer")
 - **date\*** – "2018-09-17"
 - **due_date\*** – "2018-10-16"
-- **title\*** – "Invoice"
-- **salutation\***– ""
-- **tax\*** – 8.0
-- **discount\*** – 0.0
-- **hours\*** – 1.0
-- **currency\*** – 1.0
-- **footer\*** – ""
 - **service_period\*** – "Aug 18"
+- **title\*** – "Invoice"
+- **tax\*** – 8.0
+- **currency\*** – "CHF" (a valid currency of the account)
+- **items\*** – positions (see [attributes](#attributes))
 - **status** – `created`|`draft` , default is `created`, specify `draft` in order to create a draft invoice
-- **items** – positions (see Attributes)
+- **change_address** – address propagation ("invoice", "project", "customer"), default is "invoice"
+- **salutation** (salutation text)
+- **footer** (footer text)
+- **discount** – 10 (discount in percent)
+- **cash_discount** – 2.5 (cash discount in percent)
+- **cash_discount_days** – 5 (cash discount due days)
+- **project_id** – 654321 (ID of the assigned project)
