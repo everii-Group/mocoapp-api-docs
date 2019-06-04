@@ -164,7 +164,10 @@ curl -X POST \
 
 ## WebHooks
 
-Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. Whenever an event triggers, MOCO sends an HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature. This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context for the sent payload.
+Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. 
+Whenever an event triggers, MOCO sends an HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature. 
+This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context 
+for the sent payload.
 
 - **X-Moco-Target** – Activity, Customer, Project, ...
 - **X-Moco-Event** – create, update, delete, archive, ...
@@ -183,10 +186,13 @@ X-Moco-Signature: f457bffc50e9b63f455ab107c55f2f61956550aa5525c2cfe07f574014bd8a
 X-Moco-User-Id: 933613686
 ```
 
-- We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temoporary HTTPS URLs that let you inspect any incoming WebHook data
-- WebHooks are only provided to customers after the trial phase
-- WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important for your use case
-- The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters hexadecimal string displayed in the web hook overview.
+- We recommend http://requestbin.fullcontact.com/ for WebHook development – this services provides you with temporary
+  HTTPS URLs that let you inspect any incoming WebHook data.
+- WebHooks are only provided to customers after the trial phase.
+- WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important 
+  for your use case.
+- The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters 
+  hexadecimal string displayed in the web hook overview.
 
 Sample code (Ruby) to calculate the payload signature:
 
@@ -198,3 +204,7 @@ irb(main):003:0> signature_key = "1d608b9d72219b90ff2393a1d3ee0ac0"
 irb(main):004:0> payload_signature = OpenSSL::HMAC.hexdigest("SHA256", signature_key, payload)
 => "09f9ebc0adeb597cb7cb37fd72b20be0caeca6bd9fb67416b663606bd7f89183"
 ```
+
+- We expect a successful response code for the Webhook request (i.e. any 2XX code), otherwise it's considered a failure
+  and it's retried.
+- After 500 consecutive failures a Webhook is automatically disabled.   
