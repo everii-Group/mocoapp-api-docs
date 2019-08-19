@@ -102,10 +102,10 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2017-06-11"
-- **description** – "Analysis context and dependencies"
 - **project_id\*** – 123456
 - **task_id\*** – 234567
 - **hours\*** – 1.0 💡passing 0 will start a timer if date is today
+- **description** – "Analysis context and dependencies"
 - **billable** – true/false (default: `true` or dependent on project configuration)
 - **tag** – "RMT-123" (any tag as a string)
 - **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite", "github", "youtrack")
