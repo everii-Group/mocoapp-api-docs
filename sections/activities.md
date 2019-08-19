@@ -102,7 +102,7 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2017-06-11"
-- **description\*** – "Analysis context and dependencies"
+- **description** – "Analysis context and dependencies"
 - **project_id\*** – 123456
 - **task_id\*** – 234567
 - **hours\*** – 1.0 💡passing 0 will start a timer if date is today
