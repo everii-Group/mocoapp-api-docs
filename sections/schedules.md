@@ -16,6 +16,7 @@ The planning entry representation contains among the standard fields also:
   "comment": "Half day off",
   "am": true,
   "pm": true,
+  "symbol": null,
   "assignment": {
     "id": 789,
     "name": "Holiday",
@@ -87,6 +88,7 @@ Mandatory fields are marked with a star (\*):
 - **am** – true, false (morning yes/no)
 - **pm** – true, false (afternoon yes/no)
 - **comment** – "A comment..."
+- **symbol** – 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (home, building, car, graduation cap, cocktail, bells, baby carriage, users, moon , info circle)
 - **overwrite** – true, false (override existing entry)
 
 ## PUT /schedules/{id}
