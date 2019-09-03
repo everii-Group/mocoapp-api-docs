@@ -7,6 +7,8 @@ German: "Projekte / Zusatzleistungen"
 The representation contains, among the standard fields, also the following fields:
 
 - Custom properties
+- Company
+- Project
 
 ```json
 {
@@ -27,6 +29,14 @@ The representation contains, among the standard fields, also the following field
   "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
   "custom_properties": {
     "Type": "Website"
+  },
+  "company": {
+    "id": 1234,
+    "name": "Acme Corp.",
+  },
+  "project": {
+    "id": 1234,
+    "name": "Project A",
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
