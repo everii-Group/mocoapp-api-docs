@@ -51,7 +51,7 @@ Additionally, the following parameters can be supplied:
 - **from** – "2017-05-01"
 - **to** – "2017-05-31"
 - **user_id** – 123
-- **project_id** – 345 or **absence_code** – 1, 2, 3, 4 (absence, public holiday, sick day, holiday)
+- **project_id** – 345 or **absence_code** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
 
 ## GET /schedules/{id}
 
@@ -83,7 +83,7 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2017-06-11"
-- **project_id\*** – 123456 or **absence_code\*** – 1, 2, 3, 4 (absence, public holiday, sick day, holiday)
+- **project_id\*** – 123456 or **absence_code\*** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
 - **user_id** – 234567 (user ID for active staff)
 - **am** – true, false (morning yes/no)
 - **pm** – true, false (afternoon yes/no)
