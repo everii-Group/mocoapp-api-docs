@@ -281,7 +281,7 @@ curl -X POST \
             "unit_price": 99.0
           },
           {
-            "type": "seperator"
+            "type": "separator"
           },
           {
             "type": "item",
