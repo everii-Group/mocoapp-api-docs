@@ -8,6 +8,8 @@
   "target": "Activity",
   "event": "create",
   "hook": "https://example.org/do-stuff",
+  "disabled": false,
+  "disabled_at": null,
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
@@ -49,7 +51,7 @@ curl -X POST \
   -d '{
         "target": "Activity",
         "event": "create",
-        "hook": "https://example.org/do-stuff",
+        "hook": "https://example.org/do-stuff"
       }'
 ```
 
@@ -58,7 +60,6 @@ Mandatory fields are marked with a star (\*):
 - **target\*** – "Activity" (Activity/Company/Contact/Project/Invoice/Offer/Deal)
 - **event\*** – "create" (create/update/delete)
 - **hook\*** – "https://example.org/do-stuff" 
-- **disabled_at** – "2019-09-01T00:00:00Z", to disable the web hook
 
 ## PUT /accounts/web_hooks/{id}
 
@@ -70,11 +71,31 @@ curl -X PUT \
   -H 'Authorization: Token token={api-key}' \
   -H 'Content-Type: application/json' \
   -d '{
-        "disabled_at": "2019-09-01T00:00:00Z",
+        "event": "update"
       }'
 ```
 
-Fiels are analogous to the POST request.
+Fields are analogous to the POST request.
+
+## PUT /accounts/web_hooks/{id}/disable
+
+Disable the web hook (if already disabled, it does nothing):
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/accounts/web_hooks/{id}/disable' \
+  -H 'Authorization: Token token={api-key}'
+```
+
+## PUT /accounts/web_hooks/{id}/enable
+
+Enable the web hook (if already enabled, it does nothing):
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/accounts/web_hooks/{id}/enable' \
+  -H 'Authorization: Token token={api-key}'
+```
 
 ## DELETE /accounts/web_hooks/{id}
 

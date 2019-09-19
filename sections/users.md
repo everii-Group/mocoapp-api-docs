@@ -109,7 +109,7 @@ curl -X PUT \
       }'
 ```
 
-Fiels are analogous to the POST request. A related [employment](employments.md) must be termined separately.
+Fields are analogous to the POST request. A related [employment](employments.md) must be termined separately.
 
 ## DELETE /users/{id}
 
