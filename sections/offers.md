@@ -167,15 +167,15 @@ curl -X POST \
   -H 'Authorization: Token token={api-key}' \
   -H 'Content-Type: application/json' \
   -d '{
-        "deal_id": 123    
+        "deal_id": 123,
         "recipient_address": "Acme\r\nPark Avenue",
         "date": "2019-05-10",
         "due_date": "2019-06-08",
-        "title": "Offer - Shop Locator","
-        salutation": "Hey",
+        "title": "Offer - Shop Locator",
+        "salutation": "Hey",
         "tax": 8.0,
         "discount": 0.0,
-        "footer_raw": "Bye",
+        "footer": "Bye",
         "items":[
             {"type":"title","title":"Stunden"},
             {"type":"description","description":"Aufstellung über geleistete Arbeiten"},
