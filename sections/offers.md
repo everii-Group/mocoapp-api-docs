@@ -29,6 +29,14 @@ The offer representation contains among the standard fields:
     "id": 1234,
     "name": "Acme Corp."
   },
+  "project": {
+    "id": 1234,
+    "name": "A Project"
+  },
+  "deal": {
+    "id": 1234,
+    "name": "A Lead"
+  },
   "items": [
     {
       "id": 29,
