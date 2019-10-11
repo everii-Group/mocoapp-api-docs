@@ -41,6 +41,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Project Expenses](sections/project_expenses.md)
 - [Project Recurring Expenses](sections/project_recurring_expenses.md)
 - [Project Tasks](sections/project_tasks.md)
+- [Project Payment Schedules](sections/project_payment_schedules.md)
 - [Schedules](sections/schedules.md)
 - [Units / Teams](sections/units.md)
 - [Users](sections/users.md)
