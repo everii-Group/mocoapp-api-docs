@@ -203,7 +203,7 @@ Mandatory fields are marked with a star (\*):
 - **currency\*** – "CHF" (a valid currency of the account)
 - **items\*** – positions (see [attributes](#attributes))
 - **change_address** – address propagation ("offer", "customer"), default is "offer"
-- **salutation** (salutation text)
+- **salutation*** (salutation text)
 - **footer** (footer text)
-- **discount** – 10 (discount in percent)
+- **discount*** – 10 (discount in percent)
 - **contact_id** – 123456 (ID of the associated contact)
