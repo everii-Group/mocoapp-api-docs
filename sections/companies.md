@@ -39,6 +39,7 @@ The company representation contains among default fields the following features:
   currency: "CHF",
   country_code: "CH",
   default_invoice_due_days: 30,
+  footer: "<div>Footer text</div>", // appears at the end of invoices
   projects: [
     {
       id: 944504145,
@@ -112,6 +113,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **custom_properties** – {"UID": "123-UID-456"}
 - **labels** – ["Network", "Print"] 💡name mismatch, labels/tags are used interchangeably
 - **user_id** – 123456 💡(responsible person)
+- **footer** – "<div>some html</div>" (appears at the end of invoices)
 
 Additional fields just for companies of type customer:
 
