@@ -308,6 +308,8 @@ Mandatory fields are marked with a star (\*):
 - **recipient_address\*** – "My customer..."
 - **date\*** – "2018-09-17"
 - **due_date\*** – "2018-10-16"
+- **service_period_from** – "2018-08-01"
+- **service_period_to** – "2018-08-30"
 - **title\*** – "Invoice"
 - **tax\*** – 8.0
 - **currency\*** – "CHF" (a valid currency of the account)
@@ -320,3 +322,5 @@ Mandatory fields are marked with a star (\*):
 - **cash_discount** – 2.5 (cash discount in percent)
 - **cash_discount_days** – 5 (cash discount due days)
 - **project_id** – 654321 (ID of the assigned project)
+
+Omitted fields `service_period_from` and `service_period_to` indicates the absences of a service period.
