@@ -263,7 +263,8 @@ curl -X POST \
         "title": "Invoice",
         "tax": 8.0,
         "currency": "CHF",
-        "service_period": "Aug 18",
+        "service_period_from": "2019-12-01",
+        "service_period_to": "2019-12-31",
         "items": [
           {
             "type": "title",
@@ -305,7 +306,6 @@ Mandatory fields are marked with a star (\*):
 - **recipient_address\*** – "My customer..."
 - **date\*** – "2018-09-17"
 - **due_date\*** – "2018-10-16"
-- **service_period\*** – "Aug 18"
 - **title\*** – "Invoice"
 - **tax\*** – 8.0
 - **currency\*** – "CHF" (a valid currency of the account)
