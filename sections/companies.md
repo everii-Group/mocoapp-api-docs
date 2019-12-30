@@ -122,6 +122,10 @@ Additional fields just for companies of type customer:
 - **billing_tax** – 19.0
 - **default_invoice_due_days** – 20
 
+Additional fields just for companies of type supplier:
+
+- **iban** – CH3908704016075473007
+
 ## PUT /companies/{id}
 
 Update a company.
