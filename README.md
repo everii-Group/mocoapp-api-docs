@@ -32,6 +32,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Comments](sections/comments.md)
 - [Companies](sections/companies.md)
 - [Contacts](sections/contacts.md)
+- [Deal Categories](sections/deal_categories.md)
 - [Deals / Leads](sections/deals.md)
 - [Invoices](sections/invoices.md)
 - [Invoice Payments](sections/invoice_payments.md)
