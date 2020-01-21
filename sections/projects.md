@@ -16,74 +16,74 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
 
 ```json5
 {
-  "id": 1234567,
-  "identifier": "P001",
-  "name": "Website Support",
-  "active": true,
-  "billable": true,
-  "finish_date": "2018-12-31",
-  "currency": "EUR",
-  "billing_variant": "project",
-  "billing_address": "Beispiel AG\nHerr Maier\nBeispielstrasse...",
-  "budget": 18200,
-  "budget_expenses": 8200,
-  "hourly_rate": 150,
-  "info": "Abrechnung jährlich",
-  "labels": ["Print", "Digital"],
-  "custom_properties": {
+  id: 1234567,
+  identifier: "P001",
+  name: "Website Support",
+  active: true,
+  billable: true,
+  finish_date: "2018-12-31",
+  currency: "EUR",
+  billing_variant: "project",
+  billing_address: "Beispiel AG\nHerr Maier\nBeispielstrasse...",
+  budget: 18200,
+  budget_expenses: 8200,
+  hourly_rate: 150,
+  info: "Abrechnung jährlich",
+  labels: ["Print", "Digital"],
+  custom_properties: {
     "Project Management": "https://basecamp.com/123456"
   },
-  "leader": {
-    "id": 933590696,
-    "firstname": "Michael",
-    "lastname": "Mustermann"
+  leader: {
+    id: 933590696,
+    firstname: "Michael",
+    lastname: "Mustermann"
   },
-  "customer": {
-    "id": 1233434,
-    "name": "Beispiel AG"
+  customer: {
+    id: 1233434,
+    name: "Beispiel AG"
   },
-  "tasks": [
+  tasks: [
     {
-      "id": 125112,
-      "name": "Project Management",
-      "billable": true,
-      "active": true,
-      "budget": null,
-      "hourly_rate": 0
+      id: 125112,
+      name: "Project Management",
+      billable: true,
+      active: true,
+      budget: null,
+      hourly_rate: 0
     },
     {
-      "id": 125111,
-      "name": "Development",
-      "billable": true,
-      "active": true,
-      "budget": null,
-      "hourly_rate": 0
+      id: 125111,
+      name: "Development",
+      billable: true,
+      active: true,
+      budget: null,
+      hourly_rate: 0
     }
   ],
-  "contracts": [
+  contracts: [
     {
-      "id": 458639048,
-      "user_id": 933590696,
-      "firstname": "Michael",
-      "lastname": "Mustermann",
-      "billable": true,
-      "active": true,
-      "budget": null,
-      "hourly_rate": 0
+      id: 458639048,
+      user_id: 933590696,
+      firstname: "Michael",
+      lastname: "Mustermann",
+      billable: true,
+      active: true,
+      budget: null,
+      hourly_rate: 0
     },
     {
-      "id": 458672097,
-      "user_id": 933589591,
-      "firstname": "Nicola",
-      "lastname": "Piccinini",
-      "billable": true,
-      "active": true,
-      "budget": null,
-      "hourly_rate": 0
+      id: 458672097,
+      user_id: 933589591,
+      firstname: "Nicola",
+      lastname: "Piccinini",
+      billable: true,
+      active: true,
+      budget: null,
+      hourly_rate: 0
     }
   ],
-  "created_at": "2018-10-17T09:33:46Z",
-  "updated_at": "2018-10-17T09:33:46Z"
+  created_at: "2018-10-17T09:33:46Z",
+  updated_at: "2018-10-17T09:33:46Z"
 }
 ```
 
@@ -127,21 +127,21 @@ This returns an array with limited project information.
 ```json5
 [
   {
-    "id": 1234,
-    "identifier": "P1900",
-    "name": "Application",
-    "active": false,
-    "billable": true,
-    "customer": {
-      "id": 4567,
-      "name": "A Company"
+    id: 1234,
+    identifier: "P1900",
+    name: "Application",
+    active: false,
+    billable: true,
+    customer: {
+      id: 4567,
+      name: "A Company"
     },
-    "tasks": [
+    tasks: [
       {
-        "id": 573383,
-        "name": "Integrations",
-        "active": true,
-        "billable": true
+        id: 573383,
+        name: "Integrations",
+        active: true,
+        billable: true
       }
     ]
   }
@@ -254,32 +254,34 @@ This returns the most important project business indicators:
 
 ```json5
 {
-  "budget_total": 50000.0,
-  "budget_progress_in_percentage": 50,
-  "budget_remaining": 25.0,
-  "hours_total": 1500,
-  "hours_billable": 1340,
-  "hours_remaining": 1500,
-  "costs_expenses": "4000.0",
-  "costs_activities": "16450.0",
-  "costs_by_task": [
+  budget_total: 50000.0,
+  budget_progress_in_percentage: 50,
+  budget_remaining: 25.0,
+  invoiced_total: 27885.0,
+  currency: "EUR",
+  hours_total: 1500,
+  hours_billable: 1340,
+  hours_remaining: 1500,
+  costs_expenses: 4000.0,
+  costs_activities: 16450.0,
+  costs_by_task: [
     {
-      "id": 7536,
-      "name": "Project Management",
-      "hours_total": "12.50",
-      "total_costs": "725.0"
+      id: 7536,
+      name: "Project Management",
+      hours_total: 12.5,
+      total_costs: 725.0
     },
     {
-      "id": 7239,
-      "name": "Design",
-      "hours_total": "71.98",
-      "total_costs": "5598.0"
+      id: 7239,
+      name: "Design",
+      hours_total: 71.98,
+      total_costs: 5598.0
     },
     {
-      "id": 573376,
-      "name": "Development",
-      "hours_total": "94.48",
-      "total_costs": "9448.0"
+      id: 573376,
+      name: "Development",
+      hours_total: 94.48,
+      total_costs: 9448.0
     }
   ]
 }
