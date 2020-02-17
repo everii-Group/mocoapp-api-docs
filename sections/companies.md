@@ -38,7 +38,7 @@ The company representation contains among default fields the following features:
   billing_tax: 0,
   currency: "CHF",
   country_code: "CH",
-  vat_id: "DE999999999",
+  vat_identifier: "DE999999999",
   default_invoice_due_days: 30,
   footer: "<div>Footer text</div>", // appears at the end of invoices
   projects: [
@@ -105,7 +105,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **name\*** – "Beispiel AG"
 - **type\*** – ("customer", "supplier", "organization")
 - **country_code** – (ISO Alpha-2 Country Code like "DE" / "CH" / "AT" in upper case - default is account country)
-- **vat_id** – European Union VAT identification numbers (USt-IdNr)
+- **vat_identifier** – European Union VAT identification numbers (USt-IdNr)
 - **website** – "http//www.lieferant.com"
 - **fax** – "+49 30 123 45 67"
 - **phone** – "+49 30 123 45 67"
