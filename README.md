@@ -7,6 +7,7 @@ This is the official API documentation for mocoapp.com.
 - [General](#general)
 - [Entities](#entities)
 - [Authentication](#authentication)
+- [Client Implementations / API Wrappers](#client-implementations-api-wrapper)
 - [Impersonation](#impersonation)
 - [Rate Limiting](#rate-limiting)
 - [Pagination](#pagination)
@@ -73,6 +74,14 @@ curl -X POST \
     "password": "secret"
   }'
 ```
+
+## Client Implementations / API Wrappers
+
+Here's a list of API client implementations, not maintained by us. Feel free to open up a PR to point to your implementation so others can re-use it.
+
+| Language      | Repository                               |
+| ------------- |:----------------------------------------:|
+| Python        | https://github.com/sommalia/moco-wrapper |
 
 ## Impersonation
 
