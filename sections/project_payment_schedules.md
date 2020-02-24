@@ -10,6 +10,7 @@ Payment schedules for fixed price projects.
 {
   "id": 760153573,
   "date": "2017-04-05",
+  "title": "Erste Anzahlung",
   "net_total": 1000,
   "project": {
     "id": 822322322,
@@ -54,6 +55,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
      	"net_total": 1800,
+     	"title": "Erste Anzahlung",
 	    "date": "2019-10-28"
       }'
 ```
@@ -62,6 +64,7 @@ Mandatory fields are marked with a star (\*):
 
 - **net_total\*** – 12000
 - **date\*** – "2019-10-28"
+- **title** – "Erste Anzahlung"
 - **checked** – true/false
 
 ## PUT /projects/{project_id}/payment_schedules/{id}
