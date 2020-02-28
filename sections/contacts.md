@@ -52,7 +52,7 @@ It's also possible to filter:
 
 - **tags** "Influencer, Early Adopter" (comma separated list)
 
-Returns an array with all contact information (see attributes), expect `info`.
+Returns an array with all contact information (see attributes), except `info`.
 
 ## GET /contacts/people/{id}
 
