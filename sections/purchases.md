@@ -64,7 +64,7 @@ Includes among the standard fields for purchases also:
 }
 ```
 
-## GET /purcahses
+## GET /purchases
 
 Retrieve all purchases:
 
@@ -76,7 +76,14 @@ curl -X GET \
 
 It's also possible to filter:
 
-- **tags** "Transportation, Restaurants" (comma separated list)
+- **id** – identifier of the purchase,
+- **category_id** – identifier of the purchases' category,
+- **term** – full text search on purchase positions,
+- **company_id** – identifier of the supplier, pass _0_ to get the purchases not associated to a supplier,
+- **status** – "pending" or "approved", 
+- **tags** – "Transportation, Restaurants" (comma separated list)
+- **date** – date range in the form _2020-02-01:2020-02-22_
+- **unpaid** – filter only purchases without a payment
 
 Returns an array with all purchases information (see attributes).
 
@@ -115,7 +122,11 @@ curl -X POST \
           "tax": 10,
           "tax_included": true,
         }
-      ]
+      ],
+      "file": {
+        "filename": "document.pdf",
+        "base64": "JVBERi0xLjQKJeLjz9MKNCAwIG9iago8PC9GaWx..."
+      }
     }'
 ```
 
@@ -124,11 +135,11 @@ Mandatory fields are marked with a star (\*):
 - **date\*** – "2020-02-02"
 - **currency\*** – "F", "M" or "U"
 - **payment_method\*** – "bank_transfer", "direct_debit", "credit_card", "paypal", "cash"
-- **items\*** – list of position. At least a position must be present and every position has the following fields:
+- **items\*** – list of position. At least one position must be present and every position has the following fields:
   - **title\*** – Ticket
   - **total\*** – 30
   - **tax\*** – 7.7 (tax percentage)
-  - **tax_included** – true (speficy if the total includes or not the tax) 
+  - **tax_included** – true (specify if the total includes the tax or not) 
 - **due_date** – "2020-02-18"
 - **service_period_from** – "2020-01-01"
 - **service_period_to** – "2020-01-31"
@@ -140,13 +151,13 @@ Mandatory fields are marked with a star (\*):
 - **reference** – ref
 - **custom_property_values** – {"Field": "Value}
 - **file** – file attached to the purchase, with the following fields:
-  - filename – document.pdf
+  - filename – "document.pdf"
   - base64 – base64 encoded content of the file
 - **tags** – ["Label1", "Label2"]
 
 ## DELETE /purchases/{id}
 
-⚠ Deletes a purchase
+⚠ Deletes a purchase. It's possible only if the status is _pending_ and no payments have been registered.
 
 ## PATCH /purchases/{id}/update_status
 
@@ -167,7 +178,9 @@ curl -X PATCH \
 
 ## PATCH /purchases/{id}/store_document
 
-Submits the purchase's document using `multipart/form-data` format
+Submits the purchase's document using `multipart/form-data` format if it has to be changed afterwards or was not submitted 
+with the initial creation.
+
 
 ```bash
 curl -X PATCH \
