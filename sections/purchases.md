@@ -60,7 +60,10 @@ Includes among the standard fields for purchases also:
       },
       "supplier_credit_number": 70001
     }
-  ]
+  ],
+  "created_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
+,
 }
 ```
 
