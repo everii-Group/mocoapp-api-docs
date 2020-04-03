@@ -168,7 +168,7 @@ Updates the purchase status:
 
 ```bash
 curl -X PATCH \
-  'https://{domain}.mocoapp.com/api/v1/purchases/123' \
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}' \
   -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '
@@ -187,9 +187,10 @@ with the initial creation.
 
 ```bash
 curl -X PATCH \
-  'https://{domain}.mocoapp.com/api/v1/purchases/123' \
-  -F file=@PATH_TO_FILE
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}/store_document' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -F file=@/path/to/file.pdf
 ```
 
-- **file\*** – the document to store
+- **file\*** – path to the document to store
 
