@@ -11,30 +11,30 @@ Includes among the standard fields for contacts also:
 
 ```json5
 {
-  "id": 123,
-  "gender": "M",
-  "firstname": "Peter",
-  "lastname": "Muster",
-  "title": "Dr. med.",
-  "job_position": "Account Manager",
-  "mobile_phone": "+41 123 45 67",
-  "work_fax": "",
-  "work_phone": "+41 445 45 67",
-  "work_email": "peter.muster@beispiel.ch",
-  "work_address": "Beispiel AG\nPeter Muster\nBeispielstrasse 123",
-  "home_email": "",
-  "home_address": "",
-  "birthday": "1959-05-22",
-  "info": "",
-  "avatar_url": "https//meinefirma.mocoapp.com/.../profil.jpg",
-  "tags": ["Key Account", "Christmas Card"],
-  "company": {
-    "id": 123456,
-    "type": "customer",
-    "name": "Beispiel AG"
+  id: 123,
+  gender: "M",
+  firstname: "Peter",
+  lastname: "Muster",
+  title: "Dr. med.",
+  job_position: "Account Manager",
+  mobile_phone: "+41 123 45 67",
+  work_fax: "",
+  work_phone: "+41 445 45 67",
+  work_email: "peter.muster@beispiel.ch",
+  work_address: "Beispiel AG\nPeter Muster\nBeispielstrasse 123",
+  home_email: "",
+  home_address: "",
+  birthday: "1959-05-22",
+  info: "",
+  avatar_url: "https//meinefirma.mocoapp.com/.../profil.jpg",
+  tags: ["Key Account", "Christmas Card"],
+  company: {
+    id: 123456,
+    type: "customer",
+    name: "Beispiel AG",
   },
-  "created_at": "2018-10-17T09:33:46Z",
-  "updated_at": "2018-10-17T09:33:46Z"
+  created_at: "2018-10-17T09:33:46Z",
+  updated_at: "2018-10-17T09:33:46Z",
 }
 ```
 
@@ -51,6 +51,8 @@ curl -X GET \
 It's also possible to filter:
 
 - **tags** "Influencer, Early Adopter" (comma separated list)
+- **term** "mario, volkswagen" (full text search name, firstname, work_email, company)
+- **phone** 79 826 (reverse lookup for work_phone or mobile_phone)
 
 Returns an array with all contact information (see attributes), except `info`.
 
