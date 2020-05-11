@@ -42,13 +42,13 @@ Retrieve all planning entries (paged):
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/planning_entries?from=2020-04-01:to=2020-07-31' \
+  'https://{domain}.mocoapp.com/api/v1/planning_entries?period=2020-04-01:2020-07-31' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
 This returns an array with complete information about the planning entries (see Attributes).
 
-Additionally, the following parameters can be supplied:
+The following parameters can be supplied:
 
 - **period** – "2020-05-01:2020-07-31"
 - **user_id** – 123
@@ -87,7 +87,7 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **project_id\*** – "4322"
+- **project_id\*** – 4322 (project ID for active project)
 - **starts_on\*** – "2020-05-20"
 - **ends_on\*** – "2020-05-30"
 - **hours_per_day\*** – 3
