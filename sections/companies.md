@@ -26,12 +26,12 @@ The company representation contains among default fields the following features:
   user: {
     id: 933589840,
     firstname: "Tobias",
-    lastname: "Miesel"
+    lastname: "Miesel",
   },
   labels: ["Netzwerk", "Druckerei"], // 🚧 DEPRECATED: use tags
   info: "",
   custom_properties: {
-    UID: "1234-UID-4567"
+    UID: "1234-UID-4567",
   },
   identifier: "36",
   intern: false,
@@ -47,11 +47,12 @@ The company representation contains among default fields the following features:
       identifier: "46",
       name: "Layoutanpassung",
       active: false,
-      billable: true
-    }
+      billable: true,
+    },
   ],
   created_at: "2018-10-17T09:33:46Z",
-  updated_at: "2018-10-17T09:33:46Z"
+  updated_at: "2018-10-17T09:33:46Z",
+  debit_number: 10000,
 }
 ```
 
@@ -123,10 +124,12 @@ Additional fields just for companies of type customer:
 - **identifier\*** – "K-123" (only mandatory if not automatically assigned)
 - **billing_tax** – 19.0
 - **default_invoice_due_days** – 20
+- **debit_number** – 10000 if bookkeeping is enabled
 
 Additional fields just for companies of type supplier:
 
 - **iban** – CH3908704016075473007
+- **credit_number** – 70000 if bookkeeping is enabled
 
 ## PUT /companies/{id}
 
