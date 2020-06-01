@@ -208,3 +208,19 @@ Mandatory fields are marked with a star (\*):
 - **footer** (footer text)
 - **discount** – 10 (discount in percent)
 - **contact_id** – 123456 (ID of the associated contact)
+
+## PUT /offers/{id}/update_status
+
+Update an offer status:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/offers/{id}/update_status' \
+  -H 'authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "status": "billed"
+      }'
+```
+
+The following states are valid: "created", "sent", "accepted", "partially_billed", "billed", "archived".
