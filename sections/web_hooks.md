@@ -57,9 +57,9 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **target\*** – "Activity" (Activity/Company/Contact/Project/Invoice/Offer/Deal)
+- **target\*** – "Activity" (Activity/Company/Contact/Project/Invoice/Offer/Deal/Expense)
 - **event\*** – "create" (create/update/delete)
-- **hook\*** – "https://example.org/do-stuff" 
+- **hook\*** – "https://example.org/do-stuff"
 
 ## PUT /account/web_hooks/{id}
 
