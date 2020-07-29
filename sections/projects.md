@@ -195,6 +195,7 @@ Mandatory fields are marked with a star (\*):
 - **finish_date\*** – "2018-12-31"
 - **leader_id\*** – 123456 (user ID)
 - **customer_id\*** – 234567
+- **deal_id** – 123456 (deal ID)
 - **identifier\*** – "P-123" (only mandatory if number ranges are manual)
 - **billing_address** – "Beispiel AG\nBeispielstrasse 123\n12345 Berlin"
 - **billing_variant** – "project", "task" or "user" (default: "project")
