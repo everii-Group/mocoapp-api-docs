@@ -324,7 +324,7 @@ Mandatory fields are marked with a star (\*):
 
 Omitted fields `service_period_from` and `service_period_to` indicates the absences of a service period.
 
-It's possible to mark activities or project expenses as billed using respectively `activity_ids` and `expense_ids` on position
+It's possible to mark as billed activities or project expenses using respectively `activity_ids` and `expense_ids` on positions
 with `item type`, `quantity`, `unit` and `unit_price`. For example:
 
 ```json
