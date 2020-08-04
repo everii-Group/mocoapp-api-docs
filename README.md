@@ -36,6 +36,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Deal Categories](sections/deal_categories.md)
 - [Deals / Leads](sections/deals.md)
 - [Invoices](sections/invoices.md)
+- [Invoice Reminders](sections/invoice_reminders.md)
 - [Invoice Payments](sections/invoice_payments.md)
 - [Offers](sections/offers.md)
 - [Planning Entry (New Planning)](sections/planning_entries.md)
