@@ -1,6 +1,6 @@
 # Invoice Reminders BETA
 
-German: "Rechnungen / Mahnung"
+German: "Mahnung / Zahlungserinnerung"
 
 ## Attributes
 
@@ -107,9 +107,9 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **emails_to\*** – "somebody@example.com"
+- **emails_to\*** – "somebody@example.com;info@example.com" (list of addresses separated by _;_)
 - **subject\*** – "reminder",
 - **text\*** – "pending invoice"
-- **emails_cc** – "somebodyelse@example.com"
-- **emails_bcc** – "somebody@partner.example.com"
+- **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
+- **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
 - **letter_paper_id** – 131
