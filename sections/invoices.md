@@ -324,8 +324,8 @@ Mandatory fields are marked with a star (\*):
 
 Omitted fields `service_period_from` and `service_period_to` indicates the absences of a service period.
 
-It's possible to mark as billed activities or project expenses using respectively `activity_ids` and `expense_ids` on positions
-with `item type`, `quantity`, `unit` and `unit_price`. For example:
+Items with `quantity`, `unit` and `unit_price` can be used to select activities or expenses to be billed by this invoice,
+just specify the IDs using respectively `activity_ids` and `expense_ids`, for example:
 
 ```json
 {
