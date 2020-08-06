@@ -337,3 +337,28 @@ just specify the IDs using respectively `activity_ids` and `expense_ids`, for ex
   "activity_ids": [1253, 8712]
 }
 ```
+
+## POST /invoices/{id}/send_email
+
+Send the invoice by email:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/invoices/{id}/send_email' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "emails_to": "somebody@example.com",
+        "subject": "Invoice",
+        "text": "Kind regards"
+      }'
+```
+
+Mandatory fields are marked with a star (\*):
+
+- **emails_to\*** – "somebody@example.com;info@example.com" (list of addresses separated by _;_)
+- **subject\*** – "Invoice",
+- **text\*** – "Kind regards"
+- **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
+- **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
+- **letter_paper_id** – 131
