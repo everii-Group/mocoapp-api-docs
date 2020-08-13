@@ -35,6 +35,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Contacts](sections/contacts.md)
 - [Deal Categories](sections/deal_categories.md)
 - [Deals / Leads](sections/deals.md)
+- [Hourly Rates](sections/hourly_rates.md)
 - [Invoices](sections/invoices.md)
 - [Invoice Reminders](sections/invoice_reminders.md)
 - [Invoice Payments](sections/invoice_payments.md)
@@ -83,9 +84,9 @@ curl -X POST \
 
 Here's a list of API client implementations, not maintained by us. Feel free to open up a PR to point to your implementation so others can re-use it.
 
-| Language      | Repository                               |
-| ------------- |:----------------------------------------:|
-| Python        | https://github.com/sommalia/moco-wrapper |
+| Language |                Repository                |
+| -------- | :--------------------------------------: |
+| Python   | https://github.com/sommalia/moco-wrapper |
 
 ## Impersonation
 
@@ -180,9 +181,9 @@ curl -X POST \
 
 ## WebHooks
 
-Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions. 
-Whenever an event triggers, MOCO sends an HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature. 
-This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context 
+Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions.
+Whenever an event triggers, MOCO sends an HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature.
+This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context
 for the sent payload.
 
 - **X-Moco-Target** – Activity, Customer, Project, ...
@@ -205,9 +206,9 @@ X-Moco-User-Id: 933613686
 - We recommend https://requestbin.com/ for WebHook development – this services provides you with temporary
   HTTPS URLs that let you inspect any incoming WebHook data.
 - WebHooks are only provided to customers after the trial phase.
-- WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important 
+- WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important
   for your use case.
-- The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters 
+- The signature uses HMAC with SHA256 to sign the whole payload. The key for the signature is the 32 characters
   hexadecimal string displayed in the web hook overview.
 
 Sample code (Ruby) to calculate the payload signature:
@@ -223,4 +224,4 @@ irb(main):004:0> payload_signature = OpenSSL::HMAC.hexdigest("SHA256", signature
 
 - We expect a successful response code for the Webhook request (i.e. any 2XX code), otherwise it's considered a failure
   and it's retried.
-- After 500 consecutive failures a Webhook is automatically disabled.   
+- After 500 consecutive failures a Webhook is automatically disabled.
