@@ -14,7 +14,7 @@ curl -X GET \
 
 The following parameters can be supplied:
 
-- **company_id** – 123456 (To retrieve overwritten hourly rates from customer. In case of no overwriting, if falls back to the global hourly rates)
+- **company_id** – 123456 (if overwritten: customer hourly rates, if not: global hourly rates)
 
 ### Response
 
