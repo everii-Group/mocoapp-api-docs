@@ -1,12 +1,14 @@
 # Schedules
 
-German: "Planung"
+German: "Absenz"
 
 ## Attributes
 
-The planning entry representation contains among the standard fields also:
+Schedules are now used for absences only. Use [Planning Entries](sections/planning_entries.md) for project schedules.
 
-- assignment (project assignment or absence)
+The schedule representation contains among the standard fields also:
+
+- assignment (absence)
 - assigned user (staff)
 
 ```json
@@ -36,7 +38,7 @@ The planning entry representation contains among the standard fields also:
 
 ## GET /schedules
 
-Retrieve all planning entries (paged):
+Retrieve all absences(paged):
 
 ```bash
 curl -X GET \
@@ -51,7 +53,7 @@ Additionally, the following parameters can be supplied:
 - **from** – "2017-05-01"
 - **to** – "2017-05-31"
 - **user_id** – 123
-- **project_id** – 345 or **absence_code** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
+- **absence_code** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
 
 ## GET /schedules/{id}
 
@@ -76,19 +78,19 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
         "date": "2018-10-01",
-        "project_id": 123456,
+        "absence_code": "4",
       }'
 ```
 
 Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2017-06-11"
-- **project_id\*** – 123456 or **absence_code\*** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
+- **absence_code\*** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
 - **user_id** – 234567 (user ID for active staff)
 - **am** – true, false (morning yes/no)
 - **pm** – true, false (afternoon yes/no)
 - **comment** – "A comment..."
-- **symbol** – 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (home, building, car, graduation cap, cocktail, bells, baby carriage, users, moon , info circle)
+- **symbol** – 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 (home, building, car, graduation cap, cocktail, bells, baby carriage, users, moon, info circle, dot circle, exlamation mark)
 - **overwrite** – true, false (override existing entry)
 
 ## PUT /schedules/{id}
