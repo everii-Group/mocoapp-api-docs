@@ -38,7 +38,7 @@ The schedule representation contains among the standard fields also:
 
 ## GET /schedules
 
-Retrieve all absences(paged):
+Retrieve all absences (paged):
 
 ```bash
 curl -X GET \
