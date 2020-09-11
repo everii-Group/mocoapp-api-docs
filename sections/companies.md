@@ -19,6 +19,7 @@ The company representation contains among default fields the following features:
   "name": "Beispiel AG",
   "website": "www.beispiel-ag.com",
   "email": "info@beispiel-ag.com",
+  "billing_email_cc": "cc@beispiel-ag.com",
   "phone": "+49 30 123 45 67",
   "fax": "+49 30 123 45 66",
   "address": "Beispiel AG\nBeispielstrasse 123\n12345 Beispielstadt",
@@ -47,7 +48,7 @@ The company representation contains among default fields the following features:
       "name": "Layoutanpassung",
       "active": false,
       "billable": true
-    },
+    }
   ],
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z",
@@ -110,6 +111,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **fax** – "+49 30 123 45 67"
 - **phone** – "+49 30 123 45 67"
 - **email** – "bestellung@lieferant.de"
+- **billing_email_cc** - "cc@lieferant.de"
 - **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
 - **info** – "Information for this company..."
 - **custom_properties** – {"UID": "123-UID-456"}
