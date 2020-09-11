@@ -202,6 +202,10 @@ Mandatory fields are marked with a star (\*):
 - **deal_id** – 123456 (deal ID)
 - **identifier\*** – "P-123" (only mandatory if number ranges are manual)
 - **billing_address** – "Beispiel AG\nBeispielstrasse 123\n12345 Berlin"
+- **billing_email_to** - "project@beispiel.co"
+- **billing_email_cc** - "project-cc@beispiel.co"
+- **billing_notes** - "Billing notes text"
+- **setting_include_time_report** - true / false
 - **billing_variant** – "project", "task" or "user" (default: "project")
 - **hourly_rate** – 150
 - **budget** – 20000
