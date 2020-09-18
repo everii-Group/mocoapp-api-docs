@@ -4,7 +4,7 @@ German: "Absenz"
 
 ## Attributes
 
-Schedules are now used for absences only. Use [Planning Entries](sections/planning_entries.md) for project schedules.
+Schedules are now used for absences only. Use [Planning Entries](planning_entries.md) for project schedules.
 
 The schedule representation contains among the standard fields also:
 
