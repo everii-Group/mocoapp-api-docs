@@ -107,9 +107,10 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **emails_to\*** – "somebody@example.com;info@example.com" (list of addresses separated by _;_)
-- **subject\*** – "reminder",
-- **text\*** – "pending invoice"
+- **emails_to\*** – "somebody@example.com;info@example.com" (list of addresses separated by _;_). To use default recipients, see information below.
+- **subject\*** – "Invoice",
+- **text\*** – "Kind regards"
 - **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
 - **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
-- **letter_paper_id** – 131
+
+🛈 If you want to send emails to the default recipient configured in the project or on the customer, leave `emails_to` and `emails_cc` empty. In the response, the recipients selected are returned.
