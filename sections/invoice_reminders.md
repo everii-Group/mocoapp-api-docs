@@ -108,8 +108,8 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **emails_to\*** – "somebody@example.com;info@example.com" (list of addresses separated by _;_). To use default recipients, see information below.
-- **subject\*** – "Invoice",
-- **text\*** – "Kind regards"
+- **subject\*** – "reminder",
+- **text\*** – "pending invoice"
 - **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
 - **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
 
