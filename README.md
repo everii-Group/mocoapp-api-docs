@@ -50,6 +50,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Purchase Categories](sections/purchase_categories.md)
 - [Purchases](sections/purchases.md)
 - [Schedules (Absences)](sections/schedules.md)
+- [Tags / Labels](sections/tags.md)
 - [Units / Teams](sections/units.md)
 - [Users](sections/users.md)
 - [User Employments](sections/employments.md)
