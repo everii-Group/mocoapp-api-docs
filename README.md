@@ -82,6 +82,25 @@ curl -X POST \
   }'
 ```
 
+It's also possible to verify if the API key is still valid:
+
+```bash
+curl https://{domain}.mocoapp.com/api/v1/session \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json'
+```
+
+If the key is valid, the response code id `200 ok` and the body is:
+
+```json
+{
+  "id": 123,
+  "uuid": "aec324a2-4832-11eb-b378-0242ac130002"
+}
+```
+
+otherwise the response code is `401 unauthorized`.
+
 ## Client Implementations / API Wrappers
 
 Here's a list of API client implementations, not maintained by us. Feel free to open up a PR to point to your implementation so others can re-use it.
