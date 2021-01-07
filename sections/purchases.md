@@ -136,7 +136,7 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2020-02-02"
-- **currency\*** – "F", "M" or "U"
+- **currency\*** – "CHF" (a valid currency of the account)
 - **payment_method\*** – "bank_transfer", "direct_debit", "credit_card", "paypal", "cash"
 - **items\*** – list of position. At least one position must be present and every position has the following fields:
   - **title\*** – Ticket
@@ -146,6 +146,7 @@ Mandatory fields are marked with a star (\*):
 - **due_date** – "2020-02-18"
 - **service_period_from** – "2020-01-01"
 - **service_period_to** – "2020-01-31"
+- **status** - "pending" or "approved"
 - **due_date** – "2020-02-18"
 - **company_id** – 211 (reference to the supplier)
 - **receipt_identifier** – 123
