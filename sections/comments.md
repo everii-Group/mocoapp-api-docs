@@ -21,7 +21,8 @@ The representation contains, among the standard fields, also:
     "lastname": "Miesel"
   },
   "created_at": "2018-10-17T09:33:46Z",
-  "updated_at": "2018-10-17T09:33:46Z"
+  "updated_at": "2018-10-17T09:33:46Z",
+  "last_edited_at": "2018-10-17T09:33:46Z"
 }
 ```
 
@@ -41,7 +42,7 @@ This returns complete comment information (see Attributes).
 
 Additionally, the following parameters can be supplied:
 
-- **commentable_type** – "Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport",  "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport" (object this comment relates to)
+- **commentable_type** – "Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport", "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport" (object this comment relates to)
 - **commentable_id** – 123 (object ID)
 - **user_id** – 456 (creator user ID)
 - **manual** – true/false (user-created or generated)
