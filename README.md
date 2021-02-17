@@ -2,7 +2,7 @@
 
 This is the official API documentation for mocoapp.com.
 
-## Table of Contents
+<!-- TOC -->
 
 - [General](#general)
 - [Entities](#entities)
@@ -15,6 +15,8 @@ This is the official API documentation for mocoapp.com.
 - [Sorting](#sorting)
 - [Custom Fields](#custom-fields)
 - [WebHooks](#webhooks)
+
+<!-- /TOC -->
 
 ## General
 

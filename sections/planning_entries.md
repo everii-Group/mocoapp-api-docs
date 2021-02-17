@@ -2,6 +2,17 @@
 
 German: "Planung"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /planning_entries](#get-planning_entries)
+- [GET /planning_entry/{id}](#get-planning_entryid)
+- [POST /planning_entry](#post-planning_entry)
+- [PUT /planning_entries/{id}](#put-planning_entriesid)
+- [DELETE /planning_entries/{id}](#delete-planning_entriesid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The planning entry representation contains among the standard fields also:
@@ -10,9 +21,8 @@ The planning entry representation contains among the standard fields also:
 - project
 
 ```json
-
 {
-  "id":4839,
+  "id": 4839,
   "starts_on": "2020-05-04",
   "ends_on": "2020-05-04",
   "hours_per_day": 6.0,
@@ -29,7 +39,7 @@ The planning entry representation contains among the standard fields also:
     "id": 4553,
     "identifier": "130",
     "name": "Support",
-    "customer_name":"Acme GmbH"
+    "customer_name": "Acme GmbH"
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"

@@ -2,6 +2,20 @@
 
 German: "Zeiteinträge"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /activities](#get-activities)
+- [GET /activities/{id}](#get-activitiesid)
+- [POST /activities](#post-activities)
+- [PUT /activities/{id}](#put-activitiesid)
+- [PATCH /activities/{id}/start_timer](#patch-activitiesidstart_timer)
+- [PATCH /activities/{id}/stop_timer](#patch-activitiesidstop_timer)
+- [DELETE /activities/{id}](#delete-activitiesid)
+- [POST /activities/disregard](#post-activitiesdisregard)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Activities contain among the standard fields also:

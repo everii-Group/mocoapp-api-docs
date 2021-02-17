@@ -2,6 +2,18 @@
 
 German: "Notizen"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /comments](#get-comments)
+- [GET /comments/{id}](#get-commentsid)
+- [POST /comments](#post-comments)
+- [POST /comments/bulk](#post-commentsbulk)
+- [PUT /comments/{id}](#put-commentsid)
+- [DELETE /comments/{id}](#delete-commentsid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The representation contains, among the standard fields, also:
@@ -41,7 +53,7 @@ This returns complete comment information (see Attributes).
 
 Additionally, the following parameters can be supplied:
 
-- **commentable_type** – "Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport",  "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object this comment relates to)
+- **commentable_type** – "Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport", "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object this comment relates to)
 - **commentable_id** – 123 (object ID)
 - **user_id** – 456 (creator user ID)
 - **manual** – true/false (user-created or generated)
@@ -77,7 +89,7 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **commentable_id\*** – 123 (object ID)
-- **commentable_type\*** – ""Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport",  "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object type)
+- **commentable_type\*** – ""Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport", "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object type)
 - **text\*** – "Comment text..."
 
 ## POST /comments/bulk

@@ -2,6 +2,13 @@
 
 German: "Stundensätze"
 
+<!-- TOC -->
+
+- [GET /hourly_rates](#get-hourly_rates)
+  - [Response](#response)
+
+<!-- /TOC -->
+
 ## GET /hourly_rates
 
 Retrieve hourly rates:

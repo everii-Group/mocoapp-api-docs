@@ -2,6 +2,14 @@
 
 German: "Wochenmodell"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /users/employments](#get-usersemployments)
+- [GET /users/employments/{id}](#get-usersemploymentsid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Employments contain among the standard fields also:

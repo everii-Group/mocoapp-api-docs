@@ -1,5 +1,18 @@
 # Web Hooks
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /account/web_hooks](#get-accountweb_hooks)
+- [GET /account/web_hooks/{id}](#get-accountweb_hooksid)
+- [POST /account/web_hooks](#post-accountweb_hooks)
+- [PUT /account/web_hooks/{id}](#put-accountweb_hooksid)
+- [PUT /account/web_hooks/{id}/disable](#put-accountweb_hooksiddisable)
+- [PUT /account/web_hooks/{id}/enable](#put-accountweb_hooksidenable)
+- [DELETE /account/web_hooks/{id}](#delete-accountweb_hooksid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 ```json

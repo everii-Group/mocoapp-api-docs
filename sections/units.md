@@ -2,6 +2,14 @@
 
 German: "Teams"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /units](#get-units)
+- [GET /units/{id}](#get-unitsid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The representation contains among the standard fields also:

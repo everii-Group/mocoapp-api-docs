@@ -2,6 +2,17 @@
 
 German: "Kontakte / Ansprechpartner"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /contacts/people](#get-contactspeople)
+- [GET /contacts/people/{id}](#get-contactspeopleid)
+- [POST /contacts/people](#post-contactspeople)
+- [PUT /contacts/people/{id}](#put-contactspeopleid)
+- [DELETE /contacts/people/{id}](#delete-contactspeopleid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Includes among the standard fields for contacts also:
@@ -34,7 +45,7 @@ Includes among the standard fields for contacts also:
     "name": "Beispiel AG"
   },
   "created_at": "2018-10-17T09:33:46Z",
-  "updated_at": "2018-10-17T09:33:46Z",
+  "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 

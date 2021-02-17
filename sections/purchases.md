@@ -2,6 +2,18 @@
 
 German: "Ausgaben"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /purchases](#get-purchases)
+- [GET /purchases/{id}](#get-purchasesid)
+- [POST /purchases](#post-purchases)
+- [DELETE /purchases/{id}](#delete-purchasesid)
+- [PATCH /purchases/{id}/update_status](#patch-purchasesidupdate_status)
+- [PATCH /purchases/{id}/store_document](#patch-purchasesidstore_document)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Includes among the standard fields for purchases also:
@@ -83,7 +95,7 @@ It's also possible to filter:
 - **category_id** – identifier of the purchases' category,
 - **term** – full text search on purchase positions,
 - **company_id** – identifier of the supplier, pass _0_ to get the purchases not associated to a supplier,
-- **status** – "pending" or "approved", 
+- **status** – "pending" or "approved",
 - **tags** – "Transportation, Restaurants" (comma separated list)
 - **date** – date range in the form _2020-02-01:2020-02-22_
 - **unpaid** – filter only purchases without a payment
@@ -142,7 +154,7 @@ Mandatory fields are marked with a star (\*):
   - **title\*** – Ticket
   - **total\*** – 30
   - **tax\*** – 7.7 (tax percentage)
-  - **tax_included** – true (specify if the total includes the tax or not) 
+  - **tax_included** – true (specify if the total includes the tax or not)
 - **due_date** – "2020-02-18"
 - **service_period_from** – "2020-01-01"
 - **service_period_to** – "2020-01-31"
@@ -182,9 +194,8 @@ curl -X PATCH \
 
 ## PATCH /purchases/{id}/store_document
 
-Submits the purchase's document using `multipart/form-data` format if it has to be changed afterwards or was not submitted 
+Submits the purchase's document using `multipart/form-data` format if it has to be changed afterwards or was not submitted
 with the initial creation.
-
 
 ```bash
 curl -X PATCH \
@@ -194,4 +205,3 @@ curl -X PATCH \
 ```
 
 - **file\*** – path to the document to store
-

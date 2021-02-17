@@ -2,6 +2,20 @@
 
 German: "Projekte / Zusatzleistungen"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /projects/{id}/expenses](#get-projectsidexpenses)
+- [GET /projects/{id}/expenses/{id}](#get-projectsidexpensesid)
+- [POST /projects/{id}/expenses](#post-projectsidexpenses)
+- [POST /projects/{id}/expenses/bulk](#post-projectsidexpensesbulk)
+- [PUT /projects/{id}/expenses/{id}](#put-projectsidexpensesid)
+- [DELETE /projects/{id}/expenses/{id}](#delete-projectsidexpensesid)
+- [POST /projects/{id}/expenses/disregard](#post-projectsidexpensesdisregard)
+- [GET /projects/expenses](#get-projectsexpenses)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The representation contains, among the standard fields, also the following fields:
@@ -36,7 +50,7 @@ The representation contains, among the standard fields, also the following field
   },
   "project": {
     "id": 1234,
-    "name": "Project A",
+    "name": "Project A"
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"

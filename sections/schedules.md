@@ -2,6 +2,17 @@
 
 German: "Absenz"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /schedules](#get-schedules)
+- [GET /schedules/{id}](#get-schedulesid)
+- [POST /schedules](#post-schedules)
+- [PUT /schedules/{id}](#put-schedulesid)
+- [DELETE /schedules/{id}](#delete-schedulesid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Schedules are now used for absences only. Use [Planning Entries](planning_entries.md) for project schedules.

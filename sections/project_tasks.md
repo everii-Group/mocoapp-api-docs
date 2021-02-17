@@ -2,6 +2,17 @@
 
 German: "Projekte / Leistungen"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /projects/{id}/tasks](#get-projectsidtasks)
+- [GET /projects/{id}/tasks/{id}](#get-projectsidtasksid)
+- [POST /projects/{id}/tasks](#post-projectsidtasks)
+- [PUT /projects/{id}/tasks/{id}](#put-projectsidtasksid)
+- [DELETE /projects/{id}/tasks/{id}](#delete-projectsidtasksid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 ```json

@@ -2,6 +2,18 @@
 
 German: "Rechnungen / Zahlungen"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /invoices/payments](#get-invoicespayments)
+- [GET /invoices/payments/{id}](#get-invoicespaymentsid)
+- [POST /invoices/payments](#post-invoicespayments)
+- [POST /invoices/payments/bulk](#post-invoicespaymentsbulk)
+- [PUT invoices/payments/{id}](#put-invoicespaymentsid)
+- [DELETE /invoices/payments/{id}](#delete-invoicespaymentsid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The invoice payment representation contains among standard fields also shortened invoice information.

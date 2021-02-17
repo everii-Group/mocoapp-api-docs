@@ -2,6 +2,17 @@
 
 German: "Projekte / Geplante Abrechnungen"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /projects/{project_id}/payment_schedules](#get-projectsproject_idpayment_schedules)
+- [GET /projects/{project_id}/payment_schedules/{id}](#get-projectsproject_idpayment_schedulesid)
+- [POST /projects/{project_id}/payment_schedules](#post-projectsproject_idpayment_schedules)
+- [PUT /projects/{project_id}/payment_schedules/{id}](#put-projectsproject_idpayment_schedulesid)
+- [DELETE /projects/{project_id}/payment_schedules/{id}](#delete-projectsproject_idpayment_schedulesid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Payment schedules for fixed price projects.

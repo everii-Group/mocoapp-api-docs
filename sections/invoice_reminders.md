@@ -2,6 +2,17 @@
 
 German: "Mahnung / Zahlungserinnerung"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /invoice_reminders](#get-invoice_reminders)
+- [GET /invoice_reminders/{id}](#get-invoice_remindersid)
+- [POST /invoice_reminders](#post-invoice_reminders)
+- [DELETE /invoice_reminders/{id}](#delete-invoice_remindersid)
+- [POST /invoice_reminders/{id}/send_email](#post-invoice_remindersidsend_email)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The invoice reminder representation contains among standard fields also shortened invoice information.

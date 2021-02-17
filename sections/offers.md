@@ -2,6 +2,17 @@
 
 German: "Angebote"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /offers](#get-offers)
+- [GET /offers/{id}](#get-offersid)
+- [GET /offers/{id}.pdf](#get-offersidpdf)
+- [POST /offers](#post-offers)
+- [PUT /offers/{id}/update_status](#put-offersidupdate_status)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The offer representation contains among the standard fields:

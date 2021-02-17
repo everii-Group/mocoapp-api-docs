@@ -2,6 +2,21 @@
 
 German: "Projekte"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /projects](#get-projects)
+- [GET /projects/assigned](#get-projectsassigned)
+- [GET /projects/{id}](#get-projectsid)
+- [POST /projects](#post-projects)
+- [PUT /projects/{id}](#put-projectsid)
+- [DELETE /projects/{id}](#delete-projectsid)
+- [PUT /projects/{id}/archive](#put-projectsidarchive)
+- [PUT /projects/{id}/unarchive](#put-projectsidunarchive)
+- [GET /projects/{id}/report](#get-projectsidreport)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The project representation contains, among the standard fields, also:

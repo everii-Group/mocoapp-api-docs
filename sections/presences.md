@@ -2,6 +2,18 @@
 
 German: "Arbeitszeiten"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /users/presences](#get-userspresences)
+- [GET /users/presences/{id}](#get-userspresencesid)
+- [POST /users/presences](#post-userspresences)
+- [POST /users/presences/touch](#post-userspresencestouch)
+- [PUT /users/presences/{id}](#put-userspresencesid)
+- [DELETE /users/presences/{id}](#delete-userspresencesid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 Presences contain among the standard fields also:

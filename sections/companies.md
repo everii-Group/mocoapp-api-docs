@@ -2,6 +2,17 @@
 
 German: "Firmen"
 
+<!-- TOC -->
+
+- [Attributes](#attributes)
+- [GET /companies](#get-companies)
+- [GET /companies/{id}](#get-companiesid)
+- [POST /companies](#post-companies)
+- [PUT /companies/{id}](#put-companiesid)
+- [DELETE /companies/{id}](#delete-companiesid)
+
+<!-- /TOC -->
+
 ## Attributes
 
 The company representation contains among default fields the following features:

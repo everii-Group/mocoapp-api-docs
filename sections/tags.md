@@ -1,5 +1,14 @@
 # Tags / Labels
 
+<!-- TOC -->
+
+- [GET /taggings](#get-taggings)
+- [PATCH /taggings](#patch-taggings)
+- [PUT /taggings](#put-taggings)
+- [DELETE /taggings](#delete-taggings)
+
+<!-- /TOC -->
+
 The API provides a single endpoint to manage the tags (aka labels) associated to different type of entities:
 
 ```
