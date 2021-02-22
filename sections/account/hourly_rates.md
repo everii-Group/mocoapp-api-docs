@@ -2,20 +2,19 @@
 
 German: "Stundensätze"
 
-<!-- TOC -->
+<!-- TOC depthfrom:2 -->
 
-- [GET /hourly_rates](#get-hourly_rates)
-  - [Response](#response)
+- [GET /account/hourly_rates](#get-accounthourly_rates)
 
 <!-- /TOC -->
 
-## GET /hourly_rates
+## GET /account/hourly_rates
 
 Retrieve hourly rates:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/hourly_rates' \
+  'https://{domain}.mocoapp.com/api/v1/account/hourly_rates' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
@@ -23,7 +22,7 @@ The following parameters can be supplied:
 
 - **company_id** – 123456 (if overwritten: customer hourly rates, if not: global hourly rates)
 
-### Response
+returns:
 
 ```json
 {
