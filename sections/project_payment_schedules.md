@@ -5,6 +5,7 @@ German: "Projekte / Geplante Abrechnungen"
 <!-- TOC -->
 
 - [Attributes](#attributes)
+- [GET /projects/payment_schedules](#get-projectspayment_schedules)
 - [GET /projects/{project_id}/payment_schedules](#get-projectsproject_idpayment_schedules)
 - [GET /projects/{project_id}/payment_schedules/{id}](#get-projectsproject_idpayment_schedulesid)
 - [POST /projects/{project_id}/payment_schedules](#post-projectsproject_idpayment_schedules)
@@ -35,6 +36,24 @@ Payment schedules for fixed price projects.
 }
 ```
 
+## GET /projects/payment_schedules
+
+Retrieve all payment schedules independent of a project:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/projects/payment_schedules' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+Additionally, these parameters can be supplied:
+
+- **from** – "2021-02-01"
+- **to** – "2021-02-28"
+- **checked** – true / false (show checked off payment schedules or unchecked schedules)
+- **company_id** - 1234
+- **project_id** - 1234 (There's also `/projects/{id}/payment_schedules`)
+
 ## GET /projects/{project_id}/payment_schedules
 
 Retrieve all payment schedules for the project:
@@ -44,6 +63,12 @@ curl -X GET \
   'https://{domain}.mocoapp.com/api/v1/projects/{project_id}/payment_schedules' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
+
+Additionally, these parameters can be supplied:
+
+- **from** – "2021-02-01"
+- **to** – "2021-02-28"
+- **checked** – true / false (show checked off payment schedules or unchecked schedules)
 
 ## GET /projects/{project_id}/payment_schedules/{id}
 
