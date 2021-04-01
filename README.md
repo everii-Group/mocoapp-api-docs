@@ -2,7 +2,7 @@
 
 This is the official API documentation for mocoapp.com.
 
-<!-- TOC -->
+<!-- TOC depthfrom:2 -->
 
 - [General](#general)
 - [Entities](#entities)
@@ -161,7 +161,7 @@ MOCO supports adding custom fields to many of its resources. These custom fields
 ```json
 "custom_properties": {
     "UID": "123-UID-456",
-    "Branche": "Automotive"
+    "Line of business": "Automotive"
 },
 ```
 
@@ -176,7 +176,7 @@ curl -X POST \
     "name": "Beispiel AG",
     "currency": "CHF",
     "custom_properties": {
-      "Branche": "Automotive"
+      "Line of business": "Automotive"
     }
   }'
 ```
@@ -190,7 +190,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
         "custom_properties": {
-          "Branchen": ["Automotive", "Banking"]
+          "Line of business": ["Automotive", "Banking"]
         }
       }'
 ```
@@ -198,6 +198,7 @@ curl -X POST \
 - Single-line input – "Automotive"
 - Mehrzeilige Eingabe – "A multiline input..."
 - Link – "https://www..."
+- Date – "2021-12-31"
 - Yes/No – "0", "1" (0 = No, 1 = Yes)
 - Single choice – "Value"
 - Multiple choice – ["Value 1", "Value 2"]
