@@ -7,6 +7,7 @@ German: "Ausgaben – Entwürfe"
 - [Attributes](#attributes)
 - [GET /purchases/drafts](#get-purchasesdrafts)
 - [GET /purchases/drafts/{id}](#get-purchasesdraftsid)
+- [GET /purchases/drafts/{id}.pdf](#get-purchasesdraftsidpdf)
 
 <!-- /TOC -->
 
@@ -53,3 +54,15 @@ curl -X GET \
 ```
 
 The response is a single draft representation.
+
+## GET /purchases/drafts/{id}.pdf
+
+Retrieve the draft document:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/purchases/drafts/{id}.pdf' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+This returns this draft's document if it's a PDF. Otherwise it responds with 204 No Content.
