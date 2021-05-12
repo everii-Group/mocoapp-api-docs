@@ -182,6 +182,8 @@ Additionally, these parameters can be supplied:
 - **tags** "Periodenfremd, Inkasso" (comma separated list)
 - **identifier** "R1903-003"
 - **term** - "term" (wildcard search within title and identifier)
+- **company_id** - 1234
+- **project_id** - 5678
 
 The response returns an array with all the invoice information (see attributes), except `salutation`, `footer`, `items`, `payments` and `reminders`.
 
