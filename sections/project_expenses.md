@@ -114,7 +114,7 @@ Mandatory fields are marked with a star (\*):
 - **billable** – true/false (default: true)
 - **budget_relevant** – true/false (default: false)
 - **custom_properties** – {"Type": "Website"}
-- **file** – PDF file attached to the expense, with the following fields:
+- **file** – file attached to the expense, with the following fields:
   - filename – "document.pdf"
   - base64 – base64 encoded content of the file
 
