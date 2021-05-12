@@ -94,7 +94,11 @@ curl -X POST \
         "quantity": 3,
         "unit": "months",
         "unit_price": 29,
-        "unit_cost": 19
+        "unit_cost": 19,
+        "file": {
+          "filename": "document.pdf",
+          "base64": "JVBERi0xLjQKJeLjz9MKNCAwIG9iago8PC9GaWx..."
+        }
       }'
 ```
 
@@ -110,6 +114,9 @@ Mandatory fields are marked with a star (\*):
 - **billable** – true/false (default: true)
 - **budget_relevant** – true/false (default: false)
 - **custom_properties** – {"Type": "Website"}
+- **file** – file attached to the expense, with the following fields:
+  - filename – "document.pdf"
+  - base64 – base64 encoded content of the file
 
 ## POST /projects/{id}/expenses/bulk
 
