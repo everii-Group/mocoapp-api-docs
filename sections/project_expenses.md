@@ -40,6 +40,9 @@ The representation contains, among the standard fields, also the following field
   "budget_relevant": true,
   "billable": true,
   "billed": false,
+  "service_period": "10/2020",
+  "service_period_from": "2020-10-01",
+  "service_period_to": "2020-10-31",
   "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
   "custom_properties": {
     "Type": "Website"
@@ -109,6 +112,8 @@ Mandatory fields are marked with a star (\*):
 - **description** – "Hosting, Monitoring, Backup"
 - **billable** – true/false (default: true)
 - **budget_relevant** – true/false (default: false)
+- **service_period_from** – "2021-01-01"
+- **service_period_to** – "2021-01-31"
 - **custom_properties** – {"Type": "Website"}
 
 ## POST /projects/{id}/expenses/bulk

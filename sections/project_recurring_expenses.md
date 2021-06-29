@@ -37,6 +37,7 @@ The representation contains, among the standard fields, also:
   "currency": "CHF",
   "budget_relevant": true,
   "billable": true,
+  "billing_in_advance": true,
   "custom_properties": {
     "Type": "Website"
   },
@@ -100,6 +101,7 @@ Mandatory fields are marked with a star (\*):
 - **description** – "Hosting, Monitoring, Backup"
 - **billable** – true/false (default: true)
 - **budget_relevant** – true/false (default: false)
+- **billing_in_advance** – true/false (default: true)
 - **custom_properties** – {"Type": "Website"}
 
 ## PUT /projects/{id}/recurring_expenses/{id}
