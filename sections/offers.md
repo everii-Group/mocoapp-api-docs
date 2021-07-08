@@ -4,12 +4,13 @@ German: "Angebote"
 
 <!-- TOC -->
 
-- [Attributes](#attributes)
-- [GET /offers](#get-offers)
-- [GET /offers/{id}](#get-offersid)
-- [GET /offers/{id}.pdf](#get-offersidpdf)
-- [POST /offers](#post-offers)
-- [PUT /offers/{id}/update_status](#put-offersidupdate_status)
+- [Offers](#offers)
+  - [Attributes](#attributes)
+  - [GET /offers](#get-offers)
+  - [GET /offers/{id}](#get-offersid)
+  - [GET /offers/{id}.pdf](#get-offersidpdf)
+  - [POST /offers](#post-offers)
+  - [PUT /offers/{id}/update_status](#put-offersidupdate_status)
 
 <!-- /TOC -->
 
@@ -207,14 +208,15 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **deal_id\*** – 123456 (ID of the associated deal), required if no project_id is provided
-- **project_id\*** – 123456 (ID of the associated project), required if no deal_id is provided
+- **company_id** – 123456 (ID of the associated company), is disregarded and set to the company of the project if project_id is provided
+- **deal_id** – 123456 (ID of the associated deal)
+- **project_id** – 123456 (ID of the associated project)
 - **recipient_address\*** – "My customer..."
 - **date\*** – "2018-09-17"
 - **due_date\*** – "2018-10-16"
 - **title\*** – "Offer"
 - **tax\*** – 8.0
-- **currency\*** – "CHF" (a valid currency of the account)
+- **currency\*** – "CHF" (a valid currency of the account), must match the currency of provided project and deal, only required if no company_id, deal_id and project_id is provided
 - **items\*** – positions (see [attributes](#attributes))
 - **change_address** – address propagation ("offer", "customer"), default is "offer"
 - **salutation** (salutation text)
