@@ -27,6 +27,7 @@ This is the official API documentation for mocoapp.com.
 - Zapier triggers are **not** triggered for API requests
 - Timestamps `created_at` and `updated_at` are sent for all entities in UTC, as ISO8601 format.
 - For synchronization almost all resources can be filtered by `updated_after` passing a time in UTC, as ISO8601 format.
+- MOCO does not support any client-libraries at the moment. However, there are currently the following unoffical clients available, which you can use at your risk: [Python Client](https://github.com/sommalia/moco-wrapper)
 
 ## Entities
 
