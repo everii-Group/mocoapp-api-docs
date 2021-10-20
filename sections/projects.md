@@ -51,7 +51,7 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
   "budget_expenses": 8200,
   "hourly_rate": 150,
   "info": "Abrechnung jährlich",
-  "labels": ["Print", "Digital"],
+  "tags": ["Print", "Digital"],
   "custom_properties": {
     "Project Management": "https://basecamp.com/123456"
   },
@@ -204,7 +204,7 @@ curl -X POST \
         "currency": "EUR",
         "leader_id": "1234",
         "customer_id": "5678",
-        "labels": ["Print", "Digital"],
+        "tags": ["Print", "Digital"],
       }'
 ```
 
@@ -225,7 +225,7 @@ Mandatory fields are marked with a star (\*):
 - **billing_variant** – "project", "task" or "user" (default: "project")
 - **hourly_rate** – 150
 - **budget** – 20000
-- **labels** – ["Print", "Digital"] 💡name mismatch, labels/tags are used interchangeably
+- **tags** – ["Print", "Digital"]
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
 

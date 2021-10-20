@@ -18,7 +18,7 @@ German: "Firmen"
 The company representation contains among default fields the following features:
 
 - Type ("customer", "supplier", "organization")
-- Labels
+- Tags
 - Custom properties
 - Projects (shortened)
 - User (shortened)
@@ -126,7 +126,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
 - **info** – "Information for this company..."
 - **custom_properties** – {"UID": "123-UID-456"}
-- **labels** – ["Network", "Print"] 💡name mismatch, labels/tags are used interchangeably
+- **tags** – ["Network", "Print"]
 - **user_id** – 123456 💡(responsible person)
 - **footer** – "<div>some html</div>" (appears at the end of invoices)
 
