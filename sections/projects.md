@@ -247,7 +247,7 @@ Fields are analogous to the POST request, except for `currency` which cannot be 
 
 ## DELETE /projects/{id}
 
-⚠ Deleting a project is not possible via API!
+⚠ Deletes a project. It's possible only if there are no activities, invoices, offers or expenses.
 
 ## PUT /projects/{id}/archive
 
