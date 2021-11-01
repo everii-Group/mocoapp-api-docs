@@ -52,7 +52,7 @@ The representation contains, among the standard fields, also:
 }
 ```
 
-## GET /recurring_expenses 
+## GET /recurring_expenses
 
 Retrieve all recurring additional services entries, or all the recurring additional service entries on a project:
 
