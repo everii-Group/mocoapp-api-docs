@@ -5,6 +5,7 @@ German: "Projekte / Wiederkehrende Zusatzleistungen"
 <!-- TOC -->
 
 - [Attributes](#attributes)
+- [GET /recurring_expenses](#get-recurring_expenses)
 - [GET /projects/{id}/recurring_expenses](#get-projectsidrecurring_expenses)
 - [GET /projects/{id}/recurring_expenses/{id}](#get-projectsidrecurring_expensesid)
 - [POST /projects/{id}/recurring_expenses](#post-projectsidrecurring_expenses)
@@ -18,6 +19,7 @@ German: "Projekte / Wiederkehrende Zusatzleistungen"
 The representation contains, among the standard fields, also:
 
 - Custom properties
+- Project
 
 ```json
 {
@@ -41,14 +43,27 @@ The representation contains, among the standard fields, also:
   "custom_properties": {
     "Type": "Website"
   },
+  "project": {
+    "id": 1234,
+    "name": "Project A"
+  },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
 
-## GET /projects/{id}/recurring_expenses
+## GET /recurring_expenses 
 
-Retrieve all recurring additional services entries on a project:
+Retrieve all recurring additional services entries, or all the recurring additional service entries on a project:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/recurring_expenses' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+This returns an array of recurring additional services entries (see Attributes).
+
+## GET /projects/{id}/recurring_expenses
 
 ```bash
 curl -X GET \
@@ -56,7 +71,7 @@ curl -X GET \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
-This returns an array of recurring additional services entries (see Attributes).
+This returns an array of recurring additional services entries for the project (see Attributes).
 
 ## GET /projects/{id}/recurring_expenses/{id}
 
