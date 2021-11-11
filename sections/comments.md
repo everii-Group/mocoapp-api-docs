@@ -91,6 +91,8 @@ Mandatory fields are marked with a star (\*):
 - **commentable_id\*** – 123 (object ID)
 - **commentable_type\*** – ""Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport", "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object type)
 - **text\*** – "Comment text..."
+- **attachment_filename** – "document.pdf"
+- **attachment_content** – *the file as a base64-encoded string*
 
 ## POST /comments/bulk
 
