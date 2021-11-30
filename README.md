@@ -66,6 +66,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [User Presences](sections/presences.md)
 - [Users](sections/users.md)
 - [WebHooks](sections/web_hooks.md)
+- [Reports](sections/reports.md)
 
 ## Authentication
 
