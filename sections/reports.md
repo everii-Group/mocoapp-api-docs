@@ -4,17 +4,17 @@ German: "Berichte"
 
 <!-- TOC -->
 
-- [GET /report/users_absences](#get-reportusers_absences)
+- [GET /report/absences](#get-reportabsences)
 
 <!-- /TOC -->
 
-## GET /report/users_absences
+## GET /report/absences
 
 Retrieve a list of absences per user:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/report/users_absences' \
+  'https://{domain}.mocoapp.com/api/v1/report/absences' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
@@ -28,13 +28,15 @@ This returns an array with the following structure:
 ```json
 [
   {
-    "id": 123,
-    "firstname": "Jane",
-    "lastname": "Doe",
-    "used_vacations": 10.5,
-    "planned_vacations": 5.0,
-    "rest_vacations": 9.5,
-    "sickness": 4.0
+    "user": {
+      "id": 123,
+      "firstname": "Jane",
+      "lastname": "Doe"
+    },
+    "total_vacation_days": 25.0,
+    "used_vacation_days": 10.5,
+    "planned_vacation_days": 5.0,
+    "sickdays": 4.0
   }
 ]
 ```
