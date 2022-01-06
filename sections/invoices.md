@@ -45,6 +45,7 @@ The invoice representation contains among standard fields also:
   "currency": "CHF",
   "net_total": 35612.5,
   "tax": 8,
+  "tax_description": "8.00 %",
   "gross_total": 38461.5,
   "discount": 10,
   "cash_discount": 2.5,

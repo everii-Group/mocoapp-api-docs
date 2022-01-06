@@ -47,6 +47,7 @@ The company representation contains among default fields the following features:
   "identifier": "36",
   "intern": false,
   "billing_tax": 0,
+  "billing_tax_description": "0.00 % (Ausland)",
   "currency": "CHF",
   "country_code": "CH",
   "vat_identifier": "DE999999999",

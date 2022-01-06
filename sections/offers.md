@@ -33,6 +33,7 @@ The offer representation contains among the standard fields:
   "currency": "EUR",
   "net_total": 12750,
   "tax": 19,
+  "tax_description": "19.00 %",
   "gross_total": 15172.5,
   "discount": 10,
   "salutation": "Hallo Peter<br><br>Folgende Aufwände schätzen wir für die Umsetzung der Komponenten:",
