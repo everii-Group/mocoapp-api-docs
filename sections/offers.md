@@ -21,6 +21,7 @@ The offer representation contains among the standard fields:
 - custom properties
 - positions (items)
 - position types ("title", "description", "item", "subtotal", "page-break" or "separator")
+- vat ("tax", "reverse_charge", "intra_eu" (only for accounts in the European Union))
 
 ```json
 {
@@ -33,7 +34,7 @@ The offer representation contains among the standard fields:
   "currency": "EUR",
   "net_total": 12750,
   "tax": 19,
-  "tax_description": "19.00 %",
+  "vat": { "tax": 19.0, "reverse_charge": false, "intra_eu": false },
   "gross_total": 15172.5,
   "discount": 10,
   "salutation": "Hallo Peter<br><br>Folgende Aufwände schätzen wir für die Umsetzung der Komponenten:",

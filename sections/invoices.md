@@ -26,6 +26,7 @@ The invoice representation contains among standard fields also:
 - position types ("title", "description", "item", "subtotal", "page-break" or "separator")
 - payments
 - reminders
+- vat ("tax", "reverse_charge", "intra_eu" (only for accounts in the European Union))
 
 ```json
 {
@@ -45,7 +46,7 @@ The invoice representation contains among standard fields also:
   "currency": "CHF",
   "net_total": 35612.5,
   "tax": 8,
-  "tax_description": "8.00 %",
+  "vat": { "tax": 8.0, "reverse_charge": false, "intra_eu": false },
   "gross_total": 38461.5,
   "discount": 10,
   "cash_discount": 2.5,
