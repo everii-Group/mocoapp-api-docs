@@ -23,7 +23,7 @@ Includes among the standard fields for purchases also:
 - Payments (list of payments made for the purchase)
 - User
 - Items
-- items.vat ("tax", "reverse_charge", "intra_eu" (only for accounts in the European Union))
+- items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
 
 ```json
 {

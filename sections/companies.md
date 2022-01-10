@@ -22,7 +22,7 @@ The company representation contains among default fields the following features:
 - Custom properties
 - Projects (shortened)
 - User (shortened)
-- billing_vat ("tax", "reverse_charge", "intra_eu" (only for accounts in the European Union))
+- billing_vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
 
 ```json
 {
