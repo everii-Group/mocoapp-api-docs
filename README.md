@@ -65,6 +65,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [User Employments](sections/employments.md)
 - [User Holidays](sections/holidays.md)
 - [User Presences](sections/presences.md)
+- [User Work Time Adjustments](sections/work_time_adjustments.md)
 - [Users](sections/users.md)
 - [WebHooks](sections/web_hooks.md)
 - [Reports](sections/reports.md)
