@@ -14,6 +14,7 @@ German: "Rechnungen"
 - [PUT /invoices/{id}/update_status](#put-invoicesidupdate_status)
 - [POST /invoices](#post-invoices)
 - [POST /invoices/{id}/send_email](#post-invoicesidsend_email)
+- [DELETE /invoices/{id}](#delete-invoicesid)
 
 <!-- /TOC -->
 
@@ -441,3 +442,21 @@ Mandatory fields are marked with a star (\*):
 - **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
 
 🛈 If you want to send emails to the default recipient configured in the project or on the customer, leave `emails_to` and `emails_cc` empty. In the response, the recipients selected are returned.
+
+## DELETE /invoices/{id}
+
+Delete a single invoice:
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/invoices/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+  -H 'Content-Type: application/json' \
+  -d '{
+        "reason": "Wrong invoice number",
+      }'
+```
+
+Mandatory fields are marked with a star (\*):
+
+- **reason\*** – "Wrong invoice number" (a reason why this invoice is being deleted), This can only be omitted if the invoice to be deleted is a draft.
