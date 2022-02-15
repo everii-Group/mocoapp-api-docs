@@ -435,13 +435,13 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **emails_to\*** – "somebody@example.com;info@example.com" (list of addresses separated by _;_). To use default recipients, see information below.
 - **subject\*** – "Invoice",
 - **text\*** – "Kind regards"
+- **emails_to** – "somebody@example.com;info@example.com" (list of addresses separated by _;_). To use default recipients, see information below.
 - **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
 - **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
 
-🛈 If you want to send emails to the default recipient configured in the project or on the customer, leave `emails_to` and `emails_cc` empty. In the response, the recipients selected are returned.
+🛈 If you want to send emails to the default recipients configured in the project or on the customer, leave `emails_to`, `emails_cc` and `emails_bcc` empty. Otherwise, at least one e-mail needs to be provided in one of the `emails_to`, `emails_cc` and `emails_bcc` fields. In the response, the recipients selected are returned.
 
 ## DELETE /invoices/{id}
 
