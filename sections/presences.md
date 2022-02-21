@@ -100,13 +100,25 @@ curl -X POST \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
-A first request at 9:30 AM creates a presence with `from="09:30"`, a second request at 11:30 AM sets `to="11:30"` of the previous presence. Field `is_home_office` can be passed to the request as well.
+A first request at 9:30 AM creates a presence with `from="09:30"`, a second request at 11:30 AM sets `to="11:30"` of the previous presence.
 
 ⚠ There are two special situations to take into consideration:
 
 1. If a presence is started and stopped by `touch` within the same minute, then it is discarded.
 2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
    is `423 Locked`.
+
+Field `is_home_office` can be passed to the request as well.
+
+```bash
+curl -X POST \
+ 'https://{domain}.mocoapp.com/api/v1/users/presences/touch' \
+ -H 'Authorization: Token token=YOUR_API_KEY' \
+ -H 'Content-Type: application/json' \
+ -d '{
+       "is_home_office": true,
+     }'
+```
 
 ## PUT /users/presences/{id}
 
