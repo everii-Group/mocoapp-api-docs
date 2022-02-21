@@ -41,7 +41,10 @@ The invoice representation contains among standard fields also:
   "service_period_from": "2018-10-01",
   "service_period_to": "2018-10-31",
   "status": "paid",
+  "reversed": true,
+  "reversal_invoice_id": 80548,
   "reversal": false,
+  "reversed_invoice_id": null,
   "title": "Invoice",
   "recipient_address": "Beispiel AG\r\nBeispielstrasse 123\r\n8000 Zürich",
   "currency": "CHF",
@@ -166,6 +169,13 @@ The invoice representation contains among standard fields also:
   "updated_at": "2018-10-17T09:33:46Z"
 }
 ```
+
+### Reversal Invoice Fields
+
+- **reversed** – Boolean, when true, the invoice has been reversed (canceled)
+- **reversal_invoice_id** – Is only set if the invoice has been reversed and contains the ID of the reversal invoice (cancelation invoice).
+- **reversal** – Boolean, when true, the invoice is a reversal invoice (cancelation invoice).
+- **reversed_invoice_id** – Is only set if the invoice is a reversal invoice (cancelation invoice) and contains the ID of the reversed invoice (canceled invoice).
 
 ## GET /invoices
 
