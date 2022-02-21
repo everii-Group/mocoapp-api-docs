@@ -124,4 +124,4 @@ Mandatory fields are marked with a star (\*):
 - **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
 - **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
 
-🛈 If you want to send emails to the default recipients configured in the project or on the customer, leave `emails_to`, `emails_cc` and `emails_bcc` empty. Otherwise, at least one e-mail needs to be provided in one of the `emails_to`, `emails_cc` and `emails_bcc` fields. In the response, the recipients selected are returned.
+🛈 If you want to send emails to the default recipients configured in the project or on the customer, leave `emails_to`, `emails_cc` and `emails_bcc` empty. `emails_to` always needs to be provided, either via the default recipients or as a given value. In the response, the recipients selected are returned.
