@@ -173,9 +173,9 @@ The invoice representation contains among standard fields also:
 ### Reversal Invoice Fields
 
 - **reversed** – Boolean, when true, the invoice has been reversed (canceled)
-- **reversal_invoice_id** – Is only set if the invoice has been reversed and contains the ID of the reversal invoice (cancelation invoice).
-- **reversal** – Boolean, when true, the invoice is a reversal invoice (cancelation invoice).
-- **reversed_invoice_id** – Is only set if the invoice is a reversal invoice (cancelation invoice) and contains the ID of the reversed invoice (canceled invoice).
+- **reversal_invoice_id** – Is only set if the invoice has been reversed and contains the ID of the reversal invoice (cancelation invoice)
+- **reversal** – Boolean, when true, the invoice is a reversal invoice (cancelation invoice)
+- **reversed_invoice_id** – Is only set if the invoice is a reversal invoice (cancelation invoice) and contains the ID of the reversed invoice (canceled invoice)
 
 ## GET /invoices
 
