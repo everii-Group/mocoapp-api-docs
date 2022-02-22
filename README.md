@@ -23,7 +23,7 @@ This is the official API documentation for mocoapp.com.
 
 ## General
 
-- Data to MOCO is sent as JSON (Content-Type: application/json) and also represented as JSON
+- Request payloads to MOCO must be sent as valid JSON with a mandatory `Content-Type: application/json`-header. Responses are also sent as JSON.
 - All requests have to be [authenticated](#authentication) with a user-specific key
 - Example responses showcase the happy case, i.e. usually the `200 OK` response
 - Collections are usually [paginated](#pagination)
