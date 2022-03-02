@@ -24,12 +24,14 @@ The representation contains among the standard fields also:
     {
       "id": 933590158,
       "firstname": "Tobias",
-      "lastname": "Miesel"
+      "lastname": "Miesel",
+      "email": "tobias@domain.com"
     },
     {
       "id": 933589599,
       "firstname": "Sabine",
-      "lastname": "Schäuble"
+      "lastname": "Schäuble",
+      "email": "sabine@domain.com"
     }
   ],
   "created_at": "2018-10-17T09:33:46Z",
