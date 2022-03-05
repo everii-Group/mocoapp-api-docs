@@ -123,6 +123,7 @@ Mandatory fields are marked with a star (\*):
 - **info** – "Information for this lead..."
 - **status** – "potential", "pending", "won", "lost" or "dropped" (default: "pending")
 - **closed_on** – "2020-12-27"
+- **tags** – ["Important", "Health"]
 
 ## PUT /deals/{id}
 
