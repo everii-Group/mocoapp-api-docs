@@ -59,6 +59,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Purchase Categories](sections/purchase_categories.md)
 - [Purchase Drafts](sections/purchase_drafts.md)
 - [Purchases](sections/purchases.md)
+- [Receipts](sections/receipts.md)
 - [Schedules (Absences)](sections/schedules.md)
 - [Tags / Labels](sections/tags.md)
 - [Units / Teams](sections/units.md)
@@ -67,6 +68,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [User Presences](sections/presences.md)
 - [User Work Time Adjustments](sections/work_time_adjustments.md)
 - [Users](sections/users.md)
+- [Vat Codes](sections/vat_codes.md)
 - [WebHooks](sections/web_hooks.md)
 - [Reports](sections/reports.md)
 
