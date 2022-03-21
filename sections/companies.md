@@ -137,7 +137,7 @@ Additional fields just for companies of type customer:
 - **currency\*** – "EUR"
 - **identifier\*** – "K-123" (only mandatory if not automatically assigned)
 - **billing_tax** – 19.0
-- **default_invoice_due_days** – 20
+- **default_invoice_due_days** – 20 (use **invoice_due_days** to set a value for a company)
 - **debit_number** – 10000 if bookkeeping is enabled
 
 Additional fields just for companies of type supplier:
