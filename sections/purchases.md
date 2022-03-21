@@ -178,6 +178,12 @@ Mandatory fields are marked with a star (\*):
 
 ⚠ Deletes a purchase. It's possible only if the status is _pending_ and no payments have been registered.
 
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
 ## PATCH /purchases/{id}/update_status
 
 Updates the purchase status:
