@@ -11,6 +11,7 @@ German: "Angebote"
   - [GET /offers/{id}.pdf](#get-offersidpdf)
   - [POST /offers](#post-offers)
   - [PUT /offers/{id}/update_status](#put-offersidupdate_status)
+  - [POST /offers/{id}/send_email](#post-offersidsend_email)
 
 <!-- /TOC -->
 
@@ -244,3 +245,29 @@ curl -X PUT \
 ```
 
 The following states are valid: "created", "sent", "accepted", "partially_billed", "billed", "archived".
+
+## POST /offers/{id}/send_email
+
+Send the offer by email:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/offers/{id}/send_email' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "emails_to": "somebody@example.com",
+        "subject": "Offer",
+        "text": "Kind regards"
+      }'
+```
+
+Mandatory fields are marked with a star (\*):
+
+- **subject\*** – "Offer",
+- **text\*** – "Kind regards"
+- **emails_to** – "somebody@example.com;info@example.com" (list of addresses separated by _;_). To use default recipients, see information below.
+- **emails_cc** – "somebodyelse@example.com" (list of addresses separated by _;_)
+- **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
+
+🛈 If you want to send emails to the default recipients configured on the customer or set as a contact, leave `emails_to`, `emails_cc` and `emails_bcc` empty. `emails_to` always needs to be provided, either via the default recipients or as a given value. In the response, the recipients selected are returned.
