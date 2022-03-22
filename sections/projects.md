@@ -215,7 +215,7 @@ Mandatory fields are marked with a star (\*):
 - **currency\*** – "EUR"
 - **finish_date\*** – "2018-12-31"
 - **leader_id\*** – 123456 (user ID)
-- **co_leader_id\** – 123457 (user ID)
+- **co_leader_id** – 123457 (user ID)
 - **customer_id\*** – 234567
 - **deal_id** – 123456 (deal ID)
 - **identifier\*** – "P-123" (only mandatory if number ranges are manual)
