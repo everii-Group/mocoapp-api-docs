@@ -232,5 +232,6 @@ Additionally, these parameters can be supplied:
 
 - **from** – "2019-01-01"
 - **to** – "2019-01-31"
+- **tags** – "tag one,tag two" (comma-separated project tags)
 
 ⚠️ Parameters `from` and `to` only work when provided together. 
