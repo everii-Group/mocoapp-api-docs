@@ -246,6 +246,7 @@ curl -X GET \
 Additionally, the following parameters can be supplied:
 
 - **blank** – (to get the invoice without the letter paper)
+- **letter_paper_id** – (the letter paper ID, if left off the default letter paper will be taken)
 
 This returns this invoice's PDF document.
 
