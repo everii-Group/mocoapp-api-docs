@@ -233,6 +233,7 @@ for the sent payload.
 - **X-Moco-Timestamp** – Timestamp for this event
 - **X-Moco-Signature** – The signature fo this request, see comment below for details
 - **X-Moco-User-Id** – The user ID that triggered this hook
+- **X-Moco-Account-Url** – The subdomain for the account
 - The receiver has to process the request within 10 seconds
 
 The following example shows a WebHook triggered by an activity creation.
