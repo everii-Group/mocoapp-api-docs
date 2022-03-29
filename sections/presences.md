@@ -92,7 +92,7 @@ Mandatory fields are marked with a star (\*):
 
 ## POST /users/presences/touch
 
-This request creates a new presence for the user with the corresponding API-Key starting from the current time or terminates an existing open presence at the current time. Can be used to implement a time clock system (e.g. RFID).
+This request creates a new presence and returns it for the user with the corresponding API-Key starting from the current time or terminates an existing open presence at the current time. Can be used to implement a time clock system (e.g. RFID).
 
 ```bash
 curl -X POST \
