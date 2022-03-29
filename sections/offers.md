@@ -154,7 +154,8 @@ Additionally, these parameters can be supplied:
 - **status** – ("created", "sent", "accepted", "partially_billed", "billed", "archived")
 - **from** – "2018-01-01"
 - **to** – "2018-01-31"
-- **identifier** "A1903-003"
+- **identifier** – "A1903-003"
+- **deal_id** – "123" (deal ID for offers on this deal)
 
 ## GET /offers/{id}
 
