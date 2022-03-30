@@ -84,6 +84,7 @@ It's also possible to filter:
 - **type** ("customer", "supplier", "organization")
 - **tags** "Automotive, Pharma" (comma separated list)
 - **identifier** "K0405"
+- **term** "acme corp" (search term)
 
 This returns an array with the complete company information.
 
