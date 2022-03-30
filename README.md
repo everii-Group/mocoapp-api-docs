@@ -58,6 +58,7 @@ All the entities exposed via the API can be found in their respective sections.
 - [Projects](sections/projects.md)
 - [Purchase Categories](sections/purchase_categories.md)
 - [Purchase Drafts](sections/purchase_drafts.md)
+- [Purchase Payments](sections/purchase_payments.md)
 - [Purchases](sections/purchases.md)
 - [Receipts](sections/receipts.md)
 - [Schedules (Absences)](sections/schedules.md)
