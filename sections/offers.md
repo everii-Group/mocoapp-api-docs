@@ -155,7 +155,7 @@ Additionally, these parameters can be supplied:
 - **from** – "2018-01-01"
 - **to** – "2018-01-31"
 - **identifier** – "A1903-003"
-- **deal_id** – "123" (deal ID for offers on this deal)
+- **deal_id** – "123,456" (deal ID for offers on this deal, single or comma-separated values)
 
 ## GET /offers/{id}
 
