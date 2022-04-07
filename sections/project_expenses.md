@@ -74,6 +74,12 @@ curl -X GET \
 
 This returns an array with all additional services (see Attributes).
 
+Additionally, these parameters can be supplied:
+
+- **billable** – true/false
+- **billed** – true/false
+- **budget_relevant** – true/false
+
 ## GET /projects/{id}/expenses/{id}
 
 Retrieve a single additional service for a project:
@@ -232,6 +238,9 @@ Additionally, these parameters can be supplied:
 
 - **from** – "2019-01-01"
 - **to** – "2019-01-31"
+- **billable** – true/false
+- **billed** – true/false
+- **budget_relevant** – true/false
 - **tags** – "tag one,tag two" (comma-separated project tags)
 
-⚠️ Parameters `from` and `to` only work when provided together. 
+⚠️ Parameters `from` and `to` only work when provided together.
