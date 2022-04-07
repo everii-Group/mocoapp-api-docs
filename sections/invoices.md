@@ -2,7 +2,7 @@
 
 German: "Rechnungen"
 
-<!-- TOC depthfrom:2 -->
+<!-- TOC depthfrom:2 depthto:2 -->
 
 - [Attributes](#attributes)
 - [GET /invoices](#get-invoices)
@@ -11,6 +11,7 @@ German: "Rechnungen"
 - [GET /invoices/{id}.pdf](#get-invoicesidpdf)
 - [GET /invoices/{id}/timesheet](#get-invoicesidtimesheet)
 - [GET /invoices/{id}/timesheet.pdf](#get-invoicesidtimesheetpdf)
+- [GET /invoices/{id}/expenses](#get-invoicesidexpenses)
 - [PUT /invoices/{id}/update_status](#put-invoicesidupdate_status)
 - [POST /invoices](#post-invoices)
 - [POST /invoices/{id}/send_email](#post-invoicesidsend_email)
@@ -317,6 +318,58 @@ Additionally, the following parameters can be supplied:
 - **letter_paper_id** – (letter paper ID, default: White)
 
 This returns a PDF document or a status code 404, if no hours are available.
+
+## GET /invoices/{id}/expenses
+
+Retrieve all expenses that were invoiced in a particular invoice.
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/invoices/{id}/expenses' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+This returns a list of expenses:
+
+```json
+[
+  {
+    "id": 47266,
+    "date": "2017-07-07",
+    "title": "Hosting XS",
+    "description": "<div>Hosting, Monitoring und Backup</div>",
+    "quantity": 3,
+    "unit": "Monat",
+    "unit_price": 29,
+    "unit_cost": 19,
+    "price": 87,
+    "cost": 57,
+    "currency": "CHF",
+    "budget_relevant": true,
+    "billable": true,
+    "billed": false,
+    "service_period": "10/2020",
+    "service_period_from": "2020-10-01",
+    "service_period_to": "2020-10-31",
+    "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
+    "custom_properties": {
+      "Type": "Website"
+    },
+    "company": {
+      "id": 1234,
+      "name": "Acme Corp."
+    },
+    "project": {
+      "id": 1234,
+      "name": "Project A"
+    },
+    "purchase_id": 123456,
+    "purchase_item_id": 234567,
+    "created_at": "2018-10-17T09:33:46Z",
+    "updated_at": "2018-10-17T09:33:46Z"
+  }
+]
+```
 
 ## PUT /invoices/{id}/update_status
 
