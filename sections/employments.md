@@ -67,7 +67,6 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
         "user_id": 123,
-        "weekly_target_hours": 29.75,
         "pattern": {
           "am": [0, 4.25, 4.25, 4.25, 4.25],
           "pm": [0, 4.25, 4.25, 4.25, 0]
@@ -83,7 +82,6 @@ Mandatory fields are marked with a star (\*):
 - **pattern\*** – `{ "am": [4, 4, 4, 4, 4], "pm": [4, 4, 4, 4, 4] }` the work hours during morning and afternoon on each workday
 - **from** – "2022-01-01" when the employment comes/came into effect (default: the current date)
 - **to** – "2022-12-31" when the employment stops being in effect (default: unset)
-- **weekly_target_hours** - 29.75
 
 ## GET /users/employments/{id}
 
@@ -105,7 +103,6 @@ curl -X PUT \
   -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-        "weekly_target_hours": 32,
         "pattern": {
           "am": [0, 4, 4, 4, 4],
           "pm": [0, 4, 4, 4, 4]
