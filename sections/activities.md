@@ -85,6 +85,7 @@ The following parameters can be supplied:
 - **user_id** – 123
 - **project_id** – 345
 - **task_id** – 789
+- **company_id** – 234567
 - **term** – "search terms" (search in tag, description and remote_id)
 
 ## GET /activities/{id}
