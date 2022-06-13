@@ -239,7 +239,7 @@ Mandatory fields are marked with a star (\*):
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
 
-⚠ If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start_date has to be on the first and the finish date on the last of a month!
+⚠ If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start date has to be on the first and the finish date on the last of a month!
 
 ## PUT /projects/{id}
 
