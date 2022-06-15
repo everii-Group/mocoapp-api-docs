@@ -170,7 +170,11 @@ This returns an array with limited project information.
         "active": true,
         "billable": true
       }
-    ]
+    ],
+    "contract": {
+      "user_id": 65455,
+      "active": true
+    }
   }
 ]
 ```
