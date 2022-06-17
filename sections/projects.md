@@ -38,6 +38,8 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
   "active": true,
   "billable": true,
   "fixed_price": true,
+  "retainer": false,
+  "start_date": null,
   "finish_date": "2018-12-31",
   "color": "#CCCC00",
   "currency": "EUR",
@@ -48,6 +50,7 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
   "billing_notes": "Billig notes text",
   "setting_include_time_report": true,
   "budget": 18200,
+  "budget_monthly": null,
   "budget_expenses": 8200,
   "hourly_rate": 150,
   "info": "Abrechnung jährlich",
@@ -138,6 +141,7 @@ The following parameters can be supplied:
 - **updated_to** – "2018-12-31"
 - **tags** "Important, Strategic" (comma separated list)
 - **identifier** "P1903-003"
+- **retainer** true/false
 
 ## GET /projects/assigned
 
@@ -217,7 +221,10 @@ Mandatory fields are marked with a star (\*):
 
 - **name\*** – "Relaunch Website"
 - **currency\*** – "EUR"
+- **start_date\*** – "2018-01-01"
 - **finish_date\*** – "2018-12-31"
+- **fixed_price\*** – true/false
+- **retainer\*** – true/false ⚠ see below requirements for other fields
 - **leader_id\*** – 123456 (user ID)
 - **co_leader_id** – 12345 (user ID)
 - **customer_id\*** – 234567
@@ -231,9 +238,12 @@ Mandatory fields are marked with a star (\*):
 - **billing_variant** – "project", "task" or "user" (default: "project")
 - **hourly_rate** – 150
 - **budget** – 20000
+- **budget_monthly** – 2000
 - **tags** – ["Print", "Digital"]
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
+
+⚠ If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start date has to be on the first and the finish date on the last of a month!
 
 ## PUT /projects/{id}
 
