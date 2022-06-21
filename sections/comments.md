@@ -53,7 +53,7 @@ This returns complete comment information (see Attributes).
 
 Additionally, the following parameters can be supplied:
 
-- **commentable_type** – "Company", "Contact", "Deal", "Expense", "Invoice", "InvoiceBookkeepingExport", "InvoiceDeletion", "InvoiceReminder", "Offer", "OfferConfirmation", "Project", "ProjectGroup", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft", "Receipt", "ReceiptRefundRequest", "RecurringExpense", "Unit", "User", "UserHolidayRequest" (object this comment relates to)
+- **commentable_type** – "Company", "Contact", "Deal", "DeiveryNote", "Expense", "Invoice", "InvoiceBookkeepingExport", "InvoiceDeletion", "InvoiceReminder", "Offer", "OfferConfirmation", "Project", "ProjectGroup", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft", "Receipt", "ReceiptRefundRequest", "RecurringExpense", "Unit", "User", "UserHolidayRequest" (object this comment relates to)
 - **commentable_id** – 123 (object ID)
 - **user_id** – 456 (creator user ID)
 - **manual** – true/false (user-created or generated)
@@ -89,10 +89,10 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **commentable_id\*** – 123 (object ID)
-- **commentable_type\*** – ""Contact", "Deal", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport", "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object type)
+- **commentable_type\*** – ""Contact", "Deal", "DeliveryNote", "Project", "User", "Unit", "Company", "Offer", "OfferConfirmation", "Invoice", "InvoiceReminder", "InvoiceDeletion", "InvoiceBookkeepingExport", "Expense", "RecurringExpense", "Receipt", "ReceiptRefundRequest", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft" (object type)
 - **text\*** – "Comment text..."
 - **attachment_filename** – "document.pdf"
-- **attachment_content** – *the file as a base64-encoded string*
+- **attachment_content** – _the file as a base64-encoded string_
 
 ## POST /comments/bulk
 
