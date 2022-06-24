@@ -125,8 +125,8 @@ Mandatory fields are marked with a star (\*):
 - **info** – "Information for this lead..."
 - **status** – "potential", "pending", "won", "lost" or "dropped" (default: "pending")
 - **closed_on** – "2021-12-27"
-- **service_period_from** – "2022-06-01" (beginning of month)
-- **service_period_to** – "2022-12-31" (end of month)
+- **service_period_from** – "2022-06-01" ⚠️ must be the first of the month
+- **service_period_to** – "2022-12-31" ⚠️ must be the last of the month
 - **tags** – ["Important", "Health"]
 
 ## PUT /deals/{id}
