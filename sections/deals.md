@@ -30,7 +30,7 @@ Company and person are optional. The category is only important in status "pendi
   "id": 123,
   "name": "Website V2",
   "status": "pending",
-  "reminder_date": "2017-05-19",
+  "reminder_date": "2022-09-19",
   "closed_on": null,
   "money": 61000,
   "currency": "CHF",
@@ -57,8 +57,10 @@ Company and person are optional. The category is only important in status "pendi
     "name": "Angebot",
     "probability": 30
   },
-  "created_at": "2018-10-17T09:33:46Z",
-  "updated_at": "2018-10-17T09:33:46Z"
+  "service_period_from": "2022-09-01",
+  "service_period_to": "2023-01-31",
+  "created_at": "2021-10-17T09:33:46Z",
+  "updated_at": "2012-10-17T09:33:46Z"
 }
 ```
 
@@ -122,7 +124,9 @@ Mandatory fields are marked with a star (\*):
 - **person_id** – 357
 - **info** – "Information for this lead..."
 - **status** – "potential", "pending", "won", "lost" or "dropped" (default: "pending")
-- **closed_on** – "2020-12-27"
+- **closed_on** – "2021-12-27"
+- **service_period_from** – "2022-06-01" ⚠️ must be the first of the month
+- **service_period_to** – "2022-12-31" ⚠️ must be the last of the month
 - **tags** – ["Important", "Health"]
 
 ## PUT /deals/{id}
