@@ -108,8 +108,6 @@ A first request at 9:30 AM creates a presence with `from="09:30"`, a second requ
 2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
    is `423 Locked`.
 
-Field `is_home_office` can be passed to the request as well.
-
 ```bash
 curl -X POST \
  'https://{domain}.mocoapp.com/api/v1/users/presences/touch' \
@@ -119,6 +117,14 @@ curl -X POST \
        "is_home_office": true,
      }'
 ```
+
+Optional fields:
+
+- **is_home_office** – true/false (default: `false`, will set the whole day)
+- **override** – "2022-03-27 14:45"
+
+To prevent time differences during delays between systems, the parameter `override` can be passed with the time of the event in the format `YYYY-MM-DD HH:MM`. It has to be in 24h format and is timezone agnostic which means that MOCO stores the hour and minute in local time.
+
 
 ## PUT /users/presences/{id}
 
