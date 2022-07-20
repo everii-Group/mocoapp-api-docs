@@ -38,25 +38,25 @@ Includes among the standard fields for receipts also:
         "reverse_charge": false,
         "intra_eu": false
       },
-      "refund_request": {
-        "id": 266,
-        "status": "paid"
-      },
       "purchase_category": {
         "id": 2684,
         "name": "Bewirtungsaufwände"
       },
-      "project": {
-        "id": 567,
-        "name": "Intern/Admin",
-        "billable": false,
-        "company": {
-          "id": 789,
-          "name": "Acme Inc."
-        }
-      }
     }
   ],
+  "project": {
+    "id": 567,
+    "name": "Intern/Admin",
+    "billable": false,
+    "company": {
+      "id": 789,
+      "name": "Acme Inc."
+    }
+  },
+  "refund_request": {
+    "id": 266,
+    "status": "paid"
+  },
   "info": "Teamlunch mit Peter, Sandra und Till",
   "user": {
     "id": 933,
@@ -119,6 +119,7 @@ curl -X POST \
           "gross_total": 99.90
         }
       ],
+      "project_id": 123,
       "attachment": {
         "filename": "document.pdf",
         "base64": "JVBERi0xLjQKJeLjz9MKNCAwIG9iago8PC9GaWx..."
@@ -133,6 +134,7 @@ Mandatory fields are marked with a star (\*):
 - **items\*** – list of positions. At least one position must be present and every position has the following fields:
   - **vat_code_id\*** – 186 (Vat Code ID)
   - **gross_total\*** – 99.90
+- **project_id** – 123 (Project ID)
 - **info** – free text
 - **billable** – true/false
 - **attachment** – file attached to the purchase, with the following fields:
