@@ -30,6 +30,7 @@ The invoice payment representation contains among standard fields also shortened
   "paid_total": "17999.00",
   "paid_total_in_account_currency": "17999.00",
   "currency": "EUR",
+  "description": "",
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
@@ -81,10 +82,11 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2017-10-20"
-- **invoice_id\*** – 12345
+- **invoice_id** – 12345
 - **paid_total\*** – 1000
 - **currency** – "EUR"
 - **partially_paid** – true/false
+- **description** – "Provision" (must be provided if `invoice_id` is omitted)
 
 ## POST /invoices/payments/bulk
 
