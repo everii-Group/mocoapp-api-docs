@@ -153,7 +153,7 @@ Update a company.
 ```bash
 curl -X PUT \
   'https://{domain}.mocoapp.com/api/v1/companies/{123}' \
-  -H 'authorization: Token token=YOUR_API_KEY' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
         "name": "Beispiel GmbH"
