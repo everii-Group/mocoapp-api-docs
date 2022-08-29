@@ -69,7 +69,8 @@ All the entities exposed via the API can be found in their respective sections.
 - [User Presences](sections/presences.md)
 - [User Work Time Adjustments](sections/work_time_adjustments.md)
 - [Users](sections/users.md)
-- [Vat Codes](sections/vat_codes.md)
+  <!-- Is being refactored and will changed. Removed from documentation because the endpoint is not used by anybody so far. -->
+  <!-- - [Vat Codes](sections/vat_codes.md) -->
 - [WebHooks](sections/web_hooks.md)
 - [Reports](sections/reports.md)
 
