@@ -1,6 +1,6 @@
 # Moco API Documentation
 
-This is the official API documentation for mocoapp.com.
+This is the official API documentation for mocoapp.com (👉 [we are hiring](https://www.mocoapp.com/unternehmen/jobs)).
 
 <!-- TOC depthfrom:2 -->
 
