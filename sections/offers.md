@@ -4,14 +4,13 @@ German: "Angebote"
 
 <!-- TOC -->
 
-- [Offers](#offers)
-  - [Attributes](#attributes)
-  - [GET /offers](#get-offers)
-  - [GET /offers/{id}](#get-offersid)
-  - [GET /offers/{id}.pdf](#get-offersidpdf)
-  - [POST /offers](#post-offers)
-  - [PUT /offers/{id}/update_status](#put-offersidupdate_status)
-  - [POST /offers/{id}/send_email](#post-offersidsend_email)
+- [Attributes](#attributes)
+- [GET /offers](#get-offers)
+- [GET /offers/{id}](#get-offersid)
+- [GET /offers/{id}.pdf](#get-offersidpdf)
+- [POST /offers](#post-offers)
+- [PUT /offers/{id}/update_status](#put-offersidupdate_status)
+- [POST /offers/{id}/send_email](#post-offersidsend_email)
 
 <!-- /TOC -->
 
@@ -55,6 +54,11 @@ The offer representation contains among the standard fields:
   "deal": {
     "id": 1234,
     "name": "A Lead"
+  },
+  "user": {
+    "id": 933618783,
+    "firstname": "Jane",
+    "lastname": "Doe"
   },
   "items": [
     {

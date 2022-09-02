@@ -292,8 +292,8 @@ This returns a list of activities:
     },
     "user": {
       "id": 933618783,
-      "firstname": "Doe",
-      "lastname": "Jane"
+      "firstname": "Jane",
+      "lastname": "Doe"
     },
     "timer_started_at": null,
     "created_at": "2021-02-26T10:48:28Z",
