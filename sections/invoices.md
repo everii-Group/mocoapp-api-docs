@@ -25,10 +25,11 @@ The invoice representation contains among standard fields also:
 
 - custom properties
 - positions (items)
-- position types ("title", "description", "item", "subtotal", "page-break" or "separator")
+- position types (`title`, `description`, `item`, `subtotal`, `page-break` or `separator`)
 - payments
 - reminders
-- vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
+- `vat` (`tax`, `reverse_charge`, `intra_eu` (intra community trade, only applicable for accounts in the EU))
+- `activity_hours_modified` (shows whether any positions have been modified and do correspond to the timesheet)
 
 ```json
 {
@@ -59,6 +60,7 @@ The invoice representation contains among standard fields also:
   "debit_number": null,
   "credit_number": null,
   "locked": false,
+  "activity_hours_modified": false,
   "salutation": "<div>Wir erlauben uns, Ihnen Folgendes in Rechnung zu stellen:</div>",
   "footer": "<div>Zahlbar ohne Abzug innert 20 Tagen.<br><br>Kontoverbindung...<br><br><br>Herzlichen Dank für Ihren Auftrag.</div>",
   "custom_properties": {
