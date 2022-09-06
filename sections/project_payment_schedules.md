@@ -48,6 +48,7 @@ curl -X GET \
 
 Additionally, these parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **from** – "2021-02-01"
 - **to** – "2021-02-28"
 - **checked** – true / false (show checked off payment schedules or unchecked schedules)

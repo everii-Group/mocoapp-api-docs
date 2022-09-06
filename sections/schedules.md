@@ -61,6 +61,7 @@ This returns an array with complete schedule information (see Attributes).
 
 Additionally, the following parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **from** – "2017-05-01"
 - **to** – "2017-05-31"
 - **user_id** – 123

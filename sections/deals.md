@@ -76,6 +76,7 @@ curl -X GET \
 
 Additionally, these parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **status** – "potential", "pending", "won", "lost" or "dropped"
 - **tags** "Important, Strategic" (comma separated list)
 

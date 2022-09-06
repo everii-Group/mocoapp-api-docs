@@ -155,6 +155,7 @@ curl -X GET \
 
 Additionally, these parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **status** – ("created", "sent", "accepted", "partially_billed", "billed", "archived")
 - **from** – "2018-01-01"
 - **to** – "2018-01-31"

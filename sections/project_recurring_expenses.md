@@ -61,7 +61,12 @@ curl -X GET \
   'https://{domain}.mocoapp.com/api/v1/recurring_expenses' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
+
 This returns an array of recurring additional services entries (see Attributes).
+
+It's also possible to filter:
+
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 
 ## GET /projects/{id}/recurring_expenses
 

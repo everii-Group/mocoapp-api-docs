@@ -131,6 +131,7 @@ This returns an array with complete project information (see Attributes).
 
 The following parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **include_archived** – true/false
 - **include_company** – true/false (returns a complete company instead of just ID and name)
 - **leader_id** – 123456 (project (co-)leader user ID)

@@ -47,6 +47,7 @@ curl -X GET \
 
 Additionally, these parameters can be used to filter the results set:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **invoice_id** – 123
 - **date_from** – "2018-01-01"
 - **date_to** – "2018-01-31"

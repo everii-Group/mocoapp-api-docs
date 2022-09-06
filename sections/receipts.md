@@ -41,7 +41,7 @@ Includes among the standard fields for receipts also:
       "purchase_category": {
         "id": 2684,
         "name": "Bewirtungsaufwände"
-      },
+      }
     }
   ],
   "project": {
@@ -79,6 +79,7 @@ curl -X GET \
 
 It's also possible to filter:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **from** – "2021-06-01"
 - **to** – "2021-06-30"
 - **project_id** – 567 (Project ID)

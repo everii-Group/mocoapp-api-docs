@@ -60,6 +60,7 @@ This returns an array with complete information about the planning entries (see 
 
 The following parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **period** – "2020-05-01:2020-07-31"
 - **user_id** – 123
 - **project_id** – 345
