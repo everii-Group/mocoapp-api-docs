@@ -132,4 +132,8 @@ Fields are analogous to the POST request.
 
 ## DELETE /contacts/people/{id}
 
-⚠ Deleting a contact is not possible via API!
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/contacts/people/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```

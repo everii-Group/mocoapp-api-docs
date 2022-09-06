@@ -164,4 +164,8 @@ Fields are analogous to the POST request.
 
 ## DELETE /companies/{id}
 
-⚠ Deleting a company is not possible via API!
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/companies/{123}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
