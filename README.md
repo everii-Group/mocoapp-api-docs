@@ -36,6 +36,8 @@ This is the official API documentation for mocoapp.com (👉 [we are hiring](htt
 
 All the entities exposed via the API can be found in their respective sections.
 
+- [Account / Catalog Services](sections/account/catalog_services.md)
+- [Account / Custom Properties](sections/account/custom_properties.md)
 - [Account / Fixed Costs](sections/account/fixed_costs.md)
 - [Account / Hourly Rates](sections/account/hourly_rates.md)
 - [Account / Internal Hourly Rates](sections/account/internal_hourly_rates.md)
