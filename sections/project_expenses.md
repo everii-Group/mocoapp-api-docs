@@ -236,6 +236,7 @@ This returns an array with all additional services (see Attributes).
 
 Additionally, these parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **from** – "2019-01-01"
 - **to** – "2019-01-31"
 - **billable** – true/false

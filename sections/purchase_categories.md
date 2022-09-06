@@ -37,6 +37,10 @@ curl -X GET \
 
 This returns an array with complete category information (see attributes).
 
+The following parameters can be supplied:
+
+- **ids** – e.g. `123,456` (IDS, comma-separated)
+
 ## GET /purchases/categories/{id}
 
 Retrieve a single category:

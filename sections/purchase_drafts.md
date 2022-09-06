@@ -43,6 +43,10 @@ curl -X GET \
 
 This returns an array with complete draft information (see attributes).
 
+The following parameters can be supplied:
+
+- **ids** – e.g. `123,456` (IDS, comma-separated)
+
 ## GET /purchases/drafts/{id}
 
 Retrieve a single draft:

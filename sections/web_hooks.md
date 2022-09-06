@@ -40,6 +40,10 @@ curl -X GET \
 
 This returns an array with complete web hooks information (see Attributes).
 
+The following parameters can be supplied:
+
+- **ids** – e.g. `123,456` (IDS, comma-separated)
+
 ## GET /account/web_hooks/{id}
 
 Retrieve a single web hook:

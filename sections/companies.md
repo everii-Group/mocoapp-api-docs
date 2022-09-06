@@ -81,6 +81,7 @@ curl -X GET \
 
 It's also possible to filter:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **type** ("customer", "supplier", "organization")
 - **tags** "Automotive, Pharma" (comma separated list)
 - **identifier** "K0405"

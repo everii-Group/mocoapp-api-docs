@@ -61,6 +61,7 @@ curl -X GET \
 
 It's also possible to filter:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **tags** "Influencer, Early Adopter" (comma separated list)
 - **term** "mario, volkswagen" (full text search name, firstname, work_email, company)
 - **phone** 79 826 (reverse lookup for work_phone or mobile_phone)

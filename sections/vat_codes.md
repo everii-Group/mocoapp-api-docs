@@ -35,6 +35,7 @@ This returns an array with vat codes (see Attributes).
 
 The following parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
 - **kind** – purchase/invoice (Vorsteuer/Umsatzsteuer)
 - **reverse_charge** – true/false (Umkehr Steuerschuldnerschaft)
 - **intra_eu** – true/false (Innergemeinschaftliche Leistung)
