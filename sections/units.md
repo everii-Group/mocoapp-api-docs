@@ -54,6 +54,7 @@ This returns an array with complete team information (see Attributes).
 Additionally, the following parameters can be supplied:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 
 ## GET /units/{id}
 

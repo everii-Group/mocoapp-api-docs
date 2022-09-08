@@ -4,15 +4,16 @@ German: "Zeiteinträge"
 
 <!-- TOC -->
 
-- [Attributes](#attributes)
-- [GET /activities](#get-activities)
-- [GET /activities/{id}](#get-activitiesid)
-- [POST /activities](#post-activities)
-- [PUT /activities/{id}](#put-activitiesid)
-- [PATCH /activities/{id}/start_timer](#patch-activitiesidstart_timer)
-- [PATCH /activities/{id}/stop_timer](#patch-activitiesidstop_timer)
-- [DELETE /activities/{id}](#delete-activitiesid)
-- [POST /activities/disregard](#post-activitiesdisregard)
+- [Activities](#activities)
+  - [Attributes](#attributes)
+  - [GET /activities](#get-activities)
+  - [GET /activities/{id}](#get-activitiesid)
+  - [POST /activities](#post-activities)
+  - [PUT /activities/{id}](#put-activitiesid)
+  - [PATCH /activities/{id}/start_timer](#patch-activitiesidstart_timer)
+  - [PATCH /activities/{id}/stop_timer](#patch-activitiesidstop_timer)
+  - [DELETE /activities/{id}](#delete-activitiesid)
+  - [POST /activities/disregard](#post-activitiesdisregard)
 
 <!-- /TOC -->
 
@@ -80,6 +81,8 @@ This returns an array of all activities.
 
 The following parameters can be supplied:
 
+- **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 - **from** – "2018-06-01"
 - **to** – "2018-06-30"
 - **user_id** – 123

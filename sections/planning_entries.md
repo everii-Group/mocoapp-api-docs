@@ -61,6 +61,7 @@ This returns an array with complete information about the planning entries (see 
 The following parameters can be supplied:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 - **period** – "2020-05-01:2020-07-31"
 - **user_id** – 123
 - **project_id** – 345

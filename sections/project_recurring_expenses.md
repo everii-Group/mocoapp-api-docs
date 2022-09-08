@@ -67,6 +67,7 @@ This returns an array of recurring additional services entries (see Attributes).
 It's also possible to filter:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 
 ## GET /projects/{id}/recurring_expenses
 

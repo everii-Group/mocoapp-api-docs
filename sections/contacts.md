@@ -62,6 +62,7 @@ curl -X GET \
 It's also possible to filter:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 - **tags** "Influencer, Early Adopter" (comma separated list)
 - **term** "mario, volkswagen" (full text search name, firstname, work_email, company)
 - **phone** 79 826 (reverse lookup for work_phone or mobile_phone)
