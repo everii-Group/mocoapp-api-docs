@@ -50,6 +50,7 @@ curl -X GET \
 The following parameters can be supplied:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 - **entity** – e.g. `Project` (any kind of entity that a custom property can be added to)
 
 returns an array of custom properties.

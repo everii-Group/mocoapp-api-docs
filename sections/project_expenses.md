@@ -237,6 +237,7 @@ This returns an array with all additional services (see Attributes).
 Additionally, these parameters can be supplied:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
+- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
 - **from** – "2019-01-01"
 - **to** – "2019-01-31"
 - **billable** – true/false
