@@ -77,7 +77,7 @@ Item attributes:
 
 ## GET /account/catalog_services
 
-Retrieve custom properties:
+Retrieve catalog services:
 
 ```bash
 curl -X GET \
@@ -89,7 +89,7 @@ returns an array of catalog services including their items.
 
 ## GET /account/catalog_services/{id}
 
-Retrieve custom properties:
+Retrieve catalog services:
 
 ```bash
 curl -X GET \
