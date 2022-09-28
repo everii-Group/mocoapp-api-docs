@@ -52,6 +52,7 @@ The company representation contains among default fields the following features:
   "currency": "CHF",
   "country_code": "CH",
   "vat_identifier": "DE999999999",
+  "english_correspondence_language": false,
   "default_invoice_due_days": 30,
   "footer": "<div>Footer text</div>",
   "projects": [
@@ -123,6 +124,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **type\*** – ("customer", "supplier", "organization")
 - **country_code** – (ISO Alpha-2 Country Code like "DE" / "CH" / "AT" in upper case - default is account country)
 - **vat_identifier** – European Union VAT identification numbers (USt-IdNr)
+- **english_correspondence_language** – true/false (create sales documents in English)
 - **website** – "http//www.lieferant.com"
 - **fax** – "+49 30 123 45 67"
 - **phone** – "+49 30 123 45 67"
