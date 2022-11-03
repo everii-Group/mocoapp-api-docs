@@ -23,16 +23,16 @@ German: "Steuerschlüssel"
 
 ## GET /vat_code_sales
 
-Retrieve the list of sales vat codes:
+Retrieve the list of sale vat codes:
 
 ```bash
 curl -X GET \
   'https://{domain}.mocoapp.com/api/v1/vat_code_sales'
 ```
 
-This returns an array with sales vat codes (see Attributes).
+This returns an array with sale vat codes (see Attributes).
 
-The following parameters can be supplied to filter sales vat codes:
+The following parameters can be supplied to filter sale vat codes:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
 - **reverse_charge** – true/false (Umkehr Steuerschuldnerschaft)
@@ -59,14 +59,14 @@ The following parameters can be supplied to filter purchase vat codes:
 
 ## GET /vat_code_sales/{id}
 
-Retrieve a single sales vat code:
+Retrieve a single sale vat code:
 
 ```bash
 curl -X GET \
   'https://{domain}.mocoapp.com/api/v1/vat_code_sales/123'
 ```
 
-Retrieve a single sales vat code.
+Retrieve a single sale vat code.
 
 ## GET /vat_code_purchases/{id}
 
