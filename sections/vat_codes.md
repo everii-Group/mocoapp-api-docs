@@ -5,7 +5,7 @@ German: "Steuerschlüssel"
 <!-- TOC -->
 
 - [Attributes](#attributes)
-- [GET /vat_codes](#get-vat_codes)
+- [GET /vat_code_sales](#get-vat_codes)
 
 <!-- /TOC -->
 
@@ -17,26 +17,64 @@ German: "Steuerschlüssel"
   "tax": 7.7,
   "reverse_charge": false,
   "intra_eu": false,
-  "kind": "purchase",
   "active": true
 }
 ```
 
-## GET /vat_codes
+## GET /vat_code_sales
 
-Retrieve the list of vat codes:
+Retrieve the list of sales vat codes:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/vat_codes'
+  'https://{domain}.mocoapp.com/api/v1/vat_code_sales'
 ```
 
-This returns an array with vat codes (see Attributes).
+This returns an array with sales vat codes (see Attributes).
 
-The following parameters can be supplied:
+The following parameters can be supplied to filter sales vat codes:
 
 - **ids** – e.g. `123,456` (IDS, comma-separated)
-- **kind** – purchase/invoice (Vorsteuer/Umsatzsteuer)
 - **reverse_charge** – true/false (Umkehr Steuerschuldnerschaft)
 - **intra_eu** – true/false (Innergemeinschaftliche Leistung)
 - **active** – true/false
+
+## GET /vat_code_purchases
+
+Retrieve the list of purchase vat codes:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/vat_code_purchases'
+```
+
+This returns an array with purchase vat codes (see Attributes).
+
+The following parameters can be supplied to filter purchase vat codes:
+
+- **ids** – e.g. `123,456` (IDS, comma-separated)
+- **reverse_charge** – true/false (Umkehr Steuerschuldnerschaft)
+- **intra_eu** – true/false (Innergemeinschaftliche Leistung)
+- **active** – true/false
+
+## GET /vat_code_sales/{id}
+
+Retrieve a single sales vat code:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/vat_code_sales/123'
+```
+
+Retrieve a single sales vat code.
+
+## GET /vat_code_purchases/{id}
+
+Retrieve a single purchase vat code:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/vat_code_purchases/123'
+```
+
+Retrieve a single purchase vat code.
