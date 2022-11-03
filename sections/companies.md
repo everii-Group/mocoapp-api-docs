@@ -48,7 +48,8 @@ The company representation contains among default fields the following features:
   "identifier": "36",
   "intern": false,
   "billing_tax": 0,
-  "billing_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true },
+  "customer_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true }, // for customers only
+  "supplier_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true }, // for suppliers only
   "currency": "CHF",
   "country_code": "CH",
   "vat_identifier": "DE999999999",
@@ -141,13 +142,14 @@ Additional fields just for companies of type customer:
 
 - **currency\*** – "EUR"
 - **identifier\*** – "K-123" (only mandatory if not automatically assigned)
-- **billing_tax** – 19.0
+- **customer_tax** – 19.0
 - **default_invoice_due_days** – 20 (use **invoice_due_days** to set a value for a company)
 - **debit_number** – 10000 if bookkeeping is enabled
 
 Additional fields just for companies of type supplier:
 
 - **iban** – CH3908704016075473007
+- **supplier_tax** – 19.0
 - **credit_number** – 70000 if bookkeeping is enabled
 
 ## PUT /companies/{id}
