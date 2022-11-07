@@ -27,7 +27,8 @@ Retrieve the list of sale vat codes:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/vat_code_sales'
+  'https://{domain}.mocoapp.com/api/v1/vat_code_sales' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
 This returns an array with sale vat codes (see Attributes).
@@ -45,7 +46,8 @@ Retrieve the list of purchase vat codes:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/vat_code_purchases'
+  'https://{domain}.mocoapp.com/api/v1/vat_code_purchases' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
 This returns an array with purchase vat codes (see Attributes).
@@ -63,7 +65,8 @@ Retrieve a single sale vat code:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/vat_code_sales/123'
+  'https://{domain}.mocoapp.com/api/v1/vat_code_sales/123' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
 Retrieve a single sale vat code.
@@ -74,7 +77,8 @@ Retrieve a single purchase vat code:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/vat_code_purchases/123'
+  'https://{domain}.mocoapp.com/api/v1/vat_code_purchases/123' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
 Retrieve a single purchase vat code.
