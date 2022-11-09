@@ -112,19 +112,17 @@ curl -X POST \
         "title": "Catalog entry",
         "items": [
           {
-            "id": 113400,
             "type": "item",
             "title": "Setup",
-            "net_total": 1200.0,
+            "net_total": 1200.0
           },
           {
-            "id": 113400,
             "type": "item",
             "title": "Consulting",
             "quantity": 20.0,
             "unit": "h",
             "unit_price": 150.0,
-            "net_total": 3000.0,
+            "net_total": 3000.0
           }
         ]
       }'
@@ -140,7 +138,7 @@ curl -X PUT \
   -H 'Authorization: Token token=YOUR_API_KEY'
   -H 'Content-Type: application/json' \
   -d '{
-        "title": "Catalog entry",
+        "title": "Catalog entry"
       }'
 ```
 
@@ -156,7 +154,7 @@ curl -X DELETE \
   -H 'Authorization: Token token=YOUR_API_KEY'
   -H 'Content-Type: application/json' \
   -d '{
-        "title": "Catalog entry",
+        "title": "Catalog entry"
       }'
 ```
 
@@ -185,7 +183,7 @@ curl -X POST \
         "quantity": 20.0,
         "unit": "h",
         "unit_price": 150.0,
-        "net_total": 3000.0,
+        "net_total": 3000.0
       }'
 ```
 
@@ -204,7 +202,7 @@ curl -X PUT \
         "quantity": 20.0,
         "unit": "h",
         "unit_price": 150.0,
-        "net_total": 3000.0,
+        "net_total": 3000.0
       }'
 ```
 
