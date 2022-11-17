@@ -94,7 +94,7 @@ Mandatory fields are marked with a star (\*):
 - **title\*** – "Urlaubsanspruch 80%"
 - **days\*** – 20
 - **user_id\*** – 933590696
-- **creator_id\** – 933590000
+- **creator_id** – 933590000
 
 ## PUT /users/holidays/{id}
 
