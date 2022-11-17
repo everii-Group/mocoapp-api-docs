@@ -31,6 +31,11 @@ Holidays contain among the standard fields also:
     "firstname": "John",
     "lastname": "Doe"
   },
+  "creator": {
+    "id": 933590697,
+    "firstname": "Jane",
+    "lastname": "Doe"
+  },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
@@ -89,6 +94,7 @@ Mandatory fields are marked with a star (\*):
 - **title\*** – "Urlaubsanspruch 80%"
 - **days\*** – 20
 - **user_id\*** – 933590696
+- **creator_id\** – 933590000
 
 ## PUT /users/holidays/{id}
 
