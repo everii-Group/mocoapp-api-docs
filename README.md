@@ -289,5 +289,5 @@ console.log("digest = " + digest);
 
 - We expect a successful response code for the Webhook request (i.e. any 2XX code), otherwise it's considered a failure
   and it's retried.
-- After a few seconds we timeout your request, so don't do any heavy/synchronous work and consider pushing the to a queue for further processing
+- After a few seconds we cancel your request (timeout), so avoid any heavy/synchronous work and consider pushing to a queue for further processing
 - After 500 consecutive failures a Webhook is automatically disabled.
