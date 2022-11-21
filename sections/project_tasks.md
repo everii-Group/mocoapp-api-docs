@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Project Tasks
 
 German: "Projekte / Leistungen"

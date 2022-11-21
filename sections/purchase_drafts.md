@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Purchase Drafts
 
 German: "Ausgaben – Entwürfe"

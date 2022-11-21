@@ -1,0 +1,14 @@
+title: MOCO API docs
+description: mocoapp.com REST API documentation
+theme: just-the-docs
+
+url: https://hundertzehn.github.io/mocoapp-api-docs
+
+aux_links: # remove if you don't want this link to appear on your pages
+  Template Repository: https://github.com/hundertzehn/mocoapp-api-docs
+heading_anchors: true
+kramdown:
+  toc_levels: "2,3"
+
+plugins:
+  - jekyll-default-layout

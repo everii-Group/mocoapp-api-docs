@@ -1,3 +1,9 @@
+---
+layout: default
+title: Account / Internal Hourly Rates
+parent: Entities
+---
+
 # Internal Hourly Rates
 
 German: "Interne Stundensätze"

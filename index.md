@@ -1,4 +1,6 @@
 ---
+layout: default
+title: Moco API Documentation
 nav_exclude: true
 ---
 

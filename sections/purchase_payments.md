@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Purchase Payments
 
 German: "Ausgaben / Zahlungen"

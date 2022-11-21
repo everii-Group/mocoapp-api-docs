@@ -1,3 +1,9 @@
+---
+layout: default
+title: Account / Catalog Services
+parent: Entities
+---
+
 # Catalog Services
 
 German: "Leistungskatalog"

@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # User Presences
 
 German: "Arbeitszeiten"
@@ -124,7 +129,6 @@ Optional fields:
 - **override** – "2022-03-27 14:45"
 
 To prevent time differences during delays between systems, the parameter `override` can be passed with the time of the event in the format `YYYY-MM-DD HH:MM`. It has to be in 24h format and is timezone agnostic which means that MOCO stores the hour and minute in local time.
-
 
 ## PUT /users/presences/{id}
 

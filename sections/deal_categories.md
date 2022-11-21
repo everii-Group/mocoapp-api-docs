@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Deal Categories
 
 German: "Akquise-Stufen"

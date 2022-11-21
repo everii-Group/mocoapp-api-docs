@@ -1,3 +1,9 @@
+---
+layout: default
+title: Account / Custom Properties
+parent: Entities
+---
+
 # Custom Properties
 
 German: "Eigene Felder"

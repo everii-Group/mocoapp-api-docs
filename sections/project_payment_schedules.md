@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Project Payment Schedules
 
 German: "Projekte / Geplante Abrechnungen"

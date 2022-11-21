@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Project Recurring Expenses
 
 German: "Projekte / Wiederkehrende Zusatzleistungen"
