@@ -30,7 +30,7 @@ Includes among the standard fields for purchases also:
   "id": 987,
   "identifier": "E2016-0001",
   "receipt_identifier": "KK121",
-  ",title": "SBB Ticket",
+  "title": "SBB Ticket",
   "info": null,
   "iban": "CH3908704016075473007",
   "reference": null,
