@@ -1,7 +1,7 @@
 domain: hundertzehn.github.io
 title: MOCO API docs
 description: mocoapp.com REST API documentation
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 url: https://hundertzehn.github.io
 baseurl: /mocoapp-api-docs
