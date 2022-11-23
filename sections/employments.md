@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # User Employments
 
 German: "Wochenmodell"

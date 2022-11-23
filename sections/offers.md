@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Offers
 
 German: "Angebote"

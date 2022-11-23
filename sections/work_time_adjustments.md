@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # User Work Time Adjustments
 
 German: "Korrekturen Zeiterfassung"
@@ -19,22 +24,22 @@ Work time adjustments contain among the standard fields also:
 
 ```json
 {
-  "id" : 1972,
-  "date" : "2022-01-01",
-  "description" : "Overtime from 2021",
-  "hours" : 172.01,
-  "creator" : {
+  "id": 1972,
+  "date": "2022-01-01",
+  "description": "Overtime from 2021",
+  "hours": 172.01,
+  "creator": {
     "id": 933590697,
     "firstname": "Jane",
     "lastname": "Doe"
   },
-  "user" : {
+  "user": {
     "id": 933590696,
     "firstname": "John",
     "lastname": "Doe"
   },
-  "created_at" : "2022-01-02T17:31:00Z",
-  "updated_at" : "2022-01-02T17:31:00Z"
+  "created_at": "2022-01-02T17:31:00Z",
+  "updated_at": "2022-01-02T17:31:00Z"
 }
 ```
 

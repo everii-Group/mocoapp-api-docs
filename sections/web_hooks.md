@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Entities
+---
+
 # Web Hooks
 
 <!-- TOC -->

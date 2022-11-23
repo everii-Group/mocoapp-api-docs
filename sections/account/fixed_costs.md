@@ -1,3 +1,9 @@
+---
+layout: default
+title: Account / Fixed Costs
+parent: Entities
+---
+
 # Fixed costs (Account)
 
 German: "Fixkosten"

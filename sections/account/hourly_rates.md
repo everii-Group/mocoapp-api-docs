@@ -1,3 +1,9 @@
+---
+layout: default
+title: Account / Hourly Rates
+parent: Entities
+---
+
 # Hourly Rates
 
 German: "Stundensätze"
