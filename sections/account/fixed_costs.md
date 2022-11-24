@@ -8,12 +8,8 @@ parent: Entities
 
 German: "Fixkosten"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /account/fixed_costs](#get-accountfixed_costs)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

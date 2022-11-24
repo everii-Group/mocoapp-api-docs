@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Wochenmodell"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /users/employments](#get-usersemployments)
-- [POST /users/employments](#post-usersemployments)
-- [GET /users/employments/{id}](#get-usersemploymentsid)
-- [PUT /users/employments/{id}](#put-usersemploymentsid)
-- [DELETE /users/employments/{id}](#delete-usersemploymentsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

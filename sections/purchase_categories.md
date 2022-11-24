@@ -7,13 +7,8 @@ parent: Entities
 
 German: "Ausgaben – Kategorien"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /purchases/categories](#get-purchasescategories)
-- [GET /purchases/categories/{id}](#get-purchasescategoriesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

@@ -7,17 +7,8 @@ parent: Entities
 
 German: "Notizen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /comments](#get-comments)
-- [GET /comments/{id}](#get-commentsid)
-- [POST /comments](#post-comments)
-- [POST /comments/bulk](#post-commentsbulk)
-- [PUT /comments/{id}](#put-commentsid)
-- [DELETE /comments/{id}](#delete-commentsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

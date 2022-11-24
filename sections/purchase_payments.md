@@ -7,17 +7,8 @@ parent: Entities
 
 German: "Ausgaben / Zahlungen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /purchases/payments](#get-purchasespayments)
-- [GET /purchases/payments/{id}](#get-purchasespaymentsid)
-- [POST /purchases/payments](#post-purchasespayments)
-- [POST /purchases/payments/bulk](#post-purchasespaymentsbulk)
-- [PUT purchases/payments/{id}](#put-purchasespaymentsid)
-- [DELETE /purchases/payments/{id}](#delete-purchasespaymentsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

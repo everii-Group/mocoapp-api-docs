@@ -7,7 +7,7 @@ parent: Entities
 
 German: "Zeiteinträge"
 
-- Content
+- TOC
 {:toc}
 
 ## Attributes

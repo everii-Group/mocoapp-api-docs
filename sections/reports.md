@@ -7,11 +7,8 @@ parent: Entities
 
 German: "Berichte"
 
-<!-- TOC -->
-
-- [GET /report/absences](#get-reportabsences)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## GET /report/absences
 

@@ -8,13 +8,8 @@ parent: Entities
 
 German: "Eigene Felder"
 
-<!-- TOC depthfrom:2 -->
-
-- [Attributes](#attributes)
-- [GET /account/custom_properties](#get-accountcustom_properties)
-- [GET /account/custom_properties/{id}](#get-accountcustom_propertiesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

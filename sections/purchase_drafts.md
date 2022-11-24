@@ -7,14 +7,8 @@ parent: Entities
 
 German: "Ausgaben – Entwürfe"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /purchases/drafts](#get-purchasesdrafts)
-- [GET /purchases/drafts/{id}](#get-purchasesdraftsid)
-- [GET /purchases/drafts/{id}.pdf](#get-purchasesdraftsidpdf)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

@@ -7,13 +7,8 @@ parent: Entities
 
 German: "Korrekturen Zeiterfassung"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /users/work_time_adjustments](#get-userswork_time_adjustments)
-- [GET /users/work_time_adjustments/{id}](#get-userswork_time_adjustmentsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

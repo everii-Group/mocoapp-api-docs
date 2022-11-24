@@ -7,17 +7,8 @@ parent: Entities
 
 German: "Ausgaben"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /purchases](#get-purchases)
-- [GET /purchases/{id}](#get-purchasesid)
-- [POST /purchases](#post-purchases)
-- [DELETE /purchases/{id}](#delete-purchasesid)
-- [PATCH /purchases/{id}/update_status](#patch-purchasesidupdate_status)
-- [PATCH /purchases/{id}/store_document](#patch-purchasesidstore_document)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

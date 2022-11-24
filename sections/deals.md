@@ -7,15 +7,8 @@ parent: Entities
 
 German: "Leads"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /deals](#get-deals)
-- [GET /deals/{id}](#get-dealsid)
-- [POST /deals](#post-deals)
-- [PUT /deals/{id}](#put-dealsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

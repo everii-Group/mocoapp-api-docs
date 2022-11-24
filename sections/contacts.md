@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Kontakte / Ansprechpartner"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /contacts/people](#get-contactspeople)
-- [GET /contacts/people/{id}](#get-contactspeopleid)
-- [POST /contacts/people](#post-contactspeople)
-- [PUT /contacts/people/{id}](#put-contactspeopleid)
-- [DELETE /contacts/people/{id}](#delete-contactspeopleid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

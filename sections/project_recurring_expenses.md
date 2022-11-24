@@ -7,17 +7,8 @@ parent: Entities
 
 German: "Projekte / Wiederkehrende Zusatzleistungen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /recurring_expenses](#get-recurring_expenses)
-- [GET /projects/{id}/recurring_expenses](#get-projectsidrecurring_expenses)
-- [GET /projects/{id}/recurring_expenses/{id}](#get-projectsidrecurring_expensesid)
-- [POST /projects/{id}/recurring_expenses](#post-projectsidrecurring_expenses)
-- [PUT /projects/{id}/recurring_expenses/{id}](#put-projectsidrecurring_expensesid)
-- [DELETE /projects/{id}/recurring_expenses/{id}](#delete-projectsidrecurring_expensesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

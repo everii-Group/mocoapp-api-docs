@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Urlaubsanspruch"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /users/holidays](#get-usersholidays)
-- [GET /users/holidays/{id}](#get-usersholidaysid)
-- [POST /users/holidays](#post-usersholidays)
-- [PUT /users/holidays/{id}](#put-usersholidaysid)
-- [DELETE /users/holidays/{id}](#delete-usersholidaysid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

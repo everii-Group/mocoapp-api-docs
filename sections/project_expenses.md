@@ -7,19 +7,8 @@ parent: Entities
 
 German: "Projekte / Zusatzleistungen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /projects/{id}/expenses](#get-projectsidexpenses)
-- [GET /projects/{id}/expenses/{id}](#get-projectsidexpensesid)
-- [POST /projects/{id}/expenses](#post-projectsidexpenses)
-- [POST /projects/{id}/expenses/bulk](#post-projectsidexpensesbulk)
-- [PUT /projects/{id}/expenses/{id}](#put-projectsidexpensesid)
-- [DELETE /projects/{id}/expenses/{id}](#delete-projectsidexpensesid)
-- [POST /projects/{id}/expenses/disregard](#post-projectsidexpensesdisregard)
-- [GET /projects/expenses](#get-projectsexpenses)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

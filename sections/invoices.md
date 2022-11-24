@@ -7,22 +7,8 @@ parent: Entities
 
 German: "Rechnungen"
 
-<!-- TOC depthfrom:2 depthto:2 -->
-
-- [Attributes](#attributes)
-- [GET /invoices](#get-invoices)
-- [GET /invoices/locked](#get-invoiceslocked)
-- [GET /invoices/{id}](#get-invoicesid)
-- [GET /invoices/{id}.pdf](#get-invoicesidpdf)
-- [GET /invoices/{id}/timesheet](#get-invoicesidtimesheet)
-- [GET /invoices/{id}/timesheet.pdf](#get-invoicesidtimesheetpdf)
-- [GET /invoices/{id}/expenses](#get-invoicesidexpenses)
-- [PUT /invoices/{id}/update_status](#put-invoicesidupdate_status)
-- [POST /invoices](#post-invoices)
-- [POST /invoices/{id}/send_email](#post-invoicesidsend_email)
-- [DELETE /invoices/{id}](#delete-invoicesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Akquise-Stufen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /deal_categories](#get-deal_categories)
-- [GET /deal_categories/{id}](#get-deal_categoriesid)
-- [POST /deal_categories](#post-deal_categories)
-- [PUT /deal_categories/{id}](#put-deal_categoriesid)
-- [DELETE /deal_categories/{id}](#delete-deal_categoriesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

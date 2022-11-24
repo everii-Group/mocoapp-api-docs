@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Spesen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /receipts](#get-receipts)
-- [GET /receipts/{id}](#get-receiptsid)
-- [POST /receipts](#post-receipts)
-- [PATCH /receipts/{id}](#patch-receiptsid)
-- [DELETE /receipts/{id}](#delete-receiptsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

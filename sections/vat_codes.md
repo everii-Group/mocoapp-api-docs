@@ -7,12 +7,8 @@ parent: Entities
 
 German: "Steuerschlüssel"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /vat_code_sales](#get-vat_codes)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

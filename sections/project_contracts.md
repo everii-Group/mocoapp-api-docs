@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Projekte / Personal"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /projects/{id}/contracts](#get-projectsidcontracts)
-- [GET /projects/{id}/contracts/{id}](#get-projectsidcontractsid)
-- [POST /projects/{id}/contracts](#post-projectsidcontracts)
-- [PUT /projects/{id}/contracts/{id}](#put-projectsidcontractsid)
-- [DELETE /projects/{id}/contracts/{id}](#delete-projectsidcontractsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

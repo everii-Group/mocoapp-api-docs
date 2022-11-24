@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Firmen"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /companies](#get-companies)
-- [GET /companies/{id}](#get-companiesid)
-- [POST /companies](#post-companies)
-- [PUT /companies/{id}](#put-companiesid)
-- [DELETE /companies/{id}](#delete-companiesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

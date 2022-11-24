@@ -8,12 +8,8 @@ parent: Entities
 
 German: "Interne Stundensätze"
 
-<!-- TOC depthfrom:2 -->
-
-- [GET /account/internal_hourly_rates](#get-accountinternal_hourly_rates)
-- [PATCH /account/internal_hourly_rates](#patch-accountinternal_hourly_rates)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## GET /account/internal_hourly_rates
 

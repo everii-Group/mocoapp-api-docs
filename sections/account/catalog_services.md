@@ -8,20 +8,8 @@ parent: Entities
 
 German: "Leistungskatalog"
 
-<!-- TOC depthfrom:2 -->
-
-- [Attributes](#attributes)
-- [GET /account/catalog_services](#get-accountcatalog_services)
-- [GET /account/catalog_services/{id}](#get-accountcatalog_servicesid)
-- [POST /account/catalog_services](#post-accountcatalog_services)
-- [PUT /account/catalog_services/{id}](#put-accountcatalog_servicesid)
-- [DELETE /account/catalog_services/{id}](#delete-accountcatalog_servicesid)
-- [GET /account/catalog_services/{service_id}/items/{id}](#get-accountcatalog_servicesservice_iditemsid)
-- [POST /account/catalog_services/{service_id}/items](#post-accountcatalog_servicesservice_iditems)
-- [PUT /account/catalog_services/{service_id}/items/{id}](#put-accountcatalog_servicesservice_iditemsid)
-- [DELETE /account/catalog_services/{service_id}/items/{id}](#delete-accountcatalog_servicesservice_iditemsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

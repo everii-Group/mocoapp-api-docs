@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Absenz"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /schedules](#get-schedules)
-- [GET /schedules/{id}](#get-schedulesid)
-- [POST /schedules](#post-schedules)
-- [PUT /schedules/{id}](#put-schedulesid)
-- [DELETE /schedules/{id}](#delete-schedulesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

@@ -7,16 +7,8 @@ parent: Entities
 
 German: "Planung"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /planning_entries](#get-planning_entries)
-- [GET /planning_entry/{id}](#get-planning_entryid)
-- [POST /planning_entry](#post-planning_entry)
-- [PUT /planning_entries/{id}](#put-planning_entriesid)
-- [DELETE /planning_entries/{id}](#delete-planning_entriesid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 

@@ -8,11 +8,8 @@ parent: Entities
 
 German: "Stundensätze"
 
-<!-- TOC depthfrom:2 -->
-
-- [GET /account/hourly_rates](#get-accounthourly_rates)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## GET /account/hourly_rates
 

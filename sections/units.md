@@ -7,13 +7,8 @@ parent: Entities
 
 German: "Teams"
 
-<!-- TOC -->
-
-- [Attributes](#attributes)
-- [GET /units](#get-units)
-- [GET /units/{id}](#get-unitsid)
-
-<!-- /TOC -->
+- TOC
+{:toc}
 
 ## Attributes
 
