@@ -24,46 +24,7 @@ This is the official API documentation for mocoapp.com (👉 [we are hiring](htt
 
 ## Entities
 
-All the entities exposed via the API can be found in their respective sections.
-
-- [Account / Catalog Services](sections/account/catalog_services.md)
-- [Account / Custom Properties](sections/account/custom_properties.md)
-- [Account / Fixed Costs](sections/account/fixed_costs.md)
-- [Account / Hourly Rates](sections/account/hourly_rates.md)
-- [Account / Internal Hourly Rates](sections/account/internal_hourly_rates.md)
-- [Activities](sections/activities.md)
-- [Comments](sections/comments.md)
-- [Companies](sections/companies.md)
-- [Contacts](sections/contacts.md)
-- [Deal Categories](sections/deal_categories.md)
-- [Deals / Leads](sections/deals.md)
-- [Invoice Payments](sections/invoice_payments.md)
-- [Invoice Reminders](sections/invoice_reminders.md)
-- [Invoices](sections/invoices.md)
-- [Offers](sections/offers.md)
-- [Planning Entry (New Planning)](sections/planning_entries.md)
-- [Project Contracts](sections/project_contracts.md)
-- [Project Expenses](sections/project_expenses.md)
-- [Project Payment Schedules](sections/project_payment_schedules.md)
-- [Project Recurring Expenses](sections/project_recurring_expenses.md)
-- [Project Tasks](sections/project_tasks.md)
-- [Projects](sections/projects.md)
-- [Purchase Categories](sections/purchase_categories.md)
-- [Purchase Drafts](sections/purchase_drafts.md)
-- [Purchase Payments](sections/purchase_payments.md)
-- [Purchases](sections/purchases.md)
-- [Receipts](sections/receipts.md)
-- [Schedules (Absences)](sections/schedules.md)
-- [Tags / Labels](sections/tags.md)
-- [Units / Teams](sections/units.md)
-- [User Employments](sections/employments.md)
-- [User Holidays](sections/holidays.md)
-- [User Presences](sections/presences.md)
-- [User Work Time Adjustments](sections/work_time_adjustments.md)
-- [Users](sections/users.md)
-- [Vat Codes](sections/vat_codes.md)
-- [WebHooks](sections/web_hooks.md)
-- [Reports](sections/reports.md)
+All the entities exposed via the API can be found in their [respective sections](entities.md)
 
 ## Client Implementations / API Wrappers
 
@@ -114,53 +75,4 @@ Example:
 
 - `https://{domain}.mocoapp.com/api/v1/offers?sort_by=title desc`
 
-## Custom Fields
 
-MOCO supports adding custom fields to many of its resources. These custom fields are readable and writable via the `custom_properties` field.
-
-```json
-"custom_properties": {
-    "UID": "123-UID-456",
-    "Line of business": "Automotive"
-},
-```
-
-Parameters are sent with their name as key:
-
-```bash
-curl -X POST \
-  https://{domain}.mocoapp.com/api/v1/customers \
-  -H 'Authorization: Token token=YOUR_API_KEY' \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "name": "Beispiel AG",
-    "currency": "CHF",
-    "custom_properties": {
-      "Line of business": "Automotive"
-    }
-  }'
-```
-
-All values are encoded as strings, expect for Multiple Choice, which is encoded as an array.
-
-```bash
-curl -X POST \
-  https://{domain}.mocoapp.com/api/v1/customers \
-  -H 'Authorization: Token token=YOUR_API_KEY' \
-  -H 'Content-Type: application/json' \
-  -d '{
-        "custom_properties": {
-          "Line of business": ["Automotive", "Banking"]
-        }
-      }'
-```
-
-- Single-line input – "Automotive"
-- Mehrzeilige Eingabe – "A multiline input..."
-- Link – "https://www..."
-- Date – "2021-12-31"
-- Yes/No – "0", "1" (0 = No, 1 = Yes)
-- Single choice – "Value"
-- Multiple choice – ["Value 1", "Value 2"]
-
-⚡ **WARNING** ⚡: If you use custom fields, all of them have to be provided. If not, any that are not transmitted will be removed.
