@@ -21,9 +21,6 @@ This is the official API documentation for mocoapp.com (👉 [we are hiring](htt
 - [Errors and HTTP status codes](#errors-and-http-status-codes)
 - [Sorting](#sorting)
 - [Custom Fields](#custom-fields)
-- [WebHooks](#webhooks)
-  - [Calculating the signature](#calculating-the-signature)
-  - [Notes](#notes)
 
 <!-- /TOC -->
 
