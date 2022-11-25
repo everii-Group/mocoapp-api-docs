@@ -15,7 +15,7 @@ German: "Leistungskatalog"
 
 Item attributes:
 
-- **type** `title` | `description` | `item` | `page-break` | `subtotal` | `separator` - position type
+- **type** `title` / `description` / `item` / `page-break` / `subtotal` / `separator` - position type
 - **description** (`description` type only)
 - **quantity** can be 0 for all-inclusive item (detailed `item` type only)
 - **unit** only used for detailed `item` type, could be e.g. "hours" or "pieces", (detailed `item` type only)

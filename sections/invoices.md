@@ -450,7 +450,7 @@ Mandatory fields are marked with a star (\*):
 - **tax\*** – 8.0
 - **currency\*** – "CHF" (a valid currency of the account)
 - **items\*** – positions (see [attributes](#attributes))
-- **status** – `created`|`draft` , default is `created`, specify `draft` in order to create a draft invoice
+- **status** – `created` / `draft` , default is `created`, specify `draft` in order to create a draft invoice
 - **change_address** – address propagation ("invoice", "project", "customer"), default is "invoice"
 - **salutation** (salutation text)
 - **footer** (footer text)

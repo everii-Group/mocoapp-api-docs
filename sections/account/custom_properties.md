@@ -14,7 +14,7 @@ German: "Eigene Felder"
 ## Attributes
 
 - **entity** – any kind of entity that a custom property can be added to
-- **kind** – String | Textarea | Link | Boolean | Select | MultiSelect | Date
+- **kind** – `String` / `Textarea` / `Link` / `Boolean` / `Select` / `MultiSelect` / `Date`
 - **defaults** – for selections: the options that can be selected, empty strings are also valid.
 - **placeholder** – the placeholder text displayed on MOCO for input fields
 - **notification_enabled** – for kind `Date` a notification is sent to a user (dependent on the entity).
