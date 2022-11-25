@@ -206,6 +206,7 @@ curl -X POST \
         "tax": 8.0,
         "discount": 0.0,
         "footer": "Bye",
+        "internal_contact_id": 1234,
         "items":[
             {"type":"title","title":"Stunden"},
             {"type":"description","description":"Aufstellung über geleistete Arbeiten"},
@@ -229,7 +230,8 @@ Mandatory fields are marked with a star (\*):
 - **salutation** (salutation text)
 - **footer** (footer text)
 - **discount** – 10 (discount in percent)
-- **contact_id** – 123456 (ID of the associated contact)
+- **contact_id** – 123456 (ID of the associated contact at customer)
+- **internal_contact_id** - 1234 (ID of an internal user)
 - **tags** – ["Retail"]
 - **custom_properties** – {"ext-ref": "3421"}
 
