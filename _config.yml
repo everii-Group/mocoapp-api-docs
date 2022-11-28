@@ -14,6 +14,14 @@ heading_anchors: true
 kramdown:
   toc_levels: "2,3"
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: yellow
+
 plugins:
   - jekyll-default-layout
 

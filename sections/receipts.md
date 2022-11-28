@@ -133,6 +133,7 @@ Mandatory fields are marked with a star (\*):
 - **items\*** – list of positions. At least one position must be present and every position has the following fields:
   - **vat_code_id\*** – 186 (Vat Code ID)
   - **gross_total\*** – 99.90
+  - **purchase_category_id** – 123 (Purchase Category ID, currently has to be **the same** for all items)
 - **project_id** – 123 (Project ID)
 - **info** – free text
 - **billable** – true/false
@@ -168,11 +169,13 @@ curl -X POST \
 
 Fields are similar to the create action.
 
-⚠ If provided, the field `items` will overwrite any existing items and has therefore to be provided entirely.
+{: .warning }
+If provided, the field `items` will overwrite any existing items and has therefore to be provided entirely.
 
 ## DELETE /receipts/{id}
 
-⚠ Deletes a receipt. It's possible only until no _refund_request_ has been created (receipt has not been requested for refund).
+{: .note }
+It's only possible to delete a receipt until no _refund_request_ has been created (receipt has not been requested for refund).
 
 ```bash
 curl -X DELETE \
