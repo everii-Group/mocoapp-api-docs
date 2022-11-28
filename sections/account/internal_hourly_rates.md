@@ -25,6 +25,7 @@ The following parameters can be supplied:
 
 - **years** – 2021 or 2020,2021 (single year or multiple years comma-separated)
 - **unit_id** – 1234
+- **include_archived** - include deactivated users
 
 returns:
 
