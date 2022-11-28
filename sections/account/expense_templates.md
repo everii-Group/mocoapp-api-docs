@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Account / Expense Templates
-parent: Entities
+title: Expense Templates
+parent: Account
+grand_parent: Entities
 ---
 
 # Expense Templates
