@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Account / Internal Hourly Rates
-parent: Entities
+title: Internal Hourly Rates
+parent: Account
+grand_parent: Entities
 ---
 
 # Internal Hourly Rates

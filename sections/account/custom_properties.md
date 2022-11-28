@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Account / Custom Properties
-parent: Entities
+title: Custom Properties
+parent: Account
+grand_parent: Entities
 ---
 
 # Custom Properties

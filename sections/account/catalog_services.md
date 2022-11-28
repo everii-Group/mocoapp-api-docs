@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Account / Catalog Services
-parent: Entities
+title: Catalog Services
+parent: Account
+grand_parent: Entities
 ---
 
 # Catalog Services

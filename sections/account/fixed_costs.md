@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Account / Fixed Costs
-parent: Entities
+title: Fixed Costs
+parent: Account
+grand_parent: Entities
 ---
 
-# Fixed costs (Account)
+# Fixed Costs
 
 German: "Fixkosten"
 
