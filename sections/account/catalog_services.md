@@ -146,10 +146,6 @@ Delete a catalog service:
 curl -X DELETE \
   'https://{domain}.mocoapp.com/api/v1/account/catalog_services/{id}' \
   -H 'Authorization: Token token=YOUR_API_KEY'
-  -H 'Content-Type: application/json' \
-  -d '{
-        "title": "Catalog entry"
-      }'
 ```
 
 ## GET /account/catalog_services/{service_id}/items/{id}
