@@ -92,7 +92,8 @@ Fields are analogous to the POST request (except `user_id`).
 
 ## DELETE /projects/{id}/contracts/{id}
 
-⚠ Deleting a staff assignment on a project is only possible as long as no hours are tracked from this person.
+{: .note }
+Deleting a staff assignment on a project is only possible as long as no hours are tracked from this person.
 
 ```bash
 curl -X DELETE \

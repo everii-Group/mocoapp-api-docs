@@ -90,7 +90,8 @@ Fields are analogous to the POST request.
 
 ## DELETE /projects/{id}/tasks/{id}
 
-⚠ Deleting a task on a project is only possible as long as no hours were tracked on this task.
+{: .note }
+Deleting a task on a project is only possible as long as no hours were tracked on this task.
 
 ```bash
 curl -X DELETE \
@@ -100,7 +101,8 @@ curl -X DELETE \
 
 ## DELETE /projects/{id}/tasks/destroy_all
 
-⚠ Not deletable tasks on a project will be skipped.
+{: .warning }
+Not deletable tasks on a project will be skipped.
 
 ```bash
 curl -X DELETE \

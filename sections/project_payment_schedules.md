@@ -119,7 +119,7 @@ Fields are analogous to the POST request.
 
 ## DELETE /projects/{project_id}/payment_schedules/{id}
 
-⚠ Delete the payment schedule.
+Delete the payment schedule.
 
 ```bash
 curl -X DELETE \

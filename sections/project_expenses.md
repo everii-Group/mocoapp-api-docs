@@ -239,4 +239,5 @@ Additionally, these parameters can be supplied:
 - **budget_relevant** – true/false
 - **tags** – "tag one,tag two" (comma-separated project tags)
 
-⚠️ Parameters `from` and `to` only work when provided together.
+{: .note }
+Parameters `from` and `to` only work when provided together.

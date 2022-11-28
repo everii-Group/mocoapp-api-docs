@@ -155,7 +155,8 @@ curl -X PATCH \
   -H 'Content-Type: application/json' \
 ```
 
-⚠️ The timer is only available for activities on the current day. If timer cannot be started a 422 will be returned.
+{: .note }
+The timer is only available for activities on the current day. If timer cannot be started a 422 will be returned.
 
 ## PATCH /activities/{id}/stop_timer
 
@@ -178,7 +179,8 @@ curl -X DELETE \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
-⚠️ Deleting an activity is only possible if this activity has not yet been billed or locked.
+{: .note }
+Deleting an activity is only possible if this activity has not yet been billed or locked.
 
 ## POST /activities/disregard
 

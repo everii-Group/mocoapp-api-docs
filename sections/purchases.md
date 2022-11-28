@@ -173,7 +173,8 @@ Mandatory fields are marked with a star (\*):
 
 ## DELETE /purchases/{id}
 
-⚠ Deletes a purchase. It's possible only if the status is _pending_ and no payments have been registered.
+{: .note }
+Deletes a purchase. It's possible only if the status is _pending_ and no payments have been registered.
 
 ```bash
 curl -X DELETE \

@@ -238,7 +238,8 @@ Mandatory fields are marked with a star (\*):
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
 
-⚠ If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start date has to be on the first and the finish date on the last of a month!
+{: .note }
+If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start date has to be on the first and the finish date on the last of a month!
 
 ## PUT /projects/{id}
 
@@ -258,7 +259,8 @@ Fields are analogous to the POST request, except for `currency` which cannot be 
 
 ## DELETE /projects/{id}
 
-⚠ Deletes a project. It's possible only if there are no activities, invoices, offers or expenses.
+{: .note }
+Deletes a project. It's possible only if there are no activities, invoices, offers or expenses.
 
 ```bash
 curl -X DELETE \
@@ -335,4 +337,5 @@ This returns the most important project business indicators:
 }
 ```
 
-⚠ All costs are in the account's main currency, it might differ from the budget and billable items!
+{: .note }
+All costs are in the account's main currency, it might differ from the budget and billable items!

@@ -98,10 +98,11 @@ curl -X POST \
 
 A first request at 9:30 AM creates a presence with `from="09:30"`, a second request at 11:30 AM sets `to="11:30"` of the previous presence.
 
-⚠ There are two special situations to take into consideration:
-
-1. If a presence is started and stopped by `touch` within the same minute, then it is discarded.
-2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
+{: .note }
+> There are two special situations to take into consideration:
+> 
+> 1. If a presence is started and stopped by `touch` within the same minute, then it is discarded.
+> 2. If a `touch` conflicts with an existing presence, then the request is refused and the server response code
    is `423 Locked`.
 
 ```bash

@@ -123,7 +123,8 @@ Fields are analogous to the POST request. A related [employment](employments.md)
 
 ## DELETE /users/{id}
 
-⚠ Deleting a staff member is only possible if no hours are billed already.
+{: .note }
+Deleting a staff member is only possible if no hours are billed already.
 
 ```bash
 curl -X DELETE \
