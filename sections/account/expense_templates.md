@@ -38,7 +38,7 @@ Item attributes:
 
 ## GET /account/expense_templates
 
-Retrieve catalog services:
+Retrieve expense templates:
 
 ```bash
 curl -X GET \
