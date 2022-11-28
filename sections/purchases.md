@@ -160,6 +160,7 @@ Mandatory fields are marked with a star (\*):
 - **status** - "pending" or "approved"
 - **due_date** – "2020-02-18"
 - **company_id** – 211 (reference to the supplier)
+- **user_id** – 123 (reference to the responsible user)
 - **receipt_identifier** – 123
 - **info** – free text
 - **iban** – CH123
