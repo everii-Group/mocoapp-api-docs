@@ -5,6 +5,7 @@ remote_theme: just-the-docs/just-the-docs
 
 url: https://hundertzehn.github.io
 baseurl: /mocoapp-api-docs
+logo: "https://www.mocoapp.com/custom-assets/logo_moco.svg"
 
 color_scheme: moco
 

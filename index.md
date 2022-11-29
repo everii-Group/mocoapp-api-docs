@@ -4,9 +4,9 @@ title: Moco API Documentation
 nav_exclude: true
 ---
 
-# Moco API Documentation
+# MOCO API Documentation
 
-This is the official API documentation for mocoapp.com (👉 [we are hiring](https://www.mocoapp.com/unternehmen/jobs)).
+This is the official API documentation for [mocoapp.com](https://www.mocoapp.com) (👉 [we are hiring](https://www.mocoapp.com/unternehmen/jobs)).
 
 * TOC
 {:toc}
