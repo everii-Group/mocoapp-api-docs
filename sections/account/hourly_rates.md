@@ -25,6 +25,7 @@ curl -X GET \
 The following parameters can be supplied:
 
 - **company_id** – 123456 (if overwritten: customer hourly rates, if not: global hourly rates)
+- **include_archived_users** – true (also show deactivated users, default is false)
 
 returns:
 
