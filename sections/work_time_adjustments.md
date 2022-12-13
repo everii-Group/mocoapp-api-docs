@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: Entities
+parent: Users
+grand_parent: Entities
 ---
 
 # User Work Time Adjustments

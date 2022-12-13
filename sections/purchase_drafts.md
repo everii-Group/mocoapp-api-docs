@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: Entities
+parent: Purchases
+grand_parent: Entities
 ---
 
 # Purchase Drafts

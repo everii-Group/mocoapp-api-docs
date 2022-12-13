@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: Entities
+parent: Deals / Leads
+grand_parent: Entities
 ---
 
 # Deal Categories

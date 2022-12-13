@@ -1,9 +1,10 @@
 ---
 layout: default
-parent: Entities
+parent: Invoices
+grand_parent: Entities
 ---
 
-# Invoice Reminders BETA
+# Invoice Reminders
 
 German: "Mahnung / Zahlungserinnerung"
 

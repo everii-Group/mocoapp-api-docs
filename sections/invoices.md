@@ -1,6 +1,7 @@
 ---
 layout: default
 parent: Entities
+has_children: true
 ---
 
 # Invoices

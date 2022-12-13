@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: Entities
+parent: Projects
+grand_parent: Entities
 ---
 
 # Project Contracts

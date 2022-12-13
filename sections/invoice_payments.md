@@ -1,6 +1,7 @@
 ---
 layout: default
-parent: Entities
+parent: Invoices
+grand_parent: Entities
 ---
 
 # Invoice Payments
