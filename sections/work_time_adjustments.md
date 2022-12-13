@@ -66,3 +66,51 @@ curl -X GET \
   'https://{domain}.mocoapp.com/api/v1/users/work_time_adjustments/{id}' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
+
+## POST /users/work_time_adjustments
+
+Create a work time adjustment:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/users/work_time_adjustments' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+  -H 'Content-Type: application/json' \
+  -d '{
+        "user_id": 123,
+        "description": "Overtime 2021",
+        "date": "2022-01-01",
+        "hours": 42.0
+      }'
+```
+
+Mandatory fields are marked with a star (\*):
+
+- **user_id\*** – 123 (user ID)
+- **description\*** – a short explanation
+- **date\*** - 2022-01-01
+- **hours\*** - 42.0 (the amount of hours that should be added or subtracted)
+
+## PUT /users/work_time_adjustments/{id}
+
+Update a work time adjustment:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/users/work_time_adjustments/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+  -H 'Content-Type: application/json' \
+  -d '{
+        "description": "A new description"
+      }'
+```
+
+## DELETE /users/work_time_adjustments/{id}
+
+Delete a work time adjustment:
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/users/work_time_adjustments/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
