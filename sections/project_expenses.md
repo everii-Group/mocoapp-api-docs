@@ -121,6 +121,7 @@ Mandatory fields are marked with a star (\*):
 - **budget_relevant** – true/false (default: false)
 - **service_period_from** – "2021-01-01"
 - **service_period_to** – "2021-01-31"
+- **purchase_item_id** - 123 (A purchase item ID this expense should be linked to)
 - **custom_properties** – {"Type": "Website"}
 - **file** – file attached to the expense, with the following fields:
   - filename – "document.pdf"
