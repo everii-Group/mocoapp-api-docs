@@ -29,6 +29,7 @@ Attributes `remote_service`, `remote_id` und `remote_url` are set by the MOCO Br
   "seconds": 4500,
   "description": "Analysis context and dependencies",
   "billed": false,
+  "invoice_id": null,
   "billable": false,
   "tag": "",
   "remote_service": "trello",
