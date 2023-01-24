@@ -35,6 +35,7 @@ The representation contains, among the standard fields, also the following field
   "budget_relevant": true,
   "billable": true,
   "billed": false,
+  "invoice_id": null,
   "service_period": "10/2020",
   "service_period_from": "2020-10-01",
   "service_period_to": "2020-10-31",
