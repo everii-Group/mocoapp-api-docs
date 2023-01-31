@@ -20,6 +20,7 @@ The invoice representation contains among standard fields also:
 - position types (`title`, `description`, `item`, `subtotal`, `page-break` or `separator`)
 - payments
 - reminders
+- user
 - `vat` (`tax`, `reverse_charge`, `intra_eu` (intra community trade, only applicable for accounts in the EU))
 - `activity_hours_modified` (shows whether any positions have been modified and do correspond to the timesheet)
 
@@ -59,6 +60,12 @@ The invoice representation contains among standard fields also:
     "ext-ref": "3421"
   },
   "tags": ["Postversand"],
+  "file_url": "https://data.mocoapp.com/objects...", ⚠️ this link is only available for short time and changes afterwards
+  "user": {
+    "id": 1234,
+    "firstname": "Jane",
+    "lastname": "Doe"
+  },
   "items": [
     {
       "id": 387469,
