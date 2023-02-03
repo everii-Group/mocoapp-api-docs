@@ -340,3 +340,45 @@ This returns the most important project business indicators:
 
 {: .note }
 All costs are in the account's main currency, it might differ from the budget and billable items!
+
+## PUT /projects/{id}/share
+
+Activate project report sharing:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/projects/{id}/share' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
+```
+
+This returns the the following attributes:
+
+```json
+{
+  "id": 123,
+  "active": true,
+  "url": "https://..."
+}
+```
+
+## PUT /projects/{id}/disable_share
+
+Deactive project report sharing:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/projects/{id}/disable_share' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
+```
+
+This returns the the following attributes:
+
+```json
+{
+  "id": 123,
+  "active": false,
+  "url": null
+}
+```
