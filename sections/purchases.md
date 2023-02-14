@@ -20,7 +20,8 @@ Includes among the standard fields for purchases also:
 - Payments (list of payments made for the purchase)
 - User
 - Items
-- items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
+- Items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
+- Items.expense (the associated project expense or `null`)
 
 ```json
 {
@@ -69,7 +70,14 @@ Includes among the standard fields for purchases also:
         "name": "Spesen und Reisekosten",
         "credit_account": "6640"
       },
-      "supplier_credit_number": 70001
+      "supplier_credit_number": 70001,
+      "expense": {
+        "id": 7655423,
+        "project": {
+          "id": 23345545,
+          "company_id": 54345
+        }
+      }
     }
   ],
   "created_at": "2018-10-17T09:33:46Z",
