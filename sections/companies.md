@@ -48,8 +48,14 @@ The company representation contains among default fields the following features:
   "customer_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true }, // for customers only
   "supplier_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true }, // for suppliers only
   "currency": "CHF",
+  "custom_rates": false,
+  "include_time_report": false,
+  "billing_notes": "Vor Rechnungsstellung PO beantragen.",
+  "default_discount": 0.0,
+  "default_cash_discount": 2.0,
+  "default_cash_discount_days": 10,
   "country_code": "CH",
-  "vat_identifier": "DE999999999",
+  "vat_identifier": "CH999999999",
   "english_correspondence_language": false,
   "default_invoice_due_days": 30,
   "footer": "<div>Footer text</div>",
