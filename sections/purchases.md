@@ -97,7 +97,7 @@ curl -X GET \
 
 It's also possible to filter:
 
-- **id** – identifier of the purchase,
+- [Global filters apply](../entities#global-filters)
 - **category_id** – identifier of the purchases' category,
 - **term** – full text search on purchase positions,
 - **company_id** – identifier of the supplier, pass _0_ to get the purchases not associated to a supplier,

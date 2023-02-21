@@ -22,6 +22,7 @@ curl -X GET \
 
 It's also possible to filter:
 
+- [Global filters apply](../entities#global-filters)
 - **active** - true/false (include only absences for active users, defaults to false)
 - **year** - 2021 (defaults to current year)
 

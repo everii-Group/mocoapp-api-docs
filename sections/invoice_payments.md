@@ -45,8 +45,7 @@ curl -X GET \
 
 Additionally, these parameters can be used to filter the results set:
 
-- **ids** – e.g. `123,456` (IDS, comma-separated)
-- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
+- [Global filters apply](../entities#global-filters)
 - **invoice_id** – 123
 - **date_from** – "2018-01-01"
 - **date_to** – "2018-01-31"

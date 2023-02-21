@@ -56,6 +56,7 @@ This returns an array of all holidays.
 
 The following parameters can be supplied:
 
+- [Global filters apply](../entities#global-filters)
 - **year** – 2018
 - **user_id** – 123
 

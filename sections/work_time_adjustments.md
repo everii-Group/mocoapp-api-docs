@@ -53,6 +53,7 @@ This returns an array of all work time adjustments.
 
 The following parameters can be supplied:
 
+- [Global filters apply](../entities#global-filters)
 - **from** – "2022-01-01"
 - **to** – "2022-01-31"
 - **user_id** – 123
