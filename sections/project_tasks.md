@@ -38,10 +38,6 @@ curl -X GET \
 
 This returns an array with complete task information (see Attributes).
 
-The following parameters can be supplied:
-
-- [Global filters apply](../entities#global-filters)
-
 ## GET /projects/{id}/tasks/{id}
 
 Retrieve a single task on a project:
