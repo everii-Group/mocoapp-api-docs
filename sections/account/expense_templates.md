@@ -51,7 +51,7 @@ returns an array of expense templates.
 
 The following parameters can be supplied:
 
-- [Global filters apply](../entities#global-filters)
+- [Global filters apply](../../entities#global-filters)
 
 ## GET /account/expense_templates/{id}
 

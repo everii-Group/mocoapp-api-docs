@@ -51,7 +51,7 @@ curl -X GET \
 
 The following parameters can be supplied:
 
-- [Global filters apply](../entities#global-filters)
+- [Global filters apply](../../entities#global-filters)
 - **entity** – e.g. `Project` (any kind of entity that a custom property can be added to)
 
 returns an array of custom properties.
