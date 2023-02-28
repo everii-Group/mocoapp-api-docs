@@ -54,6 +54,7 @@ This returns an array with complete staff information (see Attributes).
 
 The following parameters can be supplied:
 
+- [Global filters apply](../entities#global-filters)
 - **include_archived** – true/false (deactivated users)
 
 ## GET /users/{id}

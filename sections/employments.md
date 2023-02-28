@@ -51,6 +51,7 @@ This returns an array of all employments.
 
 The following parameters can be supplied:
 
+- [Global filters apply](../entities#global-filters)
 - **from, to** – "2018-01-01", "2018-12-31" (`from` has to be provided, `to` can be left blank for all open ended employments)
 - **user_id** – 123
 

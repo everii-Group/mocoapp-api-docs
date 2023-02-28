@@ -82,6 +82,10 @@ curl -X GET \
 
 returns an array of catalog services including their items.
 
+Additionally, the following parameters can be supplied:
+
+- [Global filters apply](../../entities#global-filters)
+
 ## GET /account/catalog_services/{id}
 
 Retrieve catalog services:

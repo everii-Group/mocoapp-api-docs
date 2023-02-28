@@ -86,8 +86,7 @@ curl -X GET \
 
 It's also possible to filter:
 
-- **ids** – e.g. `123,456` (IDS, comma-separated)
-- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
+- [Global filters apply](../entities#global-filters)
 - **type** ("customer", "supplier", "organization")
 - **tags** "Automotive, Pharma" (comma separated list)
 - **identifier** "K0405"

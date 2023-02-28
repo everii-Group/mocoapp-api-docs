@@ -36,7 +36,7 @@ This returns an array with sale vat codes (see Attributes).
 
 The following parameters can be supplied to filter sale vat codes:
 
-- **ids** – e.g. `123,456` (IDS, comma-separated)
+- [Global filters apply](../entities#global-filters)
 - **reverse_charge** – true/false (Umkehr Steuerschuldnerschaft)
 - **intra_eu** – true/false (Innergemeinschaftliche Leistung)
 - **active** – true/false

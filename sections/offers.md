@@ -157,8 +157,7 @@ curl -X GET \
 
 Additionally, these parameters can be supplied:
 
-- **ids** – e.g. `123,456` (IDS, comma-separated)
-- **updated_after** - e.g. `2022-09-01T14:00:00Z` ISO8601 timestamp, only records that have been updated/created after
+- [Global filters apply](../entities#global-filters)
 - **status** – ("created", "sent", "accepted", "partially_billed", "billed", "archived")
 - **from** – "2018-01-01"
 - **to** – "2018-01-31"

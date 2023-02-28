@@ -1,5 +1,7 @@
 # WebHooks
 
+Check the [MOCO docs](https://www.mocoapp.com/integrationen/35-moco-webhooks) on how to set them up via the web UI. It's also possible to manage them via [API](sections/web_hooks).
+
 Using WebHooks, integrating any system in real time becomes possible. Events in MOCO can be assigned subscriptions.
 Whenever an event triggers, MOCO sends an HTTPS `POST` payload to the WebHook's configured URL with an HMAC SHA265 signature.
 This way, MOCOs integrity as a legitimate sender of this information can be verified. Additional headers provide context

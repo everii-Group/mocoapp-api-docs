@@ -49,7 +49,7 @@ This returns complete comment information (see Attributes).
 
 Additionally, the following parameters can be supplied:
 
-- **ids** – e.g. `123,456` (IDS, comma-separated)
+- [Global filters apply](../entities#global-filters)
 - **commentable_type** – "Company", "Contact", "Deal", "DeiveryNote", "Expense", "Invoice", "InvoiceBookkeepingExport", "InvoiceDeletion", "InvoiceReminder", "Offer", "OfferConfirmation", "Project", "ProjectGroup", "Purchase", "PurchaseBookkeepingExport", "PurchaseDraft", "Receipt", "ReceiptRefundRequest", "RecurringExpense", "Unit", "User", "UserHolidayRequest" (object this comment relates to)
 - **commentable_id** – 123 (object ID)
 - **user_id** – 456 (creator user ID)

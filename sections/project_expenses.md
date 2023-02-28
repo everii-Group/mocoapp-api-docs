@@ -72,6 +72,7 @@ This returns an array with all additional services (see Attributes).
 
 Additionally, these parameters can be supplied:
 
+- [Global filters apply](../entities#global-filters)
 - **billable** – true/false
 - **billed** – true/false
 - **budget_relevant** – true/false
