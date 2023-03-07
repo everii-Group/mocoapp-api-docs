@@ -26,6 +26,7 @@ German: "Personal"
   "home_address": "",
   "info": "",
   "birthday": "1970-01-01",
+  "iban": "CH3181239000001245689",
   "avatar_url": "https//meinefirma.mocoapp.com/.../profil.jpg",
   "tags": ["Deutschland"],
   "custom_properties": {
@@ -101,6 +102,7 @@ Mandatory fields are marked with a star (\*):
 - **work_phone** – "+41 44 123 45 67"
 - **home_address** – "Peter Müller\nBeispielstrasse 123\nBeispielstadt"
 - **bday** – "1975-01-17"
+- **iban** - "CH3181239000001245689"
 - **work_phone** – "+41 44 123 45 67"
 - **tags** – ["Switzerland"]
 - **custom_properties** – {"Starting Month": "01.01.2016"}
