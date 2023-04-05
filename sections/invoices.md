@@ -193,6 +193,7 @@ Additionally, these parameters can be supplied:
 
 - [Global filters apply](../entities#global-filters)
 - **status** – ("draft", "created", "sent", "partially_paid", "paid", "overdue", "ignored")
+- **include_disregarded** true/false (if "marked as billed" should also be retrieved, default: false)
 - **date_from** – "2018-01-01"
 - **date_to** – "2018-01-31"
 - **service_period_from** – "2018-01-01"
@@ -204,6 +205,8 @@ Additionally, these parameters can be supplied:
 - **project_id** - 5678
 
 The response returns an array with all the invoice information (see attributes), except `salutation`, `footer`, `items`, `payments` and `reminders`.
+
+⚠️ For the status "disregarded," which is not included by default, the response has far fewer fields.
 
 ## GET /invoices/locked
 
