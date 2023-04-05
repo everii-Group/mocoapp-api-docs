@@ -51,8 +51,6 @@ The representation contains, among the standard fields, also the following field
     "id": 1234,
     "name": "Project A"
   },
-  "purchase_id": 123456,
-  "purchase_item_id": 234567,
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
@@ -123,7 +121,6 @@ Mandatory fields are marked with a star (\*):
 - **budget_relevant** – true/false (default: false)
 - **service_period_from** – "2021-01-01"
 - **service_period_to** – "2021-01-31"
-- **purchase_item_id** - 123 (A purchase item ID this expense should be linked to)
 - **user_id** - 456 (user responsible, current user by default)
 - **custom_properties** – {"Type": "Website"}
 - **file** – file attached to the expense, with the following fields:
