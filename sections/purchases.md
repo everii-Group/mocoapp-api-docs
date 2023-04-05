@@ -180,16 +180,40 @@ Mandatory fields are marked with a star (\*):
   - base64 – base64 encoded content of the file
 - **tags** – ["Label1", "Label2"]
 
-## DELETE /purchases/{id}
+## POST /purchases/{id}/assign_to_project
 
-{: .note }
-Deletes a purchase. It's possible only if the status is _pending_ and no payments have been registered.
+Assign a purchase item to a project by creating or linking to an expense in the project.
+The assignment has to be done per line item explicitly.
 
 ```bash
-curl -X DELETE \
-  'https://{domain}.mocoapp.com/api/v1/purchases/{id}' \
-  -H 'Authorization: Token token=YOUR_API_KEY'
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}/assign_to_project' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '
+    {
+      "item_id": 311936153,
+      "project_id": 23345545,
+      "expense_id": 7655423,
+      "notify_project_leader": true,
+      "billable": true,
+      "budget_relevant": true,
+      "surcharge": true
+    }'
 ```
+
+Mandatory fields are marked with a star (*):
+
+- **item_id*** – 311936153 (reference to the purchase item)
+- **project_id*** – 23345545 (reference to the project)
+- expense_id – 7655423 (reference to the project expense, if empty, a new one is created)
+- notify_project_leader – true (send a notification to the project if an expense is created)
+- surcharge – true/false (if provided in account settings, the surcharge will be applied)
+
+The following fields will override account settings only if provided:
+
+- billable – true (if the expense is billable)
+- budget_relevant – true (if the expense is budget relevant)
 
 ## PATCH /purchases/{id}/update_status
 
@@ -221,3 +245,14 @@ curl -X PATCH \
 ```
 
 - **file\*** – path to the document to store
+
+## DELETE /purchases/{id}
+
+{: .note }
+Deletes a purchase. It's possible only if the status is _pending_ and no payments have been registered.
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
