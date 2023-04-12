@@ -21,6 +21,7 @@ The project representation contains, among the standard fields, also:
 - deal (optional)
 - tasks (services)
 - contracts (assigned staff)
+- project group
 
 The attributes `hourly_rate` and `billing_variant` are linked. By choosing the billing variant "project", the hourly rate is just that. If choosing "task" (depending on the service) or "user" (depending on the staff), hourly rate becomes the mean value of hourly rates. Thus, `hourly_rate` on a `task` or `contract` only become relevant if the `billing_variant` is set accordingly.
 
@@ -106,6 +107,10 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
       "hourly_rate": 0
     }
   ],
+  project_group: {
+    id: 456687,
+    name: "Webpages"
+  },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
@@ -134,9 +139,10 @@ The following parameters can be supplied:
 - **created_to** – "2018-12-31"
 - **updated_from** – "2018-01-01"
 - **updated_to** – "2018-12-31"
-- **tags** "Important, Strategic" (comma separated list)
-- **identifier** "P1903-003"
-- **retainer** true/false
+- **tags** – "Important, Strategic" (comma separated list)
+- **identifier** – "P1903-003"
+- **retainer** – true/false
+- **project_group_id** – e.g. `4566687`
 
 ## GET /projects/assigned
 
