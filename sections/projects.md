@@ -107,9 +107,9 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
       "hourly_rate": 0
     }
   ],
-  project_group: {
-    id: 456687,
-    name: "Webpages"
+  "project_group": {
+    "id": 456687,
+    "name": "Webpages"
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
