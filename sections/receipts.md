@@ -82,6 +82,7 @@ It's also possible to filter:
 - **project_id** – 567 (Project ID)
 - **user_id** – 933 (User ID)
 - **purchase_category_id** – 2684 (Purchase Category ID)
+- **refund_request_id** – 123,456 (Refund Request IDs)
 - **submitted** – true/false (refund request created)
 
 Returns an array with all receipt information (see attributes).

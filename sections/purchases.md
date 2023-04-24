@@ -55,6 +55,11 @@ Includes among the standard fields for purchases also:
     "firstname": "Mario",
     "name": "Rossi"
   },
+  "refund_request": {
+    "id": 66129936,
+    "comment": "My receipts",
+    "user_id": 123456
+  },
   "items": [
     {
       "id": 311936153,
