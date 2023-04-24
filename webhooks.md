@@ -25,7 +25,7 @@ X-Moco-Signature: f457bffc50e9b63f455ab107c55f2f61956550aa5525c2cfe07f574014bd8a
 X-Moco-User-Id: 933613686
 ```
 
-- To debug and try out web hooks, we recommend https://webhook.site or https://requestbin.com/ – this services provides you with temporary
+- To debug and try out web hooks, we recommend [webhook.site](https://webhook.site) or [requestbin.com](https://requestbin.com/) – this services provides you with temporary
   HTTPS URLs that let you inspect any incoming WebHook data.
 - WebHooks are only provided to customers after they subscribe to MOCO.
 - WebHooks are not guaranteed to be delivered in order. Pay attention to the provided time stamp if this is important
