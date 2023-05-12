@@ -111,6 +111,7 @@ It's also possible to filter:
 - **date** – date range in the form _2020-02-01:2020-02-22_
 - **unpaid** – filter only purchases without a payment
 - **payment_method** – possible values are: "bank_transfer", "direct_debit", "credit_card", "paypal" or "cash"
+- **receipt_identifier** – filter by the receipts invoice number, e.g. R2023-1234. It must be unique scoped by supplier.
 
 Returns an array with all purchases information (see attributes).
 
