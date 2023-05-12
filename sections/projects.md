@@ -111,6 +111,11 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
     "id": 456687,
     "name": "Webpages"
   },
+  "billing_contact": {
+    "id": 1234,
+    "firstname": "Maxine",
+    "lastname": "Muster"
+  },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
