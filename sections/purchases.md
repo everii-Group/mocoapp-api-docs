@@ -163,6 +163,7 @@ Mandatory fields are marked with a star (\*):
 - **date\*** – "2020-02-02"
 - **currency\*** – "CHF" (a valid currency of the account)
 - **payment_method\*** – "bank_transfer", "direct_debit", "credit_card", "paypal", "cash"
+- **title** – set the title for this purchase. If left out, the title is generated from the positions.
 - **items\*** – list of position. At least one position must be present and every position has the following fields:
   - **title\*** – Ticket
   - **total\*** – 30
