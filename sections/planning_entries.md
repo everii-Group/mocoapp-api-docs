@@ -38,6 +38,8 @@ The planning entry representation contains among the standard fields also:
     "name": "Support",
     "customer_name": "Acme GmbH"
   },
+  "series_id": null,
+  "series_repeat": null,
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
