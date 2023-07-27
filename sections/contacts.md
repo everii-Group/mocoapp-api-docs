@@ -95,7 +95,7 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **firstname\*** – "Peter"
+- **firstname** – "Peter"
 - **lastname\*** – "Muster"
 - **gender\*** – "F", "M" or "U"
 - **company_id** – 123
