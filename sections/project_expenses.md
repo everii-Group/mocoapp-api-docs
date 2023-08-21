@@ -18,6 +18,7 @@ The representation contains, among the standard fields, also the following field
 - Custom properties
 - Company
 - Project
+- Group
 
 ```json
 {
@@ -50,6 +51,11 @@ The representation contains, among the standard fields, also the following field
   "project": {
     "id": 1234,
     "name": "Project A"
+  },
+  "group": {
+    "id": 456,
+    "title": "Exepnse Group A",
+    "budget" 5200
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
