@@ -55,7 +55,7 @@ The representation contains, among the standard fields, also the following field
   "group": {
     "id": 456,
     "title": "Exepnse Group A",
-    "budget" 5200
+    "budget": 5200
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
