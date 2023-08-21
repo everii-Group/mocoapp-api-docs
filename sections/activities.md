@@ -110,7 +110,7 @@ curl -X POST \
         "description": "Analysis context and dependencies",
         "project_id": 123456,
         "task_id": 234567,
-        "hours": 1.0
+        "seconds": 3600
       }'
 ```
 
@@ -119,14 +119,42 @@ Mandatory fields are marked with a star (\*):
 - **date\*** – "2017-06-11"
 - **project_id\*** – 123456
 - **task_id\*** – 234567
-- **hours\*** – 1.0 💡 passing 0 will start a timer if date is today
-- **seconds** – 3600 💡 to avoid rounding issues, instead of hours you can also pass seconds
+- **seconds** – 3600 💡 3600 seconds = 1 hour
 - **description** – "Analysis context and dependencies"
 - **billable** – true/false (default: `true` or dependent on project configuration)
 - **tag** – "RMT-123" (any tag as a string)
 - **remote_service** – jira (Allowed values are: "trello", "jira", "asana", "basecamp", "wunderlist", "basecamp2", "basecamp3", "toggl", "mite", "github", "youtrack")
 - **remote_id** – PRJ-2342
 - **remote_url** – https://jira.meinefirma.de/browse/PRJ-2342
+
+## POST /activities/bulk
+
+Bulk insert activities:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/activities/bulk' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "bulk_data": [
+          {
+            "date": "2023-08-21",
+            "description": "Activity 1",
+            "project_id": 123456,
+            "task_id": 234567,
+            "seconds": 3600
+          },
+          {
+            "date": "2023-08-21",
+            "description": "Activity 2",
+            "project_id": 123456,
+            "task_id": 234567,
+            "seconds": 7200
+          }
+        ]
+      }'
+```
 
 ## PUT /activities/{id}
 
@@ -138,7 +166,7 @@ curl -X PUT \
   -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-        "hours": 2.0
+        "seconds": 7200
       }'
 ```
 
