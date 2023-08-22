@@ -222,6 +222,9 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
+{: .warning }
+Either `company_id`, `deal_id` or `project_id` have to be provided
+
 - **company_id** – 123456 (ID of the associated company), is disregarded and set to the company of the project if project_id is provided
 - **deal_id** – 123456 (ID of the associated deal)
 - **project_id** – 123456 (ID of the associated project)
