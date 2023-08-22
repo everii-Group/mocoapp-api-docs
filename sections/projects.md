@@ -245,6 +245,7 @@ Mandatory fields are marked with a star (\*):
 - **hourly_rate** – 150
 - **budget** – 20000
 - **budget_monthly** – 2000
+- **budget_expenses** - 5000
 - **tags** – ["Print", "Digital"]
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
