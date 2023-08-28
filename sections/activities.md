@@ -137,7 +137,7 @@ curl -X POST \
   -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
-        "bulk_data": [
+        "activities": [
           {
             "date": "2023-08-21",
             "description": "Activity 1",
