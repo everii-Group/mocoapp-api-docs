@@ -532,3 +532,44 @@ curl -X DELETE \
 Mandatory fields are marked with a star (\*):
 
 - **reason\*** – "Wrong invoice number" (a reason why this invoice is being deleted), This can only be omitted if the invoice to be deleted is a draft.
+
+## GET /invoices/{id}/attachments
+
+List all attachments for this invoice:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/invoices/{invoice_id}/attachments' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+Provide the payload base64 encoded.
+
+## POST /invoices/{invoice_id}/attachments
+
+Add attachment PDF to invoice:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/invoices/{invoice_id}/attachments' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "attachment": {
+          "filename": "attachment.pdf",
+          "base64": "JVBERi0xLjQKJeLjz9MKNCAwIG9iago8PC9GaWx..."
+        }
+      }'
+```
+
+Provide the payload base64 encoded.
+
+## DELETE /invoices/{invoice_id}/attachments/{id}
+
+Remove attachment from invoice:
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/invoices/{invoice_id}/attachments/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
