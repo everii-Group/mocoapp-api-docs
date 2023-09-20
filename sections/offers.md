@@ -285,3 +285,43 @@ Mandatory fields are marked with a star (\*):
 - **emails_bcc** – "somebody@partner.example.com" (list of addresses separated by _;_)
 
 🛈 If you want to send emails to the default recipients configured on the customer or set as a contact, leave `emails_to`, `emails_cc` and `emails_bcc` empty. `emails_to` always needs to be provided, either via the default recipients or as a given value. In the response, the recipients selected are returned.
+
+## GET /offers/{id}/attachments
+
+List all attachments for this offer:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/offers/{offer_id}/attachments' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+Provide the payload base64 encoded.
+
+## POST /offers/{id}/attachments
+
+Add attachment PDF to offer:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/offers/{id}/attachments' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "attachment": {
+          "filename": "attachment.pdf",
+          "base64": "JVBERi0xLjQKJeLjz9MKNCAwIG9iago8PC9GaWx..."
+        }
+      }'
+```
+
+Provide the payload base64 encoded.
+
+## DELETE /offers/{offer_id}/attachments/{id}
+
+Remove attachment from offer:
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/offers/{offer_id}/attachments/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
