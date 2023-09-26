@@ -243,6 +243,7 @@ Either `company_id`, `deal_id` or `project_id` have to be provided
 - **internal_contact_id** - 1234 (ID of an internal user)
 - **tags** – ["Retail"]
 - **custom_properties** – {"ext-ref": "3421"}
+- **print_detail_columns**  - true (Hide/Display 'quantity, unit, price'). Optional property, which defaults to the global account layout setting
 
 ## PUT /offers/{id}/update_status
 
