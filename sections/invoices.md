@@ -471,6 +471,7 @@ Mandatory fields are marked with a star (\*):
 - **internal_contact_id** - 1234 (ID of an internal user)
 - **custom_properties** – {"ext-ref": "5433"}
 - **tags** – ["Hosting", "Europe"]
+- **print_detail_columns**  - true (Hide/Display 'quantity, unit, price'). Optional property, which defaults to the global account layout setting
 
 Omitted fields `service_period_from` and `service_period_to` indicates the absences of a service period.
 
