@@ -14,7 +14,7 @@ This is the official API documentation for [mocoapp.com](https://www.mocoapp.com
 ## General
 
 - Request payloads to MOCO must be sent as valid JSON with a mandatory `Content-Type: application/json`-header. Responses are also sent as JSON.
-- All requests have to be [authenticated](#authentication) with a user-specific key
+- All requests have to be [authenticated](authentication) with a key
 - Example responses showcase the happy case, i.e. usually the `200 OK` response
 - Collections are usually [paginated](#pagination)
 - Zapier triggers are **not** triggered for API requests
