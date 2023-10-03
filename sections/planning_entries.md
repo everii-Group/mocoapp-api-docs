@@ -15,7 +15,17 @@ German: "Planung"
 The planning entry representation contains among the standard fields also:
 
 - assigned user (staff)
-- project
+- *either* project *or* deal, the other is set to `null`
+- deal attributes (project attributes are given in the example below):
+  ```json
+  {
+    "id": 6542,
+    "name": "Redesign website",
+    "customer_name": "Acme GmbH",
+    "color": "#aacb84"
+  }
+  ```
+
 
 ```json
 {
@@ -36,8 +46,10 @@ The planning entry representation contains among the standard fields also:
     "id": 4553,
     "identifier": "130",
     "name": "Support",
-    "customer_name": "Acme GmbH"
+    "customer_name": "Acme GmbH",
+    "color": "#faeb44"
   },
+  "deal": null,
   "series_id": null,
   "series_repeat": null,
   "created_at": "2018-10-17T09:33:46Z",
@@ -97,7 +109,7 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **project_id\*** – 4322 (project ID for active project)
+- either **project_id\*** or **deal_id\*** – 4322 (project or deal ID)
 - **starts_on\*** – "2020-05-20"
 - **ends_on\*** – "2020-05-30"
 - **hours_per_day\*** – 3
