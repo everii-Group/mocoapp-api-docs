@@ -3,7 +3,7 @@
 There's two ways to authenticate against MOCO:
 
 1. **User API key**. Can be found under the "Integrations" tab on the profile page.
-2. **Global API key**. Has to be created in Settings > Extensions > API & Webhooks, with either read-only or full access on all endpoints.
+2. **Account API key**. Has to be created in Settings > Extensions > API & Webhooks, with either read-only or full access on all endpoints.
 
 Both kinds of keys are provided as an Authorization header.
 
