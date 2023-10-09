@@ -112,6 +112,7 @@ curl -X POST \
     {
       "date": "2020-02-02",
       "title": "Lunch with coworkers",
+      "currency": "CHF",
       "items": [
         {
           "vat_code_id": 186,
@@ -130,6 +131,7 @@ Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2020-02-02"
 - **title\*** – "Lunch with coworkers"
+- **currency\*** - "CHF"
 - **items\*** – list of positions. At least one position must be present and every position has the following fields:
   - **vat_code_id\*** – 186 (Vat Code ID)
   - **gross_total\*** – 99.90
@@ -154,6 +156,7 @@ curl -X POST \
     {
       "date": "2020-02-02",
       "title": "Lunch with customer",
+      "currency": "CHF",
       "items": [
         {
           "vat_code_id": 186,
