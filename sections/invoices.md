@@ -353,6 +353,7 @@ This returns a list of expenses:
     "budget_relevant": true,
     "billable": true,
     "billed": false,
+    "recurring_expense_id": null,
     "service_period": "10/2020",
     "service_period_from": "2020-10-01",
     "service_period_to": "2020-10-31",
