@@ -81,6 +81,7 @@ Additionally, these parameters can be supplied:
 - **billable** – true/false
 - **billed** – true/false
 - **budget_relevant** – true/false
+- **user_id** - 123456 (user that created expense)
 
 ## GET /projects/{id}/expenses/{id}
 
@@ -247,6 +248,7 @@ Additionally, these parameters can be supplied:
 - **billed** – true/false
 - **budget_relevant** – true/false
 - **tags** – "tag one,tag two" (comma-separated project tags)
+- **user_id** - 123456 (user that created expense)
 
 {: .note }
 Parameters `from` and `to` only work when provided together.
