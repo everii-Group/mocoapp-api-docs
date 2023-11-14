@@ -17,7 +17,15 @@ The invoice representation contains among standard fields also:
 
 - custom properties
 - positions (items)
-- position types (`title`, `description`, `item`, `subtotal`, `page-break` or `separator`)
+  - type: `title`, `description`, `item`, `subtotal`, `page-break` or `separator`
+  - title: A label
+  - description: A description block below that is attachted to this position
+  - quantity: for detail positions, the multiplier for this position
+  - unit: a label for the unit, e.g. "pieces", "hours", "days"
+  - unit_price: price per unit
+  - net_total: total price for position
+  - additional: signifies that this is an expense (`true` / `false`)
+  - optional: optional part of invoice (`true` / `false`)
 - payments
 - reminders
 - user
