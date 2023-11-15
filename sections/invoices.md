@@ -25,7 +25,6 @@ The invoice representation contains among standard fields also:
   - unit_price: price per unit
   - net_total: total price for position
   - additional: signifies that this is an expense (`true` / `false`)
-  - optional: optional part of invoice (`true` / `false`)
 - payments
 - reminders
 - user
