@@ -30,7 +30,7 @@ The offer representation contains among the standard fields:
   "currency": "EUR",
   "net_total": 12750,
   "tax": 19,
-  "vat": { "tax": 19.0, "reverse_charge": false, "intra_eu": false },
+  "vat": { "tax": 19.0, "reverse_charge": false, "intra_eu": false, "active": true, "print_gross_total": true, "notice_tax_exemption": "", "notice_tax_exemption_en": "" },
   "gross_total": 15172.5,
   "discount": 10,
   "salutation": "Hallo Peter<br><br>Folgende Aufwände schätzen wir für die Umsetzung der Komponenten:",

@@ -52,7 +52,7 @@ The invoice representation contains among standard fields also:
   "currency": "CHF",
   "net_total": 35612.5,
   "tax": 8,
-  "vat": { "tax": 8.0, "reverse_charge": false, "intra_eu": false },
+  "vat": { "tax": 8.0, "reverse_charge": false, "intra_eu": false, "active": true, "print_gross_total": true, "notice_tax_exemption": "", "notice_tax_exemption_en": "" },
   "gross_total": 38461.5,
   "discount": 10,
   "cash_discount": 2.5,

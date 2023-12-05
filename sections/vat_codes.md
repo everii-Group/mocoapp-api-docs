@@ -12,6 +12,23 @@ German: "Steuerschlüssel"
 
 ## Attributes
 
+### VatCode Sale
+
+```json
+{
+  "id": 186,
+  "tax": 7.7,
+  "reverse_charge": false,
+  "intra_eu": false,
+  "active": true,
+  "print_gross_total": true,
+  "notice_tax_exemption": "",
+  "notice_tax_exemption_en": "",
+}
+```
+
+### VatCode Purchase
+
 ```json
 {
   "id": 186,
