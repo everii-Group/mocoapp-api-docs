@@ -45,8 +45,8 @@ The company representation contains among default fields the following features:
   "identifier": "36",
   "intern": false,
   "billing_tax": 0,
-  "customer_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true }, // for customers only
-  "supplier_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true }, // for suppliers only
+  "customer_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true, "active": true, "print_gross_total": true, "notice_tax_exemption": "", "notice_tax_exemption_en": "" }, // for customers only
+  "supplier_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true, "active": true }, // for suppliers only
   "currency": "CHF",
   "custom_rates": false,
   "include_time_report": false,
