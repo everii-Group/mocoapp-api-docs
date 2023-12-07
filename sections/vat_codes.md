@@ -24,6 +24,8 @@ German: "Steuerschlüssel"
   "print_gross_total": true,
   "notice_tax_exemption": "",
   "notice_tax_exemption_en": "",
+  "code": "9",
+  "credit_account: "4000"
 }
 ```
 
@@ -35,7 +37,8 @@ German: "Steuerschlüssel"
   "tax": 7.7,
   "reverse_charge": false,
   "intra_eu": false,
-  "active": true
+  "active": true,
+  "code": "9"
 }
 ```
 
