@@ -33,6 +33,7 @@ The offer representation contains among the standard fields:
   "vat": { "tax": 19.0, "reverse_charge": false, "intra_eu": false, "active": true, "print_gross_total": true, "notice_tax_exemption": "", "notice_tax_exemption_en": "" },
   "gross_total": 15172.5,
   "discount": 10,
+  "status": "created",
   "salutation": "Hallo Peter<br><br>Folgende Aufwände schätzen wir für die Umsetzung der Komponenten:",
   "footer": "Für Rückfragen stehe ich dir jederzeit gerne zur Verfügung.<br><br>Viele Grüsse<br><br>Tobias",
   "tags": ["Print", "Digital"],
@@ -45,6 +46,7 @@ The offer representation contains among the standard fields:
   },
   "project": {
     "id": 1234,
+    "identifier": "P123",
     "name": "A Project"
   },
   "deal": {
