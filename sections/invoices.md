@@ -386,6 +386,9 @@ This returns a list of expenses:
 
 ## PUT /invoices/{id}/update_status
 
+{: .note }
+Only works for actual invoices, not invoice drafts
+
 Update an invoice status:
 
 ```bash
