@@ -156,7 +156,8 @@ This returns a performance report for this user:
     "target_hours": 1606.4,
     "hours_tracked_total": 210.95,
     "variation": -1395.45,
-    "variation_until_today": -0.25
+    "variation_until_today": -0.25,
+    "hours_billable_total": 190.95
   },
   "monthly": [
     {
@@ -164,42 +165,48 @@ This returns a performance report for this user:
       "month": 1,
       "target_hours": 128.0,
       "hours_tracked_total": 133.71,
-      "variation": 5.71
+      "variation": 5.71,
+      "hours_billable_total": 113.95
     },
     {
       "year": 2021,
       "month": 2,
       "target_hours": 128.0,
       "hours_tracked_total": 77.24,
-      "variation": -50.76
+      "variation": -50.76,
+      "hours_billable_total": 67.95
     },
     {
       "year": 2021,
       "month": 3,
       "target_hours": 115.2,
       "hours_tracked_total": 0.0,
-      "variation": -115.2
+      "variation": -115.2,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 4,
       "target_hours": 128.0,
       "hours_tracked_total": 0.0,
-      "variation": -128.0
+      "variation": -128.0,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 5,
       "target_hours": 121.6,
       "hours_tracked_total": 0.0,
-      "variation": -121.6
+      "variation": -121.6,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 6,
       "target_hours": 140.8,
       "hours_tracked_total": 0.0,
-      "variation": -140.8
+      "variation": -140.8,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
@@ -207,41 +214,47 @@ This returns a performance report for this user:
       "target_hours": 140.8,
       "hours_tracked_total": 0.0,
       "variation": -140.8
+      "hours_billable_total": 0.0,
     },
     {
       "year": 2021,
       "month": 8,
       "target_hours": 140.8,
       "hours_tracked_total": 0.0,
-      "variation": -140.8
+      "variation": -140.8,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 9,
       "target_hours": 140.8,
       "hours_tracked_total": 0.0,
-      "variation": -140.8
+      "variation": -140.8,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 10,
       "target_hours": 134.4,
       "hours_tracked_total": 0.0,
-      "variation": -134.4
+      "variation": -134.4,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 11,
       "target_hours": 140.8,
       "hours_tracked_total": 0.0,
-      "variation": -140.8
+      "variation": -140.8,
+      "hours_billable_total": 0.0
     },
     {
       "year": 2021,
       "month": 12,
       "target_hours": 147.2,
       "hours_tracked_total": 0.0,
-      "variation": -147.2
+      "variation": -147.2,
+      "hours_billable_total": 0.0
     }
   ]
 }
