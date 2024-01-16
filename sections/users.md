@@ -213,7 +213,7 @@ This returns a performance report for this user:
       "month": 7,
       "target_hours": 140.8,
       "hours_tracked_total": 0.0,
-      "variation": -140.8
+      "variation": -140.8,
       "hours_billable_total": 0.0,
     },
     {
