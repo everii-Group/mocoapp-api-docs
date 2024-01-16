@@ -68,7 +68,7 @@ The offer representation contains among the standard fields:
     "id": 1234,
     "active": true,
     "url": "https://mycompany.mocoapp.com/offers/1234/customer_approvals/ffbe642f6bdc65df7cb83a0d9459ece4"
-  }
+  },
   "items": [
     {
       "id": 29,
