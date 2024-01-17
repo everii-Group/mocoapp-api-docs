@@ -14,8 +14,8 @@ The API provides a single endpoint to manage the tags (aka labels) associated to
 /api/v1/taggings/{entity}/{entity_id}
 ```
 
-The parameter `{entity}` can be one of the following:
-Company, Contact, Project, Deal, Purchase, Invoice, Offer
+The parameter `{entity}` must be one of the following:
+Company, Contact, Project, Deal, Purchase, Invoice, Offer, User
 
 ## GET /taggings
 
