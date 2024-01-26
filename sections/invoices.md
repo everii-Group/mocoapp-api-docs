@@ -201,6 +201,7 @@ Additionally, these parameters can be supplied:
 - [Global filters apply](../entities#global-filters)
 - **status** – ("draft", "created", "sent", "partially_paid", "paid", "overdue", "ignored")
 - **include_disregarded** true/false (if "marked as billed" should also be retrieved, default: false)
+- **not_booked** – true/false
 - **date_from** – "2018-01-01"
 - **date_to** – "2018-01-31"
 - **service_period_from** – "2018-01-01"
