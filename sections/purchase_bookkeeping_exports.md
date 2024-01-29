@@ -106,5 +106,5 @@ Mandatory fields are marked with a star (\*):
 
 - **purchase_ids\*** – [123, 234, 345]
 - **trigger_submission** – true/false (e.g. submit also to DATEV; default is true)
-- **archive_after_export** – true/false (if purchases should be archived; default is true)
+- **archive_after_export** – true/false (if purchases should be archived; default is false)
 - **comment** – "some additional info..."
