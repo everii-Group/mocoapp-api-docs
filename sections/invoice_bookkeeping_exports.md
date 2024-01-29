@@ -105,5 +105,5 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **invoice_ids\*** – [123, 234, 345]
-- **trigger_submission** – true/false (e.g. submit also to DATEV; if not set up then ignored)
+- **trigger_submission** – true/false (e.g. submit also to DATEV; default is true)
 - **comment** – "some additional info..."

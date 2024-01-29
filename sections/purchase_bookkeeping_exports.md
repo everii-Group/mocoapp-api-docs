@@ -105,6 +105,6 @@ curl -X POST \
 Mandatory fields are marked with a star (\*):
 
 - **purchase_ids\*** – [123, 234, 345]
-- **trigger_submission** – true/false (e.g. submit also to DATEV; if not set up then ignored)
-- **archive_after_export** – true/false (if purchases should be marked archived)
+- **trigger_submission** – true/false (e.g. submit also to DATEV; default is true)
+- **archive_after_export** – true/false (if purchases should be archived; default is true)
 - **comment** – "some additional info..."
