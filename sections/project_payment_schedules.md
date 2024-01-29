@@ -20,6 +20,7 @@ Payment schedules for fixed price projects.
   "id": 760153573,
   "date": "2017-04-05",
   "title": "Erste Anzahlung",
+  "description": "<div>A description for this payment schedule</div>",
   "net_total": 1000,
   "project": {
     "id": 822322322,
