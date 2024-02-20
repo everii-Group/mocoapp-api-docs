@@ -229,9 +229,6 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-{: .warning }
-Either `company_id`, `deal_id` or `project_id` have to be provided
-
 - **company_id** – 123456 (ID of the associated company), is disregarded and set to the company of the project if project_id is provided
 - **deal_id** – 123456 (ID of the associated deal)
 - **project_id** – 123456 (ID of the associated project)
@@ -240,7 +237,7 @@ Either `company_id`, `deal_id` or `project_id` have to be provided
 - **due_date\*** – "2018-10-16"
 - **title\*** – "Offer"
 - **tax\*** – 8.0
-- **currency\*** – "CHF" (a valid currency of the account), must match the currency of provided project and deal, only required if no company_id, deal_id and project_id is provided
+- **currency\** – "CHF" (a valid currency of the account), must match the currency of provided project and deal, only required if no company_id, deal_id and project_id is provided
 - **items\*** – positions (see [attributes](#attributes))
 - **change_address** – address propagation ("offer", "customer"), default is "offer"
 - **salutation** (salutation text)
