@@ -23,7 +23,7 @@ German: "Steuerschlüssel"
   "active": true,
   "print_gross_total": true,
   "notice_tax_exemption": "",
-  "notice_tax_exemption_en": "",
+  "notice_tax_exemption_alt": "",
   "code": "9",
   "credit_account: "4000"
 }
