@@ -30,6 +30,7 @@ The schedule representation contains among the standard fields also:
   "assignment": {
     "id": 789,
     "name": "Holiday",
+    "code": "4",
     "customer_name": "hundertzehn GmbH",
     "color": "#BBB",
     "type": "Absence"
