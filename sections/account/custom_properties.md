@@ -23,10 +23,10 @@ German: "Eigene Felder"
 ```json
 {
   "id": 8601,
-  "name": "Purchase Ordner Number",
-  "name_en": "Purchase Ordner Number",
+  "name": "Purchase Order Number",
+  "name_alt": "Numero Identificativo Acquisto",
   "placeholder": "",
-  "placeholder_en": "",
+  "placeholder_alt": "",
   "entity": "Project",
   "kind": "String",
   "print_on_invoice": true,
