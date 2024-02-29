@@ -64,6 +64,7 @@ Additionally, the following parameters can be supplied:
 - **to** – "2017-05-31"
 - **user_id** – 123
 - **absence_code** – 1, 2, 3, 4, 5 (unplannable absence, public holiday, sick day, holiday, absence)
+- **holiday_request_id** – 123 (the ID of the holiday request filters all holiday absences for this request)
 
 ## GET /schedules/{id}
 
