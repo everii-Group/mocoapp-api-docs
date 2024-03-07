@@ -17,6 +17,7 @@ The offer representation contains among the standard fields:
 - custom properties
 - positions (items)
 - position types ("title", "description", "item", "subtotal", "page-break" or "separator")
+- subtotal_type: `part_total`, `sub_total`, `optional_part_total`, `optional_sub_total` (only relevant if type is `subtotal`)
 - vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
 
 ```json

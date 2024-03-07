@@ -18,6 +18,7 @@ The invoice representation contains among standard fields also:
 - custom properties
 - positions (items)
   - type: `title`, `description`, `item`, `subtotal`, `page-break` or `separator`
+  - subtotal_type: `part_total` or `sub_total` (only relevant if type is `subtotal`)
   - title: A label
   - description: A description block below that is attachted to this position
   - quantity: for detail positions, the multiplier for this position
