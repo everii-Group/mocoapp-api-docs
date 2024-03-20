@@ -6,7 +6,7 @@ MOCO supports adding custom fields to many of its resources. These custom fields
 "custom_properties": {
     "UID": "123-UID-456",
     "Line of business": "Automotive"
-},
+}
 ```
 
 Parameters are sent with their name as key:
@@ -47,4 +47,4 @@ curl -X POST \
 - Single choice – "Value"
 - Multiple choice – ["Value 1", "Value 2"]
 
-⚡ **WARNING** ⚡: If you use custom fields, all of them have to be provided. If not, any that are not transmitted will be removed.
+**NOTE**: The provided custom properties are merged with the existing custom properties of the entity. That is, only the provided custom properties are updated and the other custom properties of the entity are left unchanged.
