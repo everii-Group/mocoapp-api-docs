@@ -2,6 +2,8 @@
 
 MOCO supports adding custom fields to many of its resources. These custom fields are readable and writable via the `custom_properties` field.
 
+**NOTE**: The size of the custom_properties field is limitted to 12 kB.
+
 ```json
 "custom_properties": {
     "UID": "123-UID-456",
