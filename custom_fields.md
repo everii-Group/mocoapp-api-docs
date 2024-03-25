@@ -2,7 +2,8 @@
 
 MOCO supports adding custom fields to many of its resources. These custom fields are readable and writable via the `custom_properties` field.
 
-**NOTE**: The size of the custom_properties field is limitted to 12 kB.
+{: .note }
+ The size of the custom_properties field is limitted to 12 kB.
 
 ```json
 "custom_properties": {
@@ -49,4 +50,11 @@ curl -X POST \
 - Single choice – "Value"
 - Multiple choice – ["Value 1", "Value 2"]
 
-**NOTE**: The provided custom properties are merged with the existing custom properties of the entity. That is, only the provided custom properties are updated and the other custom properties of the entity are left unchanged.
+
+{: .note }
+The provided custom properties are merged with the existing custom properties of the entity. That is, only the provided custom properties are updated and the other custom properties of the entity are left unchanged.
+
+## Filtering by Custom Fields
+
+It is possible to filter entities by custom fields, as described in 
+[Global filters](./entities#filter-by-custom-fields-–-custom_properties)
