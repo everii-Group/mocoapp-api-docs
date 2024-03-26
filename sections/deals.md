@@ -144,3 +144,13 @@ curl -X PUT \
 ```
 
 Fields are analogous to the POST request.
+
+## DELETE /deals/{id}
+
+Delete a deal.
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/deals/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
