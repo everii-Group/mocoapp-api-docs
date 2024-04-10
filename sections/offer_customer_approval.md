@@ -40,19 +40,19 @@ curl -X GET \
 This returns the customer approval information (see Attributes) or a 404 if not yet activated.
 Evaluate the `signed_at` field to verify if approval was given.
 
-## POST /offers/{id}/customer_approval
+## POST /offers/{id}/customer_approval/activate
 
 Activate a customer approval to generate the `offer_document_url` which can be shared with the customer.
 
 ```bash
 curl -X POST \
-  'https://{domain}.mocoapp.com/api/v1/offers/{id}/customer_approval' \
+  'https://{domain}.mocoapp.com/api/v1/offers/{id}/customer_approval/activate' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
 This returns the customer approval information (see Attributes).
 
-## PUT /offers/{id}/customer_approval/deactivate
+## POST /offers/{id}/customer_approval/deactivate
 
 Deactivate a customer approval to prevent access/signing.
 
