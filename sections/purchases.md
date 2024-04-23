@@ -22,6 +22,7 @@ Includes among the standard fields for purchases also:
 - Items
 - Items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
 - Items.expense (the associated project expense or `null`)
+- Items.receipt (the associated receipt or `null`)
 
 ```json
 {
@@ -82,6 +83,12 @@ Includes among the standard fields for purchases also:
           "id": 23345545,
           "company_id": 54345
         }
+      },
+      "receipt": {
+        "id": 9857765,
+        "title": "SBB Ticket",
+        "date": "2018-10-01",
+        "attachment_url": "https://..."
       }
     }
   ],
