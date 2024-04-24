@@ -76,7 +76,7 @@ The following parameters can be supplied:
 - **user_id** – 123
 - **project_id** – 345
 
-## GET /planning_entry/{id}
+## GET /planning_entries/{id}
 
 Retrieve a single planning entry:
 
@@ -86,7 +86,7 @@ curl -X GET \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
-## POST /planning_entry
+## POST /planning_entries
 
 Create a planning entry:
 
