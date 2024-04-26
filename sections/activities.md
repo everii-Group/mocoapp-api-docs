@@ -98,7 +98,7 @@ curl -X GET \
 
 Create an activity:
 
-Every activity is created for the user that the API key belongs to.
+Every activity is created for the user that the API key belongs to. Use [impersonation](../index.md#impersonation) to create activities for other users.
 
 ```bash
 curl -X POST \
