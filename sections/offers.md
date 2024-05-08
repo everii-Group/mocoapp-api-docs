@@ -173,6 +173,7 @@ Additionally, these parameters can be supplied:
 - **identifier** – "A1903-003"
 - **deal_id** – "123,456" (deal ID for offers on this deal, single or comma-separated values)
 - **project_id** – "123,456" (project ID for offers on this project, single or comma-separated values)
+- **company_id** – "123,456" (company ID for offers on this project, single or comma-separated values)
 
 ## GET /offers/{id}
 
