@@ -200,7 +200,7 @@ curl -X GET \
 Additionally, these parameters can be supplied:
 
 - [Global filters apply](../entities#global-filters)
-- **status** – ("draft", "created", "sent", "partially_paid", "paid", "overdue", "ignored")
+- **status** – ("draft", "created", "sent", "partially_paid", "paid", "overdue", "ignored") - multiple values are allowed, comma-separated.
 - **include_disregarded** true/false (if "marked as billed" should also be retrieved, default: false)
 - **not_booked** – true/false
 - **date_from** – "2018-01-01"
