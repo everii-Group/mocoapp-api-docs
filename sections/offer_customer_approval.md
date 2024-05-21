@@ -16,7 +16,8 @@ German: "Kundenfreigabe"
 ```json
 {
   "id": 123,
-  "offer_document_url": "/offers/456/customer_approvals/abcdefhijklmnopqrstuvwxyz1234567890/document.pdf",
+  "approval_url": "https://.../offers/456/customer_approvals/abcdefhijklmnopqrstuvwxyz1234567890",
+  "offer_document_url": "https://.../offers/456/customer_approvals/abcdefhijklmnopqrstuvwxyz1234567890/document.pdf",
   "active": false,
   "customer_full_name": null,
   "customer_email": null,
