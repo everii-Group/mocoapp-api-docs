@@ -82,8 +82,8 @@ The following parameters can be supplied:
 - **project_id** – 345
 - **task_id** – 789
 - **company_id** – 234567
-- **billable** - true | false (set to true for billable activities and false for non-billable activities)
-- **billed** - true | false (set to true for (already) billed activities and false for not (yet) billed activities)
+- **billable** - true / false (set to true for billable activities and false for non-billable activities)
+- **billed** - true / false (set to true for (already) billed activities and false for not (yet) billed activities)
 - **term** – "search terms" (search in tag, description and remote_id)
 
 ## GET /activities/{id}
