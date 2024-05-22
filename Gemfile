@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+gem "just-the-docs"
+
 group :development do
   gem "webrick"
 end
