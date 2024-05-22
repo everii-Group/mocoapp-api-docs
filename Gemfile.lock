@@ -270,6 +270,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
+  jekyll-default-layout
   just-the-docs
   webrick
 
