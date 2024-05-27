@@ -7,7 +7,6 @@ parent: Entities
 
 German: "Zeiteinträge"
 
-
 - TOC
 {:toc}
 
