@@ -74,5 +74,6 @@ Sorting is controlled by the `sort_by` query parameter. Its value is the field n
 Example:
 
 - `https://{domain}.mocoapp.com/api/v1/offers?sort_by=title desc`
+  
 
 
