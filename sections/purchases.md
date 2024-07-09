@@ -113,7 +113,7 @@ It's also possible to filter:
 - **category_id** – identifier of the purchases' category,
 - **term** – full text search on purchase positions,
 - **company_id** – identifier of the supplier, pass _0_ to get the purchases not associated to a supplier,
-- **status** – "pending" or "approved"
+- **status** – "pending" or "approved" (Eingang, Archiv)
 - **not_booked** – true/false
 - **tags** – "Transportation, Restaurants" (comma separated list)
 - **date** – date range in the form _2020-02-01:2020-02-22_
