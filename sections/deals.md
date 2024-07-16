@@ -105,7 +105,7 @@ curl -X POST \
   -d '{
         "name": "Beispiel AG Website Relaunch",
         "currency": "EUR",
-        "money": "25000",
+        "money": 25000,
         "reminder_date": "2018-12-01",
         "user_id": 123,
         "deal_category_id": 456,
