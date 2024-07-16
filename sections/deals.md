@@ -31,7 +31,7 @@ Company and person are optional. The category is only important in status "pendi
   "status": "pending",
   "reminder_date": "2022-09-19",
   "closed_on": null,
-  "money": 61000,
+  "money": 61000.0,
   "currency": "CHF",
   "info": "Interesting Lead!",
   "custom_properties": {
@@ -116,10 +116,15 @@ Mandatory fields are marked with a star (\*):
 
 - **name\*** – "Beispiel AG / Website Relaunch"
 - **currency\*** – "EUR"
-- **money\*** – 25000
+  Currency should already be existing (have been created already) in your mocoapp platform
+- **money\*** – 25000.0
+  Money should be a floating point value
 - **reminder_date\*** – "2017-08-15"
 - **user_id\*** – 123
+  `user_id` should be the id of a user that has already been created in your mocoapp platform
 - **deal_category_id\*** – 456
+  `deal_category_id` should be the id of a category that as already been created in your mocoapp platform
+  You can either use a constant `deal_category_id` or you can use the [deal category](linkhere .com) to retrieve a list of all the categories that exists on your mocoapp platform.
 - **company_id** – 789
 - **person_id** – 357
 - **info** – "Information for this lead..."
@@ -128,6 +133,10 @@ Mandatory fields are marked with a star (\*):
 - **service_period_from** – "2022-06-01" ⚠️ must be the first of the month
 - **service_period_to** – "2022-12-31" ⚠️ must be the last of the month
 - **tags** – ["Important", "Health"]
+
+#### Note
+All the required fields cannot contain null values and for string values, they should not be empty strings.
+But, for floating point fields like the `money` field you can use 0.0
 
 ## PUT /deals/{id}
 
