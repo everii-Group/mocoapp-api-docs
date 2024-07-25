@@ -23,7 +23,7 @@ The representation contains, among the standard fields, also the following field
 ```json
 {
   "id": 47266,
-  "date": "2017-07-07",
+  "date": "2024-06-07",
   "title": "Hosting XS",
   "description": "<div>Hosting, Monitoring und Backup</div>",
   "quantity": 3,
@@ -36,11 +36,14 @@ The representation contains, among the standard fields, also the following field
   "budget_relevant": true,
   "billable": true,
   "billed": false,
+  "purchase_assignment_locked": true,
+  "cost_total_planned": 0,
+  "planned_purchase_date": null,
   "invoice_id": null,
   "recurring_expense_id": null,
-  "service_period": "10/2020",
-  "service_period_from": "2020-10-01",
-  "service_period_to": "2020-10-31",
+  "service_period": "06/2024",
+  "service_period_from": "2024-06-01",
+  "service_period_to": "2024-06-30",
   "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
   "custom_properties": {
     "Type": "Website"
@@ -58,8 +61,8 @@ The representation contains, among the standard fields, also the following field
     "title": "Exepnse Group A",
     "budget": 5200
   },
-  "created_at": "2018-10-17T09:33:46Z",
-  "updated_at": "2018-10-17T09:33:46Z"
+  "created_at": "2024-06-06T09:33:46Z",
+  "updated_at": "2024-06-06T09:33:46Z"
 }
 ```
 
