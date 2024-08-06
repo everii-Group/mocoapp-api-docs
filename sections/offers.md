@@ -62,6 +62,7 @@ The offer representation contains among the standard fields:
   },
   "offer_confirmation": {
     "id": 1234,
+    "date": "2022-12-12",
     "title": "Offer confirmation",
     "created_at": "2022-12-12T09:33:46Z",
     "updated_at": "2022-12-12T09:33:46Z"
