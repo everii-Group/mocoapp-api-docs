@@ -15,14 +15,15 @@ German: "Ausgaben"
 
 Includes among the standard fields for purchases also:
 
-- Tags
-- Company (if the purchase is associated to a supplier)
-- Payments (list of payments made for the purchase)
-- User
-- Items
-- Items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
-- Items.expense (the associated project expense or `null`)
-- Items.receipt (the associated receipt or `null`)
+- tags
+- company (if the purchase is associated to a supplier)
+- payments (list of payments made for the purchase)
+- user
+- status ("pending" = Inbox, "approved" = Archive)
+- items
+- items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
+- items.expense (the associated project expense or `null`)
+- items.receipt (the associated receipt or `null`)
 
 ```json
 {
@@ -113,7 +114,7 @@ It's also possible to filter:
 - **category_id** – identifier of the purchases' category,
 - **term** – full text search on purchase positions,
 - **company_id** – identifier of the supplier, pass _0_ to get the purchases not associated to a supplier,
-- **status** – "pending" or "approved" (Eingang, Archiv)
+- **status** – "pending" or "approved" (Inbox / Archive)
 - **not_booked** – true/false
 - **tags** – "Transportation, Restaurants" (comma separated list)
 - **date** – date range in the form _2020-02-01:2020-02-22_
