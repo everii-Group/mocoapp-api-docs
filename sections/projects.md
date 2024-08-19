@@ -50,6 +50,7 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
   "hourly_rate": 150,
   "info": "Abrechnung jährlich",
   "tags": ["Print", "Digital"],
+  "customer_report_url": "https://mycompany.mocoapp.com/projects/1234567/customer_report/cfd1901d23e000712488",
   "custom_properties": {
     "Project Management": "https://basecamp.com/123456"
   },
