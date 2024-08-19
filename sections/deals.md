@@ -77,7 +77,8 @@ Additionally, these parameters can be supplied:
 
 - [Global filters apply](../entities#global-filters)
 - **status** – "potential", "pending", "won", "lost" or "dropped"
-- **tags** "Important, Strategic" (comma separated list)
+- **tags** - "Important, Strategic" (comma separated list)
+- **closed_from** / **closed_to** - One or both parameters can be given to define an open or closed range for the `closed_on` attribute
 
 This returns an array with complete lead information (see attributes).
 
