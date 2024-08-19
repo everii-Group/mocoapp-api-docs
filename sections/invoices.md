@@ -389,7 +389,7 @@ This returns a list of expenses:
 ## PUT /invoices/{id}/update_status
 
 {: .note }
-Only works for actual invoices, not invoice drafts
+Only works for actual invoices, not invoice drafts. It's not possible to convert a draft to a regular invoice.
 
 Update an invoice status:
 
