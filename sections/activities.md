@@ -20,6 +20,7 @@ Activities contain among the standard fields also:
 - User (creator)
 
 Attributes `remote_service`, `remote_id` und `remote_url` are set by the MOCO Browser extension and represent a ticket in an external system (Trello, Jira, etc.) that this activity's time was spent on.
+`timer_started_at` is `null` for all activities and shows a timestamp if the timer is running on an activity. A timer can only be running on one activity at a time.
 
 ```json
 {
