@@ -31,7 +31,7 @@ Company and person are optional. The category is only important in status "pendi
   "status": "pending",
   "reminder_date": "2022-09-19",
   "closed_on": null,
-  "money": 61000,
+  "money": 61000.0,
   "currency": "CHF",
   "info": "Interesting Lead!",
   "custom_properties": {
