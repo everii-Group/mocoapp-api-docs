@@ -253,6 +253,26 @@ Mandatory fields are marked with a star (\*):
 - **custom_properties** – {"ext-ref": "3421"}
 - **print_detail_columns**  - true (Hide/Display 'quantity, unit, price'). Optional property, which defaults to the global account layout setting
 
+
+## PUT /offers/{id}/assign
+
+Assign an offer to a company, project, and/or deal.
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/offers/{id}/assign' \
+  -H 'authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "company_id": 1234,
+        "project_id": 2345,
+        "deal_id": 3456
+      }'
+```
+
+{: .note }
+If a `project_id` is set, the project's `company_id` is also set on this offer. If the company does not match the project's company, the project company overrides the given `company_id`.
+
 ## PUT /offers/{id}/update_status
 
 Update an offer status:
