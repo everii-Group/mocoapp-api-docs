@@ -22,7 +22,7 @@ The project group representation contains, among the standard fields, also:
 ```json
 {
   "id": 234,
-  "name": "Project Group Title",
+  "name": "Project Group Name",
   "user": {
     "id": 933613686,
     "firstname": "Jane",
@@ -41,7 +41,7 @@ The project group representation contains, among the standard fields, also:
     {
       "id": 944958556,
       "identifier": "P1234",
-      "name": "Project Title",
+      "name": "Project Name",
       "active": true,
       "budget": 10000.0
     }
