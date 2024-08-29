@@ -64,3 +64,47 @@ curl -X GET \
   'https://{domain}.mocoapp.com/api/v1/units/{id}' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
+
+## POST /units
+
+Create a unit:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/units' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "name": "A great new team"
+      }'
+```
+
+{: .note }
+Assigning a user is possible by [updating it](users.md#put-usersid) with the `unit_id` attribute.
+
+## PUT /units/{id}
+
+Update a unit:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/units/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "name": "A new name"
+      }'
+```
+
+Fields are analogous to the POST request.
+
+## DELETE /users/{id}
+
+{: .note }
+Deleting a unit is only possible if no users are assigned to it. Move existing users to a different unit by [updating them](users.md#put-usersid) with the `unit_id` attribute.
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/units/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
