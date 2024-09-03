@@ -28,7 +28,7 @@ The purchase budget representation is:
 }
 ```
 
-## GET /purchases/budget
+## GET /purchases/budgets
 
 Retrieve budgets for given year:
 
