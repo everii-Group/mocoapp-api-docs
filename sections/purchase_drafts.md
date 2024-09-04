@@ -26,6 +26,7 @@ The purchase draft representation is:
     "firstname": "John",
     "lastname": "Doe"
   },
+  "file_url": "https://...",
   "created_at": "2021-10-17T09:33:46Z",
   "updated_at": "2021-10-17T09:33:46Z"
 }
