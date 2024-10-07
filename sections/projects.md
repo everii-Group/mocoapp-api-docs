@@ -394,3 +394,28 @@ This returns the the following attributes:
   "url": null
 }
 ```
+
+## PUT /projects/{id}/assign_project_group
+
+Assign this project to a project group:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/projects/{id}/assign_project_group' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+      "project_group_id": 123
+    }'
+```
+
+## PUT /projects/{id}/unassign_project_group
+
+Unassign this project from its project group:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/projects/{id}/unassign_project_group' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
+```
