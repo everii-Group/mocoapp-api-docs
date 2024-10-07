@@ -11,6 +11,9 @@ German: "Projektgruppen"
 - TOC
 {:toc}
 
+{: .note }
+Assigning projects to a group is possible via the [projects endpoint](projects#put-projectsidassign_project_group)
+
 ## Attributes
 
 The project group representation contains, among the standard fields, also:
