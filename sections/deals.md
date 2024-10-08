@@ -79,6 +79,7 @@ Additionally, these parameters can be supplied:
 - **status** – "potential", "pending", "won", "lost" or "dropped"
 - **tags** - "Important, Strategic" (comma separated list)
 - **closed_from** / **closed_to** - One or both parameters can be given to define an open or closed range for the `closed_on` attribute
+- **company_id** - 123
 
 This returns an array with complete lead information (see attributes).
 
