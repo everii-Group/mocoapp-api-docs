@@ -19,7 +19,8 @@ Includes among the standard fields for purchases also:
 - company (if the purchase is associated to a supplier)
 - payments (list of payments made for the purchase)
 - user
-- status ("pending" = Inbox, "approved" = Archive)
+- status (`pending` = Inbox, `approved` = Archive)
+- approval_status (`none` = no approval requested, `approved` = all requests approved, `denied` = at least 1 denial none pending, `pending` = approvals still pending)
 - items
 - items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
 - items.expense (the associated project expense or `null`)
@@ -46,6 +47,7 @@ Includes among the standard fields for purchases also:
   "file_url": null,
   "custom_properties": { "Various": "some stuff" },
   "tags": ["Transportation"],
+  "approval_status": "approved",
   "company": {
     "id": 5552,
     "name": "Schweizerische Bundesbahnen SBB",
