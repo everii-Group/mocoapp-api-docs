@@ -38,17 +38,17 @@ X-Moco-User-Id: 933613686
 OpenSSL CLI:
 
 ```bash
-$ echo -n '{id: 111, description: "a description"}' | openssl sha256 -hmac "1d608b9d72219b90ff2393a1d3ee0ac0"
-(stdin)= 09f9ebc0adeb597cb7cb37fd72b20be0caeca6bd9fb67416b663606bd7f89183
+$ echo -n '{"id":111,"description":"a description"}' | openssl sha256 -hmac "1d608b9d72219b90ff2393a1d3ee0ac0"
+SHA2-256(stdin)= bf027a86207ef1ca1cb76f5a536b41a14287ab1a0fd5b33bfe86924bc2f48fd1
 ```
 
 Ruby:
 
 ```ruby
-payload = '{id: 111, description: "a description"}'
+payload = '{"id":111,"description":"a description"}' 
 signature_key = "1d608b9d72219b90ff2393a1d3ee0ac0"
 payload_signature = OpenSSL::HMAC.hexdigest("SHA256", signature_key, payload)
-# => "09f9ebc0adeb597cb7cb37fd72b20be0caeca6bd9fb67416b663606bd7f89183"
+# => "bf027a86207ef1ca1cb76f5a536b41a14287ab1a0fd5b33bfe86924bc2f48fd1"
 ```
 
 NodeJS:
@@ -56,7 +56,7 @@ NodeJS:
 ```javascript
 const crypto = require("crypto");
 const hmac = crypto.createHmac("sha256", "1d608b9d72219b90ff2393a1d3ee0ac0");
-const data = hmac.update('{id: 111, description: "a description"}');
+const data = hmac.update('{"id":111,"description":"a description"}');
 const digest = data.digest("hex");
 console.log("digest = " + digest);
 ```
