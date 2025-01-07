@@ -1,6 +1,9 @@
 # Custom Fields
 
-MOCO supports adding custom fields to many of its resources. These custom fields are readable and writable via the `custom_properties` field.
+MOCO supports saving custom fields to many of its resources. These custom fields are readable and writable via the `custom_properties` field.
+
+{: .note }
+ Custom fields must first be defined in the MOCO settings.
 
 {: .note }
  The size of the custom_properties field is limitted to 12 kB.
