@@ -240,16 +240,16 @@ Updates the purchase status:
 
 ```bash
 curl -X PATCH \
-  'https://{domain}.mocoapp.com/api/v1/purchases/{id}' \
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}/update_status' \
   -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '
     {
-      "status": "approved"
+      "status": "archived"
     }'
 ```
 
-- **status\*** – "pending", "approved"
+- **status\*** – "pending", "archived"
 
 ## PATCH /purchases/{id}/store_document
 
