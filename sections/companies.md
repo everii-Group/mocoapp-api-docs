@@ -86,6 +86,9 @@ curl -X GET \
 
 It's also possible to filter:
 
+{: .note }
+To filter by custom properties, you have to supply the `type` parameter.
+
 - [Global filters apply](../entities#global-filters)
 - **type** ("customer", "supplier", "organization")
 - **tags** "Automotive, Pharma" (comma separated list)
