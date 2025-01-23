@@ -121,7 +121,7 @@ It's also possible to filter:
 - **tags** – "Transportation, Restaurants" (comma separated list)
 - **date** – date range in the form _2020-02-01:2020-02-22_
 - **unpaid** – filter only purchases without a payment
-- **payment_method** – possible values are: "bank_transfer", "direct_debit", "credit_card", "paypal" or "cash"
+- **payment_method** – possible values are: "bank_transfer", "direct_debit", "credit_card", "paypal" or "cash", "bank_transfer_swiss_qr_esr"
 - **receipt_identifier** – filter by the receipts invoice number, e.g. R2023-1234. It must be unique scoped by supplier.
 - **identifier** – filter by purchase identifier, e.g. E2312-0001
 
@@ -174,7 +174,7 @@ Mandatory fields are marked with a star (\*):
 
 - **date\*** – "2020-02-02"
 - **currency\*** – "CHF" (a valid currency of the account)
-- **payment_method\*** – "bank_transfer", "direct_debit", "credit_card", "paypal", "cash"
+- **payment_method\*** – "bank_transfer", "direct_debit", "credit_card", "paypal", "cash", "bank_transfer_swiss_qr_esr"
 - **title** – set the title for this purchase. If left out, the title is generated from the positions.
 - **items\*** – list of position. At least one position must be present and every position has the following fields:
   - **title\*** – Ticket
