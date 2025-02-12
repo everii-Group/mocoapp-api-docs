@@ -51,6 +51,7 @@ The planning entry representation contains among the standard fields also:
   },
   "deal": null,
   "series_id": null,
+  "tentative": false,
   "series_repeat": null,
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
@@ -116,6 +117,7 @@ Mandatory fields are marked with a star (\*):
 - **user_id** – 234567 (user ID for active staff)
 - **comment** – "A comment..."
 - **symbol** – 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (home, building, car, graduation cap, cocktail, bells, baby carriage, users, moon , info circle)
+- **tentative** - true / false (whether this is a blocker or not)
 
 ## PUT /planning_entries/{id}
 
