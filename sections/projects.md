@@ -75,7 +75,8 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
       "billable": true,
       "active": true,
       "budget": null,
-      "hourly_rate": 0
+      "hourly_rate": 0,
+      "description": "A task description"
     },
     {
       "id": 125111,
@@ -83,7 +84,8 @@ The attributes `hourly_rate` and `billing_variant` are linked. By choosing the b
       "billable": true,
       "active": true,
       "budget": null,
-      "hourly_rate": 0
+      "hourly_rate": 0,
+      "description": "A task description"
     }
   ],
   "contracts": [
