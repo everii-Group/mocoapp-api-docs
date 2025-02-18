@@ -42,7 +42,7 @@ By default all requests are scoped to the authenticated user. Some resources can
 
 ## Rate Limiting
 
-You can expect to be able to send 120 requests per 2 minutes (~ 1 request per second). If you exceed this limit, the server responds with `429 Too Many Requests`.
+You can expect to be able to send 120 requests per 2 minutes (~ 1 request per second). For the unlimited plan, its 1200 requests per 2 minutes (~ 10 per second). If you exceed this limit, the server responds with `429 Too Many Requests`.
 
 ## Pagination
 
