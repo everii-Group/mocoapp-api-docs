@@ -21,6 +21,7 @@ German: "Projekte / Leistungen"
   "active": true,
   "budget": 2900,
   "hourly_rate": 120,
+  "description": "A task description",
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }
@@ -71,6 +72,7 @@ Mandatory fields are marked with a star (\*):
 - **active** – true/false
 - **budget** – 5000
 - **hourly_rate** – 120
+- **description** – A description of this task
 
 ## PUT /projects/{id}/tasks/{id}
 
