@@ -253,6 +253,35 @@ Mandatory fields are marked with a star (\*):
 - **custom_properties** – {"ext-ref": "3421"}
 - **print_detail_columns**  - true (Hide/Display 'quantity, unit, price'). Optional property, which defaults to the global account layout setting
 
+### Variables
+
+It's possible to use variables in the salutation and footer texts. Use curly braces like `{variable}` to use them:
+
+* `{salutation}`
+* `{date}`
+* `{due_date}`
+* `{due_days}`
+* `{invoice_due_days}`
+* `{recipient}` - full address
+* `{company_name}`
+* `{net_total}`
+* `{net_total_plus_options}` - including optional positions
+* `{tax}`
+* `{gross_total}`
+* `{title}`
+* `{identifier}` - offer number
+* `{me}` - current user full name
+* `{me_firstname}`
+* `{me_email}`
+* `{me_details}` - current user full name, email phone
+* `{user}` - creator full name
+* `{user_email}`
+* `{user_details}` - creator full name, email, phone
+* `{internal_contact}` - full name
+* `{internal_contact_email}`
+* `{internal_contact_details}` - full name, email, phone
+* `{signatur_image}` - email signature image
+* `{customer_approval_link}` - a URL to approve this offer - this activates the customer approval on this offer
 
 ## PUT /offers/{id}/assign
 
