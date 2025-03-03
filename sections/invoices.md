@@ -502,6 +502,38 @@ just specify the IDs using respectively `activity_ids` and `expense_ids`, for ex
 }
 ```
 
+### Variables
+
+It's possible to use variables in the salutation and footer texts. Use curly braces like `{variable}` to use them:
+
+* `{salutation}`
+* `{date}`
+* `{due_date}`
+* `{due_days}`
+* `{recipient}` - full address
+* `{company_name}`
+* `{net_total}`
+* `{tax}`
+* `{gross_total}`
+* `{title}`
+* `{identifier}` - invoice number
+* `{me}` - current user full name
+* `{me_firstname}`
+* `{me_email}`
+* `{me_details}` - full name, email, phone number
+* `{user}` - invoice creator full name 
+* `{user_email}` 
+* `{user_details}` - invoice creator full name, email, phone number
+* `{internal_contact}`
+* `{internal_contact_email}`
+* `{internal_contact_details}`
+* `{service_period}`
+* `{cash_discount}`
+* `{cash_discount_days}`
+* `{cash_discount_total}`
+* `{gross_total_with_cash_discount}`
+* `{signature_image}` - email signature image
+
 ## POST /invoices/{id}/send_email
 
 Send the invoice by email:
