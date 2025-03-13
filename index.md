@@ -36,7 +36,7 @@ Here's a list of API client implementations, not maintained by us. Feel free to 
 
 ## Impersonation
 
-By default all requests are scoped to the authenticated user. Some resources cannot be written in behalf of other users like `Activities` and `User Presences`. This reflects the behaviour in the UI. But you can login as another user provided that the authenticated user has permission to _Staff_. To achieve the same behaviour in the API, one can set the following x-header:
+By default all requests are scoped to the authenticated user. Some resources cannot be provided with a `user_id` or similar, like `Activities` and `User Presences`. This reflects the behaviour in the UI, since every user can only create their own activities or presences. But you can login as another user provided that the authenticated user has permission to _Staff_. To achieve the same behaviour in the API, one can set the following x-header:
 
 `X-IMPERSONATE-USER-ID=123` (user id to act in behalf of)
 
