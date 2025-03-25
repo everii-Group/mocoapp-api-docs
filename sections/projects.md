@@ -238,6 +238,9 @@ Mandatory fields are marked with a star (\*):
 - **co_leader_id** – 12345 (user ID)
 - **customer_id\*** – 234567
 - **deal_id** – 123456 (deal ID)
+- **contact_id** - 123456 (contact ID)
+- **secondary_contact_id** - 56789 (contact ID)
+- **billing_contact_id** - 56789 (contact ID)
 - **identifier\*** – "P-123" (only mandatory if number ranges are manual)
 - **billing_address** – "Beispiel AG\nBeispielstrasse 123\n12345 Berlin"
 - **billing_email_to** - "project@beispiel.co"
