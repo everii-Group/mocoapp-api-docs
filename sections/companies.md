@@ -136,6 +136,7 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **phone** – "+49 30 123 45 67"
 - **email** – "bestellung@lieferant.de"
 - **billing_email_cc** - "cc@lieferant.de"
+- **billing_notes** - "Rechnung mit Stundenauszug schicken"
 - **address** – "Lieferant AG\nBeispielstrasse 123\n12345 Berlin"
 - **info** – "Information for this company..."
 - **custom_properties** – {"UID": "123-UID-456"}
