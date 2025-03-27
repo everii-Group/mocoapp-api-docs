@@ -238,6 +238,7 @@ Mandatory fields are marked with a star (\*):
 - **co_leader_id** – 12345 (user ID)
 - **customer_id\*** – 234567
 - **deal_id** – 123456 (deal ID)
+- **project_group_id** - 123456 (project group ID)
 - **contact_id** - 123456 (contact ID)
 - **secondary_contact_id** - 56789 (contact ID)
 - **billing_contact_id** - 56789 (contact ID)
