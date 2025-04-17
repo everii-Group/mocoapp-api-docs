@@ -107,6 +107,9 @@ Mandatory fields are marked with a star (\*):
 - **tags** – ["Switzerland"]
 - **custom_properties** – {"Starting Month": "01.01.2016"}
 - **info** – "Info for this person..."
+- **avatar** – avatar (user picture) with the following fields:
+  - filename – "document.pdf"
+  - base64 – base64 encoded content of the file
 
 ## PUT /users/{id}
 
