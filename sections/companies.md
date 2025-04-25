@@ -156,6 +156,7 @@ Additional fields just for companies of type supplier:
 
 - **iban** – CH3908704016075473007
 - **supplier_tax** – 19.0
+- **default_invoice_due_days** – 20 (use **invoice_due_days** to set a value for a company)
 - **credit_number** – 70000 if bookkeeping is enabled
 
 ## PUT /companies/{id}
