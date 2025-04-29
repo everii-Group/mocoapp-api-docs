@@ -49,6 +49,10 @@ The planning entry representation contains among the standard fields also:
     "customer_name": "Acme GmbH",
     "color": "#faeb44"
   },
+  "task": {
+    "id": 6789,
+    "name": "Projektleitung"
+  },
   "deal": null,
   "series_id": null,
   "tentative": false,
