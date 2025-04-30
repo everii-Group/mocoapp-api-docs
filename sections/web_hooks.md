@@ -87,7 +87,7 @@ curl -X PUT \
       }'
 ```
 
-Fields are analogous to the POST request.
+Only the `hook` field can be updated.
 
 ## PUT /account/web_hooks/{id}/disable
 
