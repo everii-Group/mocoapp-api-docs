@@ -64,6 +64,10 @@ Includes among the standard fields for purchases also:
     "comment": "My receipts",
     "user_id": 123456
   },
+  "credit_card_transaction": {
+    "source": "pliant",
+    "transaction_identifier": "57a04fc8-a56e-4be6-acb2-241b513f0570"
+  },
   "items": [
     {
       "id": 311936153,
