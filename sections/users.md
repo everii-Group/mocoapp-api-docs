@@ -57,6 +57,7 @@ The following parameters can be supplied:
 
 - [Global filters apply](../entities#global-filters)
 - **include_archived** – true/false (deactivated users)
+- **tags** "Designer, Developer" (comma separated list)
 
 ## GET /users/{id}
 
