@@ -61,7 +61,7 @@ The representation contains, among the standard fields, also the following field
     "title": "Exepnse Group A",
     "budget": 5200
   },
-  purchase_items: [
+  "purchase_items": [
     {
       "id": 1234,
       "title": "Item Title",
