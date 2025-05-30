@@ -61,6 +61,19 @@ The representation contains, among the standard fields, also the following field
     "title": "Exepnse Group A",
     "budget": 5200
   },
+  purchase_items: [
+    {
+      "id": 1234,
+      "title": "Item Title",
+      "net_total", 12.0,
+      "currency": "EUR",
+      "purchase_id": 345,
+      "document": {
+        "id": 567,
+        "file_url": "https://..."
+      }
+    }
+  ],
   "created_at": "2024-06-06T09:33:46Z",
   "updated_at": "2024-06-06T09:33:46Z"
 }
