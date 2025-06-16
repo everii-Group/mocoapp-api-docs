@@ -25,6 +25,7 @@ The offer representation contains among the standard fields:
 {
   "id": 273,
   "identifier": "A1704-042",
+  "invoice_id": 1873491,
   "date": "2017-04-12",
   "due_date": "2017-04-26",
   "title": "Offer - User Management",

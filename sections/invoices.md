@@ -37,6 +37,7 @@ The invoice representation contains among standard fields also:
   "id": 80547,
   "customer_id": 760269602,
   "project_id": 944514545,
+  "offer_id": 98375923,
   "identifier": "R1704-013",
   "date": "2017-04-05",
   "due_date": "2017-04-25",
