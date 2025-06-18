@@ -19,7 +19,7 @@ Includes among the standard fields for purchases also:
 - company (if the purchase is associated to a supplier)
 - payments (list of payments made for the purchase)
 - user
-- status (`pending` = Inbox, `approved` = Archive)
+- status (`pending` = Inbox, `archived` = Archive)
 - approval_status (`none` = no approval requested, `approved` = all requests approved, `denied` = at least 1 denial none pending, `pending` = approvals still pending)
 - items
 - items.vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
@@ -120,7 +120,7 @@ It's also possible to filter:
 - **category_id** – identifier of the purchases' category,
 - **term** – full text search on purchase positions,
 - **company_id** – identifier of the supplier, pass _0_ to get the purchases not associated to a supplier,
-- **status** – "pending" or "approved" (Inbox / Archive)
+- **status** – "pending" or "archived" (Inbox / Archive)
 - **not_booked** – true/false
 - **tags** – "Transportation, Restaurants" (comma separated list)
 - **date** – date range in the form _2020-02-01:2020-02-22_
@@ -189,7 +189,7 @@ Mandatory fields are marked with a star (\*):
 - **due_date** – "2020-02-18"
 - **service_period_from** – "2020-01-01"
 - **service_period_to** – "2020-01-31"
-- **status** - "pending" or "approved"
+- **status** - "pending" or "archived"
 - **due_date** – "2020-02-18"
 - **company_id** – 211 (reference to the supplier)
 - **user_id** – 123 (reference to the responsible user)
