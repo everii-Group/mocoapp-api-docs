@@ -80,6 +80,7 @@ The following parameters can be supplied:
 - **period** – "2020-05-01:2020-07-31"
 - **user_id** – 123
 - **project_id** – 345
+- **deal_id** – 456
 
 ## GET /planning_entries/{id}
 
