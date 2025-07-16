@@ -26,6 +26,8 @@ The invoice representation contains among standard fields also:
   - unit_price: price per unit
   - net_total: total price for position
   - additional: signifies that this is an expense (`true` / `false`)
+  - for expense positions, it includes:
+    - expense_ids: [1234, 5678] (IDs of expenses that were billed with this position)
 - payments
 - reminders
 - user
