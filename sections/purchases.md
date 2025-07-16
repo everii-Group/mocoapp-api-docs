@@ -203,6 +203,25 @@ Mandatory fields are marked with a star (\*):
   - base64 – base64 encoded content of the file
 - **tags** – ["Label1", "Label2"]
 
+## PUT /purchases/{id}
+
+Update a purchase:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/purchases/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "date": "2020-02-02",
+        "currency": "EUR",
+        "payment_method": "bank_transfer",
+        "receipt_identifier": "XXLA",
+      }'
+```
+
+Fields are analogous to the POST request, update of purchase's items is at the moment **NOT** supported.
+
 ## POST /purchases/{id}/assign_to_project
 
 Assign a purchase item to a project by creating or linking to an expense in the project.
