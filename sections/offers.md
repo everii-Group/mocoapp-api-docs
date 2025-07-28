@@ -20,6 +20,7 @@ The offer representation contains among the standard fields:
 - position types ("title", "description", "item", "subtotal", "page-break" or "separator")
 - subtotal_type: `part_total`, `sub_total`, `optional_part_total`, `optional_sub_total` (only relevant if type is `subtotal`)
 - vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
+- service_type ("service" for regular items, "expense" for additional services)
 
 ```json
 {
@@ -83,7 +84,8 @@ The offer representation contains among the standard fields:
       "unit": "d",
       "unit_price": 1500,
       "net_total": 1500,
-      "optional": false
+      "optional": false,
+      "service_type": "service"
     },
     {
       "id": 30,
@@ -94,7 +96,8 @@ The offer representation contains among the standard fields:
       "unit": "d",
       "unit_price": 1500,
       "net_total": 4500,
-      "optional": false
+      "optional": false,
+      "service_type": "service"
     },
     {
       "id": 31,
@@ -105,7 +108,8 @@ The offer representation contains among the standard fields:
       "unit": null,
       "unit_price": 0,
       "net_total": 0,
-      "optional": false
+      "optional": false,
+      "service_type": "service"
     },
     {
       "id": 34,
@@ -116,7 +120,8 @@ The offer representation contains among the standard fields:
       "unit": "d",
       "unit_price": 1500,
       "net_total": 6000,
-      "optional": false
+      "optional": false,
+      "service_type": "expense"
     },
     {
       "id": 35,
@@ -127,7 +132,8 @@ The offer representation contains among the standard fields:
       "unit": null,
       "unit_price": 0,
       "net_total": 0,
-      "optional": false
+      "optional": false,
+      "service_type": "service"
     },
     {
       "id": 38,
@@ -138,7 +144,8 @@ The offer representation contains among the standard fields:
       "unit": "d",
       "unit_price": 1500,
       "net_total": 750,
-      "optional": false
+      "optional": false,
+      "service_type": "service"
     }
   ],
   "created_at": "2018-10-17T09:33:46Z",
