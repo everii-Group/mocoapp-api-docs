@@ -28,6 +28,7 @@ The invoice representation contains among standard fields also:
   - additional: signifies that this is an expense (`true` / `false`)
   - for expense positions, it includes:
     - expense_ids: [1234, 5678] (IDs of expenses that were billed with this position)
+  - service_type ("service" for regular items, "expense" for additional services)
 - payments
 - reminders
 - user
@@ -86,7 +87,8 @@ The invoice representation contains among standard fields also:
       "quantity": 0,
       "unit": null,
       "unit_price": 0,
-      "net_total": 0
+      "net_total": 0,
+      "service_type": "service"
     },
     {
       "id": 387470,
@@ -96,7 +98,8 @@ The invoice representation contains among standard fields also:
       "quantity": 15.5,
       "unit": "h",
       "unit_price": 185,
-      "net_total": 2867.5
+      "net_total": 2867.5,
+      "service_type": "service"
     },
     {
       "id": 387471,
@@ -106,7 +109,8 @@ The invoice representation contains among standard fields also:
       "quantity": 4.25,
       "unit": "h",
       "unit_price": 185,
-      "net_total": 786.25
+      "net_total": 786.25,
+      "service_type": "service"
     },
     {
       "id": 387472,
@@ -116,7 +120,8 @@ The invoice representation contains among standard fields also:
       "quantity": 110.25,
       "unit": "h",
       "unit_price": 185,
-      "net_total": 20396.25
+      "net_total": 20396.25,
+      "service_type": "service"
     },
     {
       "id": 387473,
@@ -126,7 +131,8 @@ The invoice representation contains among standard fields also:
       "quantity": 45.5,
       "unit": "h",
       "unit_price": 185,
-      "net_total": 8417.5
+      "net_total": 8417.5,
+      "service_type": "expense"
     },
     {
       "id": 387474,
@@ -136,7 +142,8 @@ The invoice representation contains among standard fields also:
       "quantity": 11.75,
       "unit": "h",
       "unit_price": 185,
-      "net_total": 2173.75
+      "net_total": 2173.75,
+      "service_type": "service"
     },
     {
       "id": 387475,
@@ -146,7 +153,8 @@ The invoice representation contains among standard fields also:
       "quantity": 5.25,
       "unit:": "h",
       "unit_price": 185,
-      "net_total": 971.25
+      "net_total": 971.25,
+      "service_type": "service"
     }
   ],
   "payments": [
