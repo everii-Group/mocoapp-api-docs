@@ -160,7 +160,8 @@ The following parameters can be supplied:
 - **tags** – "Important, Strategic" (comma separated list)
 - **identifier** – "P1903-003"
 - **retainer** – true/false
-- **project_group_id** – e.g. `4566687`
+- **project_group_id** – 4566687
+- **deal_id** – 123456 (also multiple values, comma-separated)
 
 ## GET /projects/assigned
 
