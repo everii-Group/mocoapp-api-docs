@@ -67,3 +67,60 @@ curl -X GET \
 ```
 
 returns a single custom property.
+
+## POST /account/custom_properties
+
+Create a new custom property:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/account/custom_properties' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "name": "Slogan",
+        "kind": "String",
+        "entity": "Deal"
+      }'
+```
+
+Mandatory fields are marked with a star (\*):
+
+- **name\*** – "Slogan" name of the custom property
+- **kind\*** – String | Textarea | Link | Boolean | Select | MultiSelect | Date
+- **entity\*** – Deal | Project | Customer | ...
+- **placeholder** – placeholder text displayed on MOCO for the input fields
+- **placeholder_alt** – paceholder in the alternative language
+- **print_on_invoice** – true/false (if true, the custom property is printed on invoices)
+- **print_on_offer** – true/false (if true, the custom property is printed on offers)
+- **print_on_timesheet** – true/false (if true, the custom property is printed on timesheets)
+- **notification_enabled** – true/false (for kind `Date` a notification is sent to a user, dependent on the entity)
+- **api_only** – true/false (if true, the custom property is not displayed in the UI, but can be used via the API)
+- **defaults** – for selections: the options that can be selected, empty strings are also valid.
+
+## PATCH /account/custom_properties/{id}
+
+Update a new custom property:
+
+```bash
+
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/account/custom_properties' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "name": "Slogan",
+        "placeholder": "Enter your slogan here",
+      }'
+```
+
+Fields are analogous to the POST request, but `kind` and `entity` cannot be changed.
+
+## DELETE /account/custom_properties/{id}
+
+Deletes the custom property:
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/account/custom_properties/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
