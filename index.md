@@ -33,6 +33,7 @@ Here's a list of API client implementations, not maintained by us. Feel free to 
 | Language |                Repository                |
 | -------- | :--------------------------------------: |
 | Python   | https://github.com/sommalia/moco-wrapper |
+| PHP      | https://github.com/mbs-hub/moco-php      |
 
 ## Impersonation
 
