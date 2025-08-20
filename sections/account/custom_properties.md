@@ -104,8 +104,8 @@ Update a new custom property:
 
 ```bash
 
-curl -X PUT \
-  'https://{domain}.mocoapp.com/api/v1/account/custom_properties' \
+curl -X PATCH \
+  'https://{domain}.mocoapp.com/api/v1/account/custom_properties/{id}' \
   -H 'Authorization: Token token=YOUR_API_KEY' \
   -H 'Content-Type: application/json' \
   -d '{
