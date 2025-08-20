@@ -151,16 +151,16 @@ The following parameters can be supplied:
 - [Global filters apply](../entities#global-filters)
 - **include_archived** – true/false
 - **include_company** – true/false (returns a complete company instead of just ID and name)
-- **leader_id** – 123456 (project (co-)leader user ID)
-- **company_id** – 123456 (company ID)
+- **leader_id** – 123456 (project (co-)leader user ID; also multiple values, comma-separated)
+- **company_id** – 123456 (also multiple values, comma-separated)
 - **created_from** – "2018-01-01"
 - **created_to** – "2018-12-31"
 - **updated_from** – "2018-01-01"
 - **updated_to** – "2018-12-31"
 - **tags** – "Important, Strategic" (comma separated list)
-- **identifier** – "P1903-003"
+- **identifier** – "P1903-003" (also multiple values, comma-separated)
 - **retainer** – true/false
-- **project_group_id** – 4566687
+- **project_group_id** – 4566687 (also multiple values, comma-separated)
 - **deal_id** – 123456 (also multiple values, comma-separated)
 
 ## GET /projects/assigned
