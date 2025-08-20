@@ -88,6 +88,8 @@ curl -X POST \
       }'
 ```
 
+Mandatory fields are: name.
+
 ## PUT /account/task_templates/{id}
 
 Update an task template:
