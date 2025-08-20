@@ -19,6 +19,8 @@ Activities contain among the standard fields also:
 - Task (on the project)
 - User (creator)
 
+The attribute `seconds` are the billable seconds of the activity; the attribute `worked_seconds` are the seconds considered for the users' actual hours.
+
 Attributes `remote_service`, `remote_id` und `remote_url` are set by the MOCO Browser extension and represent a ticket in an external system (Trello, Jira, etc.) that this activity's time was spent on.
 `timer_started_at` is `null` for all activities and shows a timestamp if the timer is running on an activity. A timer can only be running on one activity at a time per user.
 
@@ -28,6 +30,7 @@ Attributes `remote_service`, `remote_id` und `remote_url` are set by the MOCO Br
   "date": "2018-07-03",
   "hours": 1.25,
   "seconds": 4500,
+  "worked_seconds": 4500,
   "description": "Analysis context and dependencies",
   "billed": false,
   "invoice_id": null,
