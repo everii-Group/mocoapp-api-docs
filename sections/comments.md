@@ -90,6 +90,7 @@ Mandatory fields are marked with a star (\*):
 - **text\*** – "Comment text..."
 - **attachment_filename** – "document.pdf"
 - **attachment_content** – _the file as a base64-encoded string_
+- **created_at** – _when migrating data, pass this in the format `2018-05-09T05:40:06`_
 
 ## POST /comments/bulk
 
