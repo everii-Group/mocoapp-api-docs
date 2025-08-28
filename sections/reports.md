@@ -126,3 +126,77 @@ This returns an array with the following structure:
   }
 ]
 ```
+
+## GET /report/utilization
+
+Retrieve the utilization report:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/report/utilization?from={from_date}&to={to_date}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+The parameters `from` and `to` are required:
+
+- **from** - 2025-01-01
+- **to** - 2025-12-31
+
+```json
+[
+  {
+    "date": "2025-08-20",
+    "user_id": 92345,
+    "target_hours": 6.4,
+    "billable_hours": 4.3,
+    "unbillable_hours": 0.83,
+    "billable_seconds": 15487,
+    "unbillable_seconds": 3000
+  },
+  {
+    "date": "2025-08-21",
+    "user_id": 92345,
+    "target_hours": 6.4,
+    "billable_hours": 2.0,
+    "unbillable_hours": 3.83,
+    "billable_seconds": 7200,
+    "unbillable_seconds": 13800
+  },
+  {
+    "date": "2025-08-22",
+    "user_id": 92345,
+    "target_hours": 6.4,
+    "billable_hours": 3.33,
+    "unbillable_hours": 3.5,
+    "billable_seconds": 12000,
+    "unbillable_seconds": 12600
+  },
+  {
+    "date": "2025-08-20",
+    "user_id": 93346,
+    "target_hours": 8.0,
+    "billable_hours": 0.0,
+    "unbillable_hours": 0.0,
+    "billable_seconds": 0.0,
+    "unbillable_seconds": 0.0
+  },
+  {
+    "date": "2025-08-21",
+    "user_id": 93346,
+    "target_hours": 4.0,
+    "billable_hours": 0.0,
+    "unbillable_hours": 0.0,
+    "billable_seconds": 0.0,
+    "unbillable_seconds": 0.0
+  },
+  {
+    "date": "2025-08-22",
+    "user_id": 93346,
+    "target_hours": 8.0,
+    "billable_hours": 0.0,
+    "unbillable_hours": 0.25,
+    "billable_seconds": 0,
+    "unbillable_seconds": 900
+  }
+]
+```
