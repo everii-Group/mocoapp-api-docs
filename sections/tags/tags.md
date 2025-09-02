@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Tags (Labels)
-parent: Tags (Labels)
-grand_parent: Entities
+parent: Entities
+has_children: true
 ---
 
 # Tags
