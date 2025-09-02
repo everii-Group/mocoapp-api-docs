@@ -1,14 +1,16 @@
 ---
 layout: default
-parent: Entities
+title: Taggings
+parent: Tags (Labels)
+grand_parent: Entities
 ---
 
-# Tags / Labels
+# Taggings (tag associations)
 
 - TOC
 {:toc}
 
-The API provides a single endpoint to manage the tags (aka labels) associated to different type of entities:
+The API provides a single endpoint to manage the tag associations to different type of entities:
 
 ```
 /api/v1/taggings/{entity}/{entity_id}
