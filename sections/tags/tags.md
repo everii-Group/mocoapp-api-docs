@@ -100,4 +100,4 @@ curl -X DELETE \
 ```
 
 {: .note }
-Pass `merge_tag_id` if you want to replace all tagged entities with another tag. Usefull to consolidate many tags into one.
+Pass `merge_tag_id` if you want to replace all tagged entities with another tag. Useful to consolidate many tags into one.
