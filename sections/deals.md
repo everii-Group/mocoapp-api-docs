@@ -58,6 +58,7 @@ Company and person are optional. The category is only important in status "pendi
   },
   "service_period_from": "2022-09-01",
   "service_period_to": "2023-01-31",
+  "inbox_email_address": "lead-website-v2-jh72nuqrkfcndwkj@inbox.mocoapp.com",
   "created_at": "2021-10-17T09:33:46Z",
   "updated_at": "2012-10-17T09:33:46Z"
 }
