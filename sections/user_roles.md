@@ -14,7 +14,7 @@ German: "Benutzerrollen"
 
 The representation contains among the standard fields also:
 
-- permissions (the permissions granted with this role)
+- permission (the permission granted with this role)
 
 ```json
 {
