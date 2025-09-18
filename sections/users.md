@@ -28,13 +28,19 @@ German: "Personal"
   "birthday": "1970-01-01",
   "iban": "CH3181239000001245689",
   "avatar_url": "https//meinefirma.mocoapp.com/.../profil.jpg",
-  "tags": ["Deutschland"],
+  "tags": [
+    "Deutschland"
+  ],
   "custom_properties": {
     "Starting Month": "January 2015"
   },
   "unit": {
     "id": 456,
     "name": "Geschäftsleitung"
+  },
+  "role": {
+    "id": 42,
+    "name": "Entwickler"
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
@@ -96,6 +102,7 @@ Mandatory fields are marked with a star (\*):
 - **email\*** – "peter.mueller@meinefirma.de"
 - **password\*** – "dAfsdf88fw8fKjtD28f293!"
 - **unit_id\*** – 123 (team ID)
+- **role_id** – 42 (permission role ID)
 - **active** – true/false (activated/deactivated)
 - **external** – true/false (external employee / contractor)
 - **language** – "de", "de-AT", "de-CH", "en", "it" or "fr"
