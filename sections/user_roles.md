@@ -23,7 +23,6 @@ The representation contains among the standard fields also:
   "is_default": false,
   "is_admin": false,
   "permission": {
-    "id": 555,
     "report": "none",
     "companies": "full",
     "contacts": "full",
@@ -35,7 +34,9 @@ The representation contains among the standard fields also:
     "calendar": "full",
     "time_tracking": "full",
     "invoicing": "none"
-  }
+  },
+  "created_at": "2024-10-17T09:33:46Z",
+  "updated_at": "2024-10-17T09:33:46Z"
 }
 ```
 
