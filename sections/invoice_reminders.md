@@ -15,6 +15,8 @@ German: "Mahnung / Zahlungserinnerung"
 
 The invoice reminder representation contains among standard fields also shortened invoice information.
 
+* `status` can be `created` or `sent`.
+
 ```json
 {
   "id": 1,
@@ -23,6 +25,7 @@ The invoice reminder representation contains among standard fields also shortene
   "fee": 0.0,
   "date": "2019-10-16",
   "due_date": "2019-10-30",
+  "status": "created",
   "invoice": {
     "id": 1489,
     "identifier": "1409-019",
