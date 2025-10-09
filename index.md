@@ -30,11 +30,11 @@ All the entities exposed via the API can be found in their [respective sections]
 
 Here's a list of API client implementations, not maintained by us. Feel free to open up a PR to point to your implementation so others can re-use it.
 
-| Language |                Repository                        |
-| -------- | :----------------------------------------------: |
-| Python   | https://github.com/sommalia/moco-wrapper         |
-| PHP      | https://github.com/mbs-hub/moco-php              |
-| Ruby     | https://github.com/starsong-consulting/moco-ruby |
+| Language |                Repository                                                                            |
+| :------: | :-------------------------------------------------------------------------------------------------:  |
+| Python   | [https://github.com/sommalia/moco-wrapper](https://github.com/sommalia/moco-wrapper)                 |
+| PHP      | [https://github.com/mbs-hub/moco-php](https://github.com/mbs-hub/moco-php)                           |
+| Ruby     | [https://github.com/starsong-consulting/moco-ruby](https://github.com/starsong-consulting/moco-ruby) |
 
 ## Impersonation
 
