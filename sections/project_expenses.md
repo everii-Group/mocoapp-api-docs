@@ -145,6 +145,8 @@ Mandatory fields are marked with a star (\*):
 - **budget_relevant** – true/false (default: false)
 - **service_period_from** – "2021-01-01"
 - **service_period_to** – "2021-01-31"
+- **planned_purchase_date** – "2025-01-31" (expected purchase date)
+- **cost_total_planned** – 100.5 (expected purchase amount)
 - **user_id** - 456 (user responsible, current user by default)
 - **custom_properties** – {"Type": "Website"}
 - **file** – file attached to the expense, with the following fields:
