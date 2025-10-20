@@ -21,6 +21,12 @@ German: "Projekte / Leistungen"
   "active": true,
   "budget": 2900,
   "hourly_rate": 120,
+  "revenue_categoory": {
+    "id": 126,
+    "name": "Projektleitung",
+    "revenue_account": 30058,
+    "cost_category": "PM1"
+  },
   "description": "A task description",
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"

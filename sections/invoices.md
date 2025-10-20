@@ -83,6 +83,12 @@ The invoice representation contains among standard fields also:
       "id": 387469,
       "type": "title",
       "title": "März 2017",
+      "revenue_categoory": {
+        "id": 123,
+        "name": "Software-Entwicklung",
+        "revenue_account": 30055,
+        "cost_category": "SW1"
+      },
       "description": null,
       "quantity": 0,
       "unit": null,
@@ -94,6 +100,7 @@ The invoice representation contains among standard fields also:
       "id": 387470,
       "type": "item",
       "title": "Allgemeine Arbeiten",
+      "revenue_categoory": null,
       "description": null,
       "quantity": 15.5,
       "unit": "h",
@@ -105,6 +112,12 @@ The invoice representation contains among standard fields also:
       "id": 387471,
       "type": "item",
       "title": "Umsetzung Backend",
+      "revenue_categoory": {
+        "id": 123,
+        "name": "Software-Entwicklung",
+        "revenue_account": 30055,
+        "cost_category": "SW1"
+      },
       "description": null,
       "quantity": 4.25,
       "unit": "h",
@@ -116,6 +129,12 @@ The invoice representation contains among standard fields also:
       "id": 387472,
       "type": "item",
       "title": "Umsetzung Frontend",
+      "revenue_categoory": {
+        "id": 123,
+        "name": "Software-Entwicklung",
+        "revenue_account": 30055,
+        "cost_category": "SW1"
+      },
       "description": null,
       "quantity": 110.25,
       "unit": "h",
@@ -127,6 +146,12 @@ The invoice representation contains among standard fields also:
       "id": 387473,
       "type": "item",
       "title": "Hosting Dienstleistungen",
+      "revenue_categoory": {
+        "id": 124,
+        "name": "Hosting",
+        "revenue_account": 30056,
+        "cost_category": "HO1"
+      },
       "description": null,
       "quantity": 45.5,
       "unit": "h",
@@ -138,6 +163,12 @@ The invoice representation contains among standard fields also:
       "id": 387474,
       "type": "item",
       "title": "Support",
+      "revenue_categoory": {
+        "id": 125,
+        "name": "Support",
+        "revenue_account": 30057,
+        "cost_category": "SU1"
+      },
       "description": null,
       "quantity": 11.75,
       "unit": "h",
@@ -149,6 +180,12 @@ The invoice representation contains among standard fields also:
       "id": 387475,
       "type": "item",
       "title": "Projektleitung / Kommunikation",
+      "revenue_categoory": {
+        "id": 126,
+        "name": "Projektleitung",
+        "revenue_account": 30058,
+        "cost_category": "PM1"
+      },
       "description": null,
       "quantity": 5.25,
       "unit:": "h",
@@ -532,8 +569,8 @@ It's possible to use variables in the salutation and footer texts. Use curly bra
 * `{me_firstname}`
 * `{me_email}`
 * `{me_details}` - full name, email, phone number
-* `{user}` - invoice creator full name 
-* `{user_email}` 
+* `{user}` - invoice creator full name
+* `{user_email}`
 * `{user_details}` - invoice creator full name, email, phone number
 * `{internal_contact}`
 * `{internal_contact_email}`
