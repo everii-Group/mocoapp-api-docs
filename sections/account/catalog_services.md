@@ -45,6 +45,12 @@ Item attributes:
       "optional": false,
       "part": false,
       "additional": false,
+      "revenue_category": {
+        "id": 124,
+        "name": "Hosting",
+        "revenue_account": 30056,
+        "cost_category": "HO1"
+      },
       "created_at": "2022-06-16T12:24:30Z",
       "updated_at": "2022-06-16T12:24:30Z"
     },
@@ -61,6 +67,12 @@ Item attributes:
       "optional": false,
       "part": false,
       "additional": false,
+      "revenue_category": {
+        "id": 127,
+        "name": "Consulting",
+        "revenue_account": 30059,
+        "cost_category": "CO1"
+      },
       "created_at": "2022-06-16T12:24:30Z",
       "updated_at": "2022-06-16T12:24:30Z"
     }

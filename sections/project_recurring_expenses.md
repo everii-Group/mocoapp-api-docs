@@ -44,6 +44,12 @@ The representation contains, among the standard fields, also:
     "id": 1234,
     "name": "Project A"
   },
+  "revenue_category": {
+    "id": 124,
+    "name": "Hosting",
+    "revenue_account": 30056,
+    "cost_category": "HO1"
+  },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
 }

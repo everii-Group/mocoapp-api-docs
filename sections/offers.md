@@ -84,8 +84,14 @@ The offer representation contains among the standard fields:
       "unit": "d",
       "unit_price": 1500,
       "net_total": 1500,
-      "optional": false,
-      "service_type": "service"
+      "optional": false
+      "service_type": "service",
+      "revenue_category": {
+        "id": 124,
+        "name": "Hosting",
+        "revenue_account": 30056,
+        "cost_category": "HO1"
+      }
     },
     {
       "id": 30,
@@ -97,7 +103,8 @@ The offer representation contains among the standard fields:
       "unit_price": 1500,
       "net_total": 4500,
       "optional": false,
-      "service_type": "service"
+      "service_type": "service",
+      "revenue_category": null
     },
     {
       "id": 31,
@@ -109,7 +116,8 @@ The offer representation contains among the standard fields:
       "unit_price": 0,
       "net_total": 0,
       "optional": false,
-      "service_type": "service"
+      "service_type": "service",
+      "revenue_category": null
     },
     {
       "id": 34,
@@ -121,7 +129,13 @@ The offer representation contains among the standard fields:
       "unit_price": 1500,
       "net_total": 6000,
       "optional": false,
-      "service_type": "expense"
+      "service_type": "expense",
+      "revenue_category": {
+        "id": 123,
+        "name": "Software-Entwicklung",
+        "revenue_account": 30055,
+        "cost_category": "SW1"
+      }
     },
     {
       "id": 35,
@@ -133,7 +147,8 @@ The offer representation contains among the standard fields:
       "unit_price": 0,
       "net_total": 0,
       "optional": false,
-      "service_type": "service"
+      "service_type": "service",
+      "revenue_category": null
     },
     {
       "id": 38,
@@ -146,6 +161,12 @@ The offer representation contains among the standard fields:
       "net_total": 750,
       "optional": false,
       "service_type": "service"
+      "revenue_category": {
+        "id": 126,
+        "name": "Projektleitung",
+        "revenue_account": 30058,
+        "cost_category": "PM1"
+      }
     }
   ],
   "created_at": "2018-10-17T09:33:46Z",
