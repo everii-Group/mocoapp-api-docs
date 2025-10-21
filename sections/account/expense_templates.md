@@ -32,7 +32,7 @@ Item attributes:
   "unit_price": "50.0",
   "unit_cost": "40.0",
   "currency": "EUR",
-  "revenue_categoory": {
+  "revenue_category": {
     "id": 124,
     "name": "Hosting",
     "revenue_account": 30056,

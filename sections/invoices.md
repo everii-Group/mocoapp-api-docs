@@ -83,7 +83,7 @@ The invoice representation contains among standard fields also:
       "id": 387469,
       "type": "title",
       "title": "März 2017",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 123,
         "name": "Software-Entwicklung",
         "revenue_account": 30055,
@@ -100,7 +100,7 @@ The invoice representation contains among standard fields also:
       "id": 387470,
       "type": "item",
       "title": "Allgemeine Arbeiten",
-      "revenue_categoory": null,
+      "revenue_category": null,
       "description": null,
       "quantity": 15.5,
       "unit": "h",
@@ -112,7 +112,7 @@ The invoice representation contains among standard fields also:
       "id": 387471,
       "type": "item",
       "title": "Umsetzung Backend",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 123,
         "name": "Software-Entwicklung",
         "revenue_account": 30055,
@@ -129,7 +129,7 @@ The invoice representation contains among standard fields also:
       "id": 387472,
       "type": "item",
       "title": "Umsetzung Frontend",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 123,
         "name": "Software-Entwicklung",
         "revenue_account": 30055,
@@ -146,7 +146,7 @@ The invoice representation contains among standard fields also:
       "id": 387473,
       "type": "item",
       "title": "Hosting Dienstleistungen",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 124,
         "name": "Hosting",
         "revenue_account": 30056,
@@ -163,7 +163,7 @@ The invoice representation contains among standard fields also:
       "id": 387474,
       "type": "item",
       "title": "Support",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 125,
         "name": "Support",
         "revenue_account": 30057,
@@ -180,7 +180,7 @@ The invoice representation contains among standard fields also:
       "id": 387475,
       "type": "item",
       "title": "Projektleitung / Kommunikation",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 126,
         "name": "Projektleitung",
         "revenue_account": 30058,

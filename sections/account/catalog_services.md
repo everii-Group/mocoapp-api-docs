@@ -45,7 +45,7 @@ Item attributes:
       "optional": false,
       "part": false,
       "additional": false,
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 124,
         "name": "Hosting",
         "revenue_account": 30056,
@@ -67,7 +67,7 @@ Item attributes:
       "optional": false,
       "part": false,
       "additional": false,
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 127,
         "name": "Consulting",
         "revenue_account": 30059,

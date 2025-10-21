@@ -86,7 +86,7 @@ The offer representation contains among the standard fields:
       "net_total": 1500,
       "optional": false
       "service_type": "service",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 124,
         "name": "Hosting",
         "revenue_account": 30056,
@@ -104,7 +104,7 @@ The offer representation contains among the standard fields:
       "net_total": 4500,
       "optional": false,
       "service_type": "service",
-      "revenue_categoory": null
+      "revenue_category": null
     },
     {
       "id": 31,
@@ -117,7 +117,7 @@ The offer representation contains among the standard fields:
       "net_total": 0,
       "optional": false,
       "service_type": "service",
-      "revenue_categoory": null
+      "revenue_category": null
     },
     {
       "id": 34,
@@ -130,7 +130,7 @@ The offer representation contains among the standard fields:
       "net_total": 6000,
       "optional": false,
       "service_type": "expense",
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 123,
         "name": "Software-Entwicklung",
         "revenue_account": 30055,
@@ -148,7 +148,7 @@ The offer representation contains among the standard fields:
       "net_total": 0,
       "optional": false,
       "service_type": "service",
-      "revenue_categoory": null
+      "revenue_category": null
     },
     {
       "id": 38,
@@ -161,7 +161,7 @@ The offer representation contains among the standard fields:
       "net_total": 750,
       "optional": false,
       "service_type": "service"
-      "revenue_categoory": {
+      "revenue_category": {
         "id": 126,
         "name": "Projektleitung",
         "revenue_account": 30058,

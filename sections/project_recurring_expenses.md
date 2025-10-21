@@ -44,7 +44,7 @@ The representation contains, among the standard fields, also:
     "id": 1234,
     "name": "Project A"
   },
-  "revenue_categoory": {
+  "revenue_category": {
     "id": 124,
     "name": "Hosting",
     "revenue_account": 30056,

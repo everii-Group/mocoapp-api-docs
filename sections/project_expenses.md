@@ -45,7 +45,7 @@ The representation contains, among the standard fields, also the following field
   "service_period_from": "2024-06-01",
   "service_period_to": "2024-06-30",
   "file_url": "https//meinefirma.mocoapp.com/.../beleg1.jpg",
-  "revenue_categoory": {
+  "revenue_category": {
     "id": 124,
     "name": "Hosting",
     "revenue_account": 30056,
