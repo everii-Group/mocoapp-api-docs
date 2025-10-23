@@ -267,6 +267,7 @@ Mandatory fields are marked with a star (\*):
 - **tags** – ["Print", "Digital"]
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
+- **skip_favorite** – don't add this project to the leaders' favorites
 
 {: .note }
 If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start date has to be on the first and the finish date on the last of a month!
