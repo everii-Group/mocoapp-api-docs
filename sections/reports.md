@@ -91,7 +91,7 @@ Retrieve the finance report:
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/report/cashflow' \
+  'https://{domain}.mocoapp.com/api/v1/report/finance' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
