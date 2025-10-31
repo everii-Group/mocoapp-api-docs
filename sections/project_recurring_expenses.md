@@ -141,8 +141,21 @@ curl -X PUT \
         "unit_price": 49,
       }'
 ```
-
 The fields are analogous to the POST request, except for `start_date` and `period`. These fields cannot be modified after creation.
+
+## POST /projects/{id}/recurring_expenses/{id}/recur
+
+Creates an additional service entry on a project ahead of schedule.
+
+For an active recurring additional service, MOCO automatically creates the corresponding additional expense on the next recurrence date.
+Using the `recur` endpoint, you can trigger this creation process manually — before the automatic generation occurs.
+This also advances the `recur_next_date` by the defined `period`.
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/projects/{id}/recurring_expenses/{id}/recur' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+```
 
 ## DELETE /projects/{id}/recurring_expenses/{id}
 
