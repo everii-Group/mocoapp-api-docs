@@ -30,6 +30,7 @@ The planning entry representation contains among the standard fields also:
 ```json
 {
   "id": 4839,
+  "title": "Project Management",
   "starts_on": "2020-05-04",
   "ends_on": "2020-05-04",
   "hours_per_day": 6.0,
@@ -105,6 +106,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
         "project_id": 4322,
+        "task_id": 6789,
         "starts_on": "2020-05-20",
         "ends_on": "2020-05-30",
         "hours_per_day": 3,
