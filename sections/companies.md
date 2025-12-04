@@ -154,7 +154,9 @@ Additional fields just for companies of type customer:
 
 Additional fields just for companies of type supplier:
 
+- **bank_owner** – name of the account holder (if deviating from the supplier name)
 - **iban** – CH3908704016075473007
+- **bank_bic** – POFICHBEXXX
 - **supplier_tax** – 19.0
 - **default_invoice_due_days** – 20 (use **invoice_due_days** to set a value for a company)
 - **credit_number** – 70000 if bookkeeping is enabled
