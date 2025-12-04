@@ -100,7 +100,7 @@ Mandatory fields are marked with a star (\*):
 - **firstname\*** – "Peter"
 - **lastname\*** – "Müller"
 - **email\*** – "peter.mueller@meinefirma.de"
-- **password\*** – "dAfsdf88fw8fKjtD28f293!"
+- **password** – "dAfsdf88fw8fKjtD28f293!"
 - **unit_id\*** – 123 (team ID)
 - **role_id** – 42 (permission role ID)
 - **active** – true/false (activated/deactivated)
