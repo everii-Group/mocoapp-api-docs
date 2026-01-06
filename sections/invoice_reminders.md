@@ -26,6 +26,7 @@ The invoice reminder representation contains among standard fields also shortene
   "date": "2019-10-16",
   "due_date": "2019-10-30",
   "status": "created",
+  "file_url": "https://...",
   "invoice": {
     "id": 1489,
     "identifier": "1409-019",
