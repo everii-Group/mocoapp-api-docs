@@ -268,6 +268,9 @@ Mandatory fields are marked with a star (\*):
 - **custom_properties** – {"PO-Nummer": "123-ABC"}
 - **info** – "Info for this project"
 - **skip_favorite** – don't add this project to the leaders' favorites
+- **retainer_billing_date** – 15 (Integer, 1..31 - day of month to bill; default values for retainer payment schedule creation)
+- **retainer_billing_title** – "Monthly Retainer" (default title for retainer payment schedule creation)
+- **retainer_billing_description** – "Recurring billing" (default description for retainer payment schedule creation)
 
 {: .note }
 If the field `retainer` is true, the fields `start_date`, `finish_date`, `budget_monthly` are mandatory. Also the start date has to be on the first and the finish date on the last of a month!
