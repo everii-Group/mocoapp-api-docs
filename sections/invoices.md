@@ -90,9 +90,9 @@ The invoice representation contains among standard fields also:
         "cost_category": "SW1"
       },
       "description": null,
-      "quantity": 0,
+      "quantity": null,
       "unit": null,
-      "unit_price": 0,
+      "unit_price": null,
       "net_total": 0,
       "service_type": "service"
     },
