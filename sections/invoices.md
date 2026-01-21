@@ -60,6 +60,7 @@ The invoice representation contains among standard fields also:
   "vat": { "tax": 8.0, "reverse_charge": false, "intra_eu": false, "active": true, "print_gross_total": true, "notice_tax_exemption": "", "notice_tax_exemption_alt": "" },
   "gross_total": 38461.5,
   "discount": 10,
+  "creditor_reference": "12345",
   "cash_discount": 2.5,
   "cash_discount_days": 5,
   "debit_number": null,
