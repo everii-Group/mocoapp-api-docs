@@ -75,7 +75,7 @@ Includes among the standard fields for purchases also:
       "net_total": 44.88,
       "tax_total": 1.12,
       "tax": 2.5,
-      "vat": { "tax": 2.5, "reverse_charge": false, "intra_eu": false, "active": true },
+      "vat": { "tax": 2.5, "reverse_charge": false, "intra_eu": false, "active": true, "code": "9" },
       "tax_included": true,
       "gross_total": 46.0,
       "category": {
