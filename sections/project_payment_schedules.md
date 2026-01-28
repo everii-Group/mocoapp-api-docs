@@ -118,6 +118,10 @@ curl -X PUT \
 
 Fields are analogous to the POST request.
 
+Default retainer billing settings (`retainer_billing_date`, `retainer_billing_title`, `retainer_billing_description`) can be retrieved and updated via the [GET /projects/{id}](projects#get-projectsid) and [PUT /projects/{id}](projects#put-projectsid) endpoints.
+
+
+
 ## DELETE /projects/{project_id}/payment_schedules/{id}
 
 Delete the payment schedule.
@@ -127,3 +131,5 @@ curl -X DELETE \
   'https://{domain}.mocoapp.com/api/v1/projects/{project_id}/payment_schedules/{id}' \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
+
+
