@@ -17,10 +17,18 @@ The offer representation contains among the standard fields:
 
 - custom properties
 - positions (items)
-- position types ("title", "description", "item", "subtotal", "page-break" or "separator")
-- subtotal_type: `part_total`, `sub_total`, `optional_part_total`, `optional_sub_total` (only relevant if type is `subtotal`)
+  - type: "title", "description", "item", "subtotal", "page-break" or "separator"
+  - title: main item title
+  - description: rich text description that belongs to the item
+  - quantity: for detail positions, the multiplier for this position
+  - unit: a label for the unit, e.g. “pieces”, “hours”, “days”
+  - unit_price: price per unit
+  - net_total: total price for position
+  - optional: true = not included in the total sum
+  - service_type ("service" for regular items, "expense" for additional services). Use `additional = true` attribute to set to `expense`.
+  - subtotal_type: `part_total`, `sub_total`, `optional_part_total`, `optional_sub_total` (only relevant if type is `subtotal`)
 - vat ("tax", "reverse_charge", "intra_eu" (intra community trade, only applicable for accounts in the EU))
-- service_type ("service" for regular items, "expense" for additional services)
+
 
 ```json
 {
