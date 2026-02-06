@@ -28,6 +28,7 @@ The invoice representation contains among standard fields also:
   - additional: signifies that this is an expense (`true` / `false`)
   - for expense positions, it includes:
     - expense_ids: [1234, 5678] (IDs of expenses that were billed with this position)
+  - optional: whether this position is optional (i.e. not actually billed and not included in the total) (`true` / `false`)
   - service_type ("service" for regular items, "expense" for additional services)
 - payments
 - reminders
