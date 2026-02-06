@@ -71,3 +71,13 @@ curl -X GET \
 ```
 
 This returns this draft's document if it's a PDF. Otherwise it responds with 204 No Content.
+
+## DELETE /purchases/drafts/{id}
+
+Deletes a purchase draft.
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/purchases/drafts/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
