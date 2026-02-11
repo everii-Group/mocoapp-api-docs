@@ -8,7 +8,7 @@ parent: Entities
 German: "Firmen"
 
 - TOC
-{:toc}
+  {:toc}
 
 ## Attributes
 
@@ -45,8 +45,21 @@ The company representation contains among default fields the following features:
   "identifier": "36",
   "intern": false,
   "billing_tax": 0,
-  "customer_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true, "active": true, "print_gross_total": true, "notice_tax_exemption": "", "notice_tax_exemption_alt": "" }, // for customers only
-  "supplier_vat": { "tax": 0.0, "reverse_charge": true, "intra_eu": true, "active": true }, // for suppliers only
+  "customer_vat": {
+    "tax": 0.0,
+    "reverse_charge": true,
+    "intra_eu": true,
+    "active": true,
+    "print_gross_total": true,
+    "notice_tax_exemption": "",
+    "notice_tax_exemption_alt": ""
+  }, // for customers only
+  "supplier_vat": {
+    "tax": 0.0,
+    "reverse_charge": true,
+    "intra_eu": true,
+    "active": true
+  }, // for suppliers only
   "currency": "CHF",
   "custom_rates": false,
   "include_time_report": false,
@@ -68,6 +81,8 @@ The company representation contains among default fields the following features:
       "billable": true
     }
   ],
+  "active": true,
+  "archived_on": null,
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z",
   "debit_number": 10000
@@ -90,6 +105,7 @@ It's also possible to filter:
 To filter by custom properties, you have to supply the `type` parameter.
 
 - [Global filters apply](../entities#global-filters)
+- **include_archived** – true/false
 - **type** ("customer", "supplier", "organization")
 - **tags** "Automotive, Pharma" (comma separated list)
 - **identifier** "K0405"
@@ -183,4 +199,26 @@ Fields are analogous to the POST request.
 curl -X DELETE \
   'https://{domain}.mocoapp.com/api/v1/companies/{123}' \
   -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+## PUT /companies/{id}/archive
+
+Archival of a company:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/companies/{id}/archive' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
+```
+
+## PUT /companies/{id}/unarchive
+
+Reactivate an archived company:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/companies/{id}/unarchive' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json'
 ```
