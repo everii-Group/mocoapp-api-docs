@@ -21,8 +21,9 @@ The offer representation contains among the standard fields:
   - title: main item title
   - description: rich text description that belongs to the item
   - quantity: for detail positions, the multiplier for this position
-  - unit: a label for the unit, e.g. “pieces”, “hours”, “days”
+  - unit: a label for the unit, e.g. "pieces", "hours", "days"
   - unit_price: price per unit
+  - unit_cost: internal cost per unit
   - net_total: total price for position
   - optional: true = not included in the total sum
   - service_type ("service" for regular items, "expense" for additional services). Use `additional = true` attribute to set to `expense`.
@@ -91,8 +92,9 @@ The offer representation contains among the standard fields:
       "quantity": 1,
       "unit": "d",
       "unit_price": 1500,
+      "unit_cost": 1200,
       "net_total": 1500,
-      "optional": false
+      "optional": false,
       "service_type": "service",
       "revenue_category": {
         "id": 124,
@@ -109,6 +111,7 @@ The offer representation contains among the standard fields:
       "quantity": 3,
       "unit": "d",
       "unit_price": 1500,
+      "unit_cost": null,
       "net_total": 4500,
       "optional": false,
       "service_type": "service",
@@ -122,6 +125,7 @@ The offer representation contains among the standard fields:
       "quantity": 0,
       "unit": null,
       "unit_price": 0,
+      "unit_cost": null,
       "net_total": 0,
       "optional": false,
       "service_type": "service",
@@ -135,6 +139,7 @@ The offer representation contains among the standard fields:
       "quantity": 4,
       "unit": "d",
       "unit_price": 1500,
+      "unit_cost": 1000,
       "net_total": 6000,
       "optional": false,
       "service_type": "expense",
@@ -153,6 +158,7 @@ The offer representation contains among the standard fields:
       "quantity": 0,
       "unit": null,
       "unit_price": 0,
+      "unit_cost": null,
       "net_total": 0,
       "optional": false,
       "service_type": "service",
@@ -166,9 +172,10 @@ The offer representation contains among the standard fields:
       "quantity": 0.5,
       "unit": "d",
       "unit_price": 1500,
+      "unit_cost": 800,
       "net_total": 750,
       "optional": false,
-      "service_type": "service"
+      "service_type": "service",
       "revenue_category": {
         "id": 126,
         "name": "Projektleitung",
