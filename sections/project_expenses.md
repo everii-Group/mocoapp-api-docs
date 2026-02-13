@@ -174,7 +174,9 @@ curl -X POST \
             "quantity": 1,
             "unit": "Server",
             "unit_price": 29,
-            "unit_cost": 19
+            "unit_cost": 19,
+            "service_period_from": "2018-10-01",
+            "service_period_to": "2018-10-31"
           },
           {
             "date": "2018-10-22",
@@ -182,7 +184,9 @@ curl -X POST \
             "quantity": 1,
             "unit": "Server",
             "unit_price": 29,
-            "unit_cost": 19
+            "unit_cost": 19,
+            "service_period_from": "2018-10-01",
+            "service_period_to": "2018-10-31"
           }
         ]
       }'
@@ -199,6 +203,8 @@ Mandatory fields are marked with a star (\*):
 - **description** – "Hosting, Monitoring, Backup"
 - **billable** – true/false (default: true)
 - **budget_relevant** – true/false (default: false)
+- **service_period_from** – "2024-01-01"
+- **service_period_to** – "2024-01-31"
 
 ## PUT /projects/{id}/expenses/{id}
 
