@@ -127,6 +127,56 @@ This returns an array with the following structure:
 ]
 ```
 
+## GET /report/planned_vs_tracked
+
+Retrieve the planned vs tracked report:
+
+```bash
+curl -I -X GET \
+  'https://{domain}.mocoapp.com/api/v1/report/planned_vs_tracked' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+It's possible to filter:
+
+- **from** - 2025-01-01
+- **to** - 2025-12-31
+- **term** - text
+
+This returns an array with the following structure:
+
+```json
+[
+  {
+    "user_id": 111,
+    "project_id": 222,
+    "tracked_hours": 0.0,
+    "planned_hours": 218.0,
+    "delta": -218.0,
+    "quota": 0.0,
+    "user": {
+      "id": 111,
+      "firstname": "John",
+      "name": "Smith",
+      "initials": "JS",
+      "color": "#d9822b",
+      "unit": {
+        "id": 777,
+        "name": "4 Support / Success"
+      }
+    },
+    "project": {
+      "id": 222,
+      "identifier": "276",
+      "name": "Support",
+      "company": {
+        "id": 333,
+        "name": "hundertzehn GmbH"
+      }
+    }
+  }
+]
+```
+
 ## GET /report/utilization
 
 Retrieve the utilization report:
