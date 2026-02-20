@@ -55,8 +55,8 @@ curl -X GET \
 
 It's possible to filter:
 
-- **from** - 2025-01-01
-- **to** - 2025-12-31
+- **from** - 2025-01-01, defaults to the beginning of the current year if not specified
+- **to** - 2025-12-31, defaults to the end of the current year if not specified
 - **term** - text
 
 
@@ -97,8 +97,8 @@ curl -X GET \
 
 It's possible to filter:
 
-- **from** - 2025-01-01
-- **to** - 2025-12-31
+- **from** - 2025-01-01, defaults to the beginning of the current year if not specified
+- **to** - 2025-12-31, defaults to the end of the current year if not specified
 - **term** - text
 
 
@@ -138,8 +138,8 @@ curl -I -X GET \
 ```
 It's possible to filter:
 
-- **from** - 2025-01-01
-- **to** - 2025-12-31
+- **from** - 2025-01-01, defaults to the beginning of the current year if not specified
+- **to** - 2025-12-31, defaults to the end of the current year if not specified
 - **term** - text
 
 This returns an array with the following structure:
@@ -187,10 +187,10 @@ curl -X GET \
   -H 'Authorization: Token token=YOUR_API_KEY'
 ```
 
-The parameters `from` and `to` are required:
+It's possible to filter:
 
-- **from** - 2025-01-01
-- **to** - 2025-12-31
+- **from** - 2025-01-01, defaults to the beginning of the current year if not specified
+- **to** - 2025-12-31, defaults to the end of the current year if not specified
 
 ```json
 [
