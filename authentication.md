@@ -9,8 +9,16 @@ Both kinds of keys are provided as an Authorization header.
 
 ```bash
 curl -X GET \
-  'https://{domain}.mocoapp.com/api/v1/projects.json' \
+  'https://{domain}.mocoapp.com/api/v1/projects' \
   -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+Alternatively, you can use Bearer token authentication:
+
+```bash
+curl -X GET \
+  'https://{domain}.mocoapp.com/api/v1/projects' \
+  -H 'Authorization: Bearer YOUR_API_KEY'
 ```
 
 This key can also be requested via API for user-specific keys:
