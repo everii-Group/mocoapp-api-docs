@@ -159,6 +159,8 @@ Fields for all types of companies. Mandatory fields are marked with a star (\*):
 - **tags** – ["Network", "Print"]
 - **user_id** – 123456 💡(responsible person)
 - **footer** – "<div>some html</div>" (appears at the end of invoices)
+- **invoice_format** – "regular_pdf" (default), "x_invoice", "zugferd_x_invoice"
+- **default_payment_means** – "not_defined", "credit_transfer" – can be left empty to use the account default
 
 Additional fields just for companies of type customer:
 
