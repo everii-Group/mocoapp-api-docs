@@ -9,7 +9,7 @@ has_children: true
 German: "Rechnungen"
 
 - TOC
-  {:toc}
+{:toc}
 
 ## Attributes
 
