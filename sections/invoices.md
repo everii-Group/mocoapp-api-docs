@@ -9,7 +9,7 @@ has_children: true
 German: "Rechnungen"
 
 - TOC
-{:toc}
+  {:toc}
 
 ## Attributes
 
@@ -490,7 +490,8 @@ curl -X POST \
             "title": "Hosting",
             "quantity": 1,
             "unit": "Stk",
-            "unit_price": 99.0
+            "unit_price": 99.0,
+            "revenue_category_id": 123
           },
           {
             "type": "separator"
@@ -534,9 +535,13 @@ Mandatory fields are marked with a star (\*):
 - **internal_contact_id** - 1234 (ID of an internal user)
 - **custom_properties** – {"ext-ref": "5433"}
 - **tags** – ["Hosting", "Europe"]
-- **print_detail_columns**  - true (Hide/Display 'quantity, unit, price'). Optional property, which defaults to the global account layout setting
+- **print_detail_columns** - true (Hide/Display 'quantity, unit, price'). Optional property, which defaults to the global account layout setting
+
+### Service Period
 
 Omitted fields `service_period_from` and `service_period_to` indicates the absences of a service period.
+
+### Billing activities and expenses
 
 Items with `quantity`, `unit` and `unit_price` can be used to select activities or expenses to be billed by this invoice,
 just specify the IDs using respectively `activity_ids` and `expense_ids`, for example:
@@ -552,37 +557,41 @@ just specify the IDs using respectively `activity_ids` and `expense_ids`, for ex
 }
 ```
 
+### Setting a revenue category for an item
+
+A `revenue_category_id` can be specified for each item.
+
 ### Variables
 
 It's possible to use variables in the salutation and footer texts. Use curly braces like `{variable}` to use them:
 
-* `{salutation}`
-* `{date}`
-* `{due_date}`
-* `{due_days}`
-* `{recipient}` - full address
-* `{company_name}`
-* `{net_total}`
-* `{tax}`
-* `{gross_total}`
-* `{title}`
-* `{identifier}` - invoice number
-* `{me}` - current user full name
-* `{me_firstname}`
-* `{me_email}`
-* `{me_details}` - full name, email, phone number
-* `{user}` - invoice creator full name
-* `{user_email}`
-* `{user_details}` - invoice creator full name, email, phone number
-* `{internal_contact}`
-* `{internal_contact_email}`
-* `{internal_contact_details}`
-* `{service_period}`
-* `{cash_discount}`
-* `{cash_discount_days}`
-* `{cash_discount_total}`
-* `{gross_total_with_cash_discount}`
-* `{signature_image}` - email signature image
+- `{salutation}`
+- `{date}`
+- `{due_date}`
+- `{due_days}`
+- `{recipient}` - full address
+- `{company_name}`
+- `{net_total}`
+- `{tax}`
+- `{gross_total}`
+- `{title}`
+- `{identifier}` - invoice number
+- `{me}` - current user full name
+- `{me_firstname}`
+- `{me_email}`
+- `{me_details}` - full name, email, phone number
+- `{user}` - invoice creator full name
+- `{user_email}`
+- `{user_details}` - invoice creator full name, email, phone number
+- `{internal_contact}`
+- `{internal_contact_email}`
+- `{internal_contact_details}`
+- `{service_period}`
+- `{cash_discount}`
+- `{cash_discount_days}`
+- `{cash_discount_total}`
+- `{gross_total_with_cash_discount}`
+- `{signature_image}` - email signature image
 
 ## POST /invoices/{id}/send_email
 
