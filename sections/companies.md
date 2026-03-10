@@ -7,8 +7,7 @@ parent: Entities
 
 German: "Firmen"
 
-## TOC
-
+- TOC
 {:toc}
 
 ## Attributes
