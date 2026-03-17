@@ -183,9 +183,10 @@ Mandatory fields are marked with a star (\*):
 - **items\*** – list of position. At least one position must be present and every position has the following fields:
   - **title\*** – Ticket
   - **total\*** – 30
-  - **tax\*** – 7.7 (tax percentage)
+  - **tax** – 7.7 (tax percentage) ⚠️ deprecated, please use `vat_code_id` instead.
   - **tax_included** – true (specify if the total includes the tax or not)
-  - **category_id** – 123 (reference to a purchase category)
+  - **category_id** – 123 (reference to a [purchase category](../sections/purchase_categories))
+  - **vat_code_id\*** - 234 (reference to [vat code](../sections/vat_codes))
 - **due_date** – "2020-02-18"
 - **service_period_from** – "2020-01-01"
 - **service_period_to** – "2020-01-31"
