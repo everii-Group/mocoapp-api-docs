@@ -15,6 +15,7 @@ German: "Notizen"
 The representation contains, among the standard fields, also:
 
 - user (creator)
+- impersonating_user (only present when the comment was created while impersonating another user)
 
 ```json
 {
@@ -27,6 +28,11 @@ The representation contains, among the standard fields, also:
     "id": 567,
     "firstname": "Tobias",
     "lastname": "Miesel"
+  },
+  "impersonating_user": {
+    "id": 789,
+    "firstname": "Erika",
+    "lastname": "Mustermann"
   },
   "created_at": "2018-10-17T09:33:46Z",
   "updated_at": "2018-10-17T09:33:46Z"
