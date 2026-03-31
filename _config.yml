@@ -11,6 +11,13 @@ color_scheme: moco
 
 aux_links: # remove if you don't want this link to appear on your pages
   Github: https://github.com/everii-group/mocoapp-api-docs
+
+nav_external_links:
+  - title: Open API
+    url: https://docs.mocoapp.com/api/docs/v1
+    opens_in_new_tab: true
+    hide_icon: false
+
 heading_anchors: true
 kramdown:
   toc_levels: "2,3"
