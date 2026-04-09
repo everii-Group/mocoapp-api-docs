@@ -27,6 +27,8 @@ The purchase draft representation is:
     "lastname": "Doe"
   },
   "file_url": "https://...",
+  "net_total": 100.00,
+  "gross_total": 119.00,
   "created_at": "2021-10-17T09:33:46Z",
   "updated_at": "2021-10-17T09:33:46Z"
 }
