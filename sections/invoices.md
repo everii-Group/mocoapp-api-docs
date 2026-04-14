@@ -33,6 +33,12 @@ The invoice representation contains among standard fields also:
 - payments
 - reminders
 - user
+- `debt_collection_procedure` – debt collection procedure linked to this invoice (or `null`), containing:
+  - `id`
+  - `user` (`id`, `firstname`, `lastname`)
+  - `note`
+  - `created_at`
+  - `updated_at`
 - `vat` (`tax`, `reverse_charge`, `intra_eu` (intra community trade, only applicable for accounts in the EU))
 - `activity_hours_modified` (shows whether any positions have been modified and do correspond to the timesheet)
 
@@ -75,6 +81,17 @@ The invoice representation contains among standard fields also:
   },
   "tags": ["Postversand"],
   "file_url": "https://data.mocoapp.com/objects...", ⚠️ this link is only available for short time and changes afterwards
+  "debt_collection_procedure": {
+    "id": 15,
+    "user": {
+      "id": 1234,
+      "firstname": "Jane",
+      "lastname": "Doe"
+    },
+    "note": "Sent to collection agency",
+    "created_at": "2018-10-17T09:33:46Z",
+    "updated_at": "2018-10-17T09:33:46Z"
+  },
   "user": {
     "id": 1234,
     "firstname": "Jane",
