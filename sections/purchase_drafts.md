@@ -50,6 +50,33 @@ The following parameters can be supplied:
 
 - [Global filters apply](../entities#global-filters)
 
+## POST /purchases/drafts
+
+Create a purchase draft:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/purchases/drafts' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "title": "Supplier invoice draft",
+        "file": {
+          "filename": "invoice.pdf",
+          "base64": "JVBERi0xLjQK..."
+        }
+      }'
+```
+
+Mandatory fields are: **title**.
+
+Fields:
+
+- **title** – Title of the purchase draft (required)
+- **file** – Optional file attachment with properties:
+  - **filename** – Original file name including extension
+  - **base64** – Base64-encoded file content
+
 ## GET /purchases/drafts/{id}
 
 Retrieve a single draft:
