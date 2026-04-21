@@ -203,6 +203,7 @@ Mandatory fields are marked with a star (\*):
   - filename – "document.pdf"
   - base64 – base64 encoded content of the file
 - **tags** – ["Label1", "Label2"]
+- **partially_paid** – true/false (marks the purchase as partially paid, can be set independently from payments)
 
 ## PUT /purchases/{id}
 
