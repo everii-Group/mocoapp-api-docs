@@ -140,7 +140,6 @@ It's possible to filter:
 
 - **from** - 2025-01-01, defaults to the beginning of the current year if not specified
 - **to** - 2025-12-31, defaults to the end of the current year if not specified
-- **term** - text
 
 This returns an array with the following structure:
 
