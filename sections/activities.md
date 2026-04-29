@@ -178,6 +178,27 @@ curl -X PUT \
 
 All fields are analogous to the POST request.
 
+## PATCH /activities/{id}/billable_seconds
+
+Update only the billable seconds of an activity independently of the actual worked time (`worked_seconds`). This is useful when the billable time differs from the actual tracked time (e.g., courtesy services or write-offs).
+
+Only available to project leaders. Returns 403 if the current user lacks the required permissions.
+
+```bash
+curl -X PATCH \
+  'https://{domain}.mocoapp.com/api/v1/activities/{id}/billable_seconds' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "seconds": 7200
+      }'
+```
+
+- **seconds** – 7200 (billable seconds, may differ from worked_seconds)
+
+{: .note }
+Only the `seconds` parameter is accepted. Other fields must be updated via the main [PUT /activities/{id}](#put-activitiesid) endpoint.
+
 ## PATCH /activities/{id}/start_timer
 
 Start or continue a timer on an activity.
