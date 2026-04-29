@@ -180,7 +180,7 @@ All fields are analogous to the POST request.
 
 ## PATCH /activities/{id}/billable_seconds
 
-Update only the billable seconds of an activity independently of the actual worked time (`worked_seconds`). This is useful when the billable time differs from the actual tracked time (e.g., courtesy services or write-offs).
+Update only the billable seconds of an activity independently of the actual worked time (`worked_seconds`). This is useful when the billable time differs from the actual tracked time.
 
 Only available to project leaders. Returns 403 if the current user lacks the required permissions.
 
