@@ -89,3 +89,84 @@ curl -X GET \
 ```
 
 Returns the complete representation for a single purchase order including all linked purchases.
+
+## POST /purchase_orders
+
+Create a new purchase order:
+
+```bash
+curl -X POST \
+  'https://{domain}.mocoapp.com/api/v1/purchase_orders' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "date": "2026-04-29",
+    "title": "Office Supplies Budget",
+    "currency": "CHF",
+    "user_id": 933589613,
+    "net_total": 5000,
+    "frequency": "once",
+    "info": "Annual budget for office supplies",
+    "company_id": 760554554
+  }'
+```
+
+Mandatory fields are marked with a star (*):
+
+- **date\*** – start date of the purchase order (ISO 8601)
+- **title\*** – descriptive title
+- **currency\*** – ISO 4217 currency code
+- **user_id\*** – responsible user ID
+- **net_total** – budget amount (net)
+- **frequency** – `once`, `weekly`, `biweekly`, `monthly`, `quarterly`, `biannual`, `annual` (default: `once`)
+- **finish_date** – end date (for recurring orders only)
+- **info** – additional notes
+- **company_id** – supplier company ID (optional)
+- **custom_properties** – custom field values (optional)
+
+## PUT /purchase_orders/{id}
+
+Update an existing purchase order:
+
+```bash
+curl -X PUT \
+  'https://{domain}.mocoapp.com/api/v1/purchase_orders/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "title": "Updated Title",
+    "net_total": 6000
+  }'
+```
+
+Fields are analogous to the POST request.
+
+{: .note }
+Changing the `frequency` is not allowed if purchases are already assigned to this order.
+
+## PATCH /purchase_orders/{id}
+
+Partially update a purchase order (only changed fields need to be provided):
+
+```bash
+curl -X PATCH \
+  'https://{domain}.mocoapp.com/api/v1/purchase_orders/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "net_total": 7500
+  }'
+```
+
+## DELETE /purchase_orders/{id}
+
+Delete a purchase order:
+
+```bash
+curl -X DELETE \
+  'https://{domain}.mocoapp.com/api/v1/purchase_orders/{id}' \
+  -H 'Authorization: Token token=YOUR_API_KEY'
+```
+
+{: .note }
+Deleting a purchase order is only possible if **no purchases are assigned** to it. If purchases are assigned, the request will return `422 Unprocessable Content` with an error message indicating the number of assigned purchases.
