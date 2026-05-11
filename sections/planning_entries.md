@@ -107,6 +107,7 @@ curl -X POST \
   -d '{
         "project_id": 4322,
         "task_id": 6789,
+        "title": "Project Management",
         "starts_on": "2020-05-20",
         "ends_on": "2020-05-30",
         "hours_per_day": 3,
@@ -122,6 +123,7 @@ Mandatory fields are marked with a star (\*):
 - **ends_on\*** – "2020-05-30"
 - **hours_per_day\*** – 3
 - **user_id** – 234567 (user ID for active staff)
+- **title** – "Project Management"
 - **comment** – "A comment..."
 - **symbol** – 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (home, building, car, graduation cap, cocktail, bells, baby carriage, users, moon , info circle)
 - **tentative** - true / false (whether this is a blocker or not)
