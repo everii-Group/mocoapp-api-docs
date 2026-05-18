@@ -162,6 +162,7 @@ The following parameters can be supplied:
 - **retainer** – true/false
 - **project_group_id** – 4566687 (also multiple values, comma-separated)
 - **deal_id** – 123456 (also multiple values, comma-separated)
+- **term** – "search term" (wildcard search within project name, project identifier and customer company name)
 
 ## GET /projects/assigned
 
