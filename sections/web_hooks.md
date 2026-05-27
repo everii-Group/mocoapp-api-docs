@@ -69,7 +69,7 @@ curl -X POST \
 
 Mandatory fields are marked with a star (\*):
 
-- **target\*** – "Activity" (Activity/Company/Contact/Project/Invoice/Offer/Deal/Expense)
+- **target\*** – "Activity" (Activity / Comment / Company / Contact / Contract / Deal / Expense / Invoice / Invoice::Approval / Invoice::Payment / InvoiceDraft / InvoiceReminder / Offer / PlanningEntry / Presence / Project / Project::PaymentSchedule / Purchase / Purchase::Approval / Purchase::Draft / Purchase::Payment / RecurringExpense / Schedule / Task / User / User::HolidayRequest / User::AbsenceRequest / User::PeriodLockOverride)
 - **event\*** – "create" (create/update/delete)
 - **hook\*** – "https://example.org/do-stuff"
 
