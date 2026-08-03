@@ -6,6 +6,11 @@ has_children: true
 
 # Entities
 
+## Deprecation notice
+
+The `Entities` section of the API is deprecated and will no longer be maintained. 
+Please refer to our [OpenAPI documentation](https://docs.mocoapp.com/api/docs/v1) for the latest API reference and entity definitions.
+
 ## Global Filters
 
 All list/index endpoints offer a common set of filters.
