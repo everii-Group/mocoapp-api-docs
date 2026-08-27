@@ -1,1 +1,24 @@
 <link rel="shortcut icon" type="image/png" href="/mocoapp-api-docs/favicon.png">
+<style>
+  .entity-deprecation-note {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid #e4af0a;
+    background: #fff8db;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!window.location.pathname.includes("/sections/")) return;
+    if (document.querySelector(".entity-deprecation-note")) return;
+
+    var heading = document.querySelector("main h1");
+    if (!heading) return;
+
+    var note = document.createElement("p");
+    note.className = "entity-deprecation-note";
+    note.innerHTML =
+      'This API documentation is being deprecated. Please use our <a href="https://docs.mocoapp.com/api/docs/v1#description/introduction">OpenAPI Documentation</a> instead.';
+    heading.insertAdjacentElement("afterend", note);
+  });
+</script>
