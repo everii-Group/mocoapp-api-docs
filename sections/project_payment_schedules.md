@@ -6,6 +6,9 @@ grand_parent: Entities
 
 # Project Payment Schedules
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/projectpaymentschedules).
+
 German: "Projekte / Geplante Abrechnungen"
 
 - TOC

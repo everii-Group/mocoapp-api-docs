@@ -6,6 +6,9 @@ grand_parent: Entities
 
 # Project Expenses
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/expenses).
+
 German: "Projekte / Zusatzleistungen"
 
 - TOC

@@ -6,6 +6,9 @@ grand_parent: Entities
 
 # Invoice Bookkeeping Exports
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/invoicebookkeepingexports).
+
 German: "Rechnungen / Buchhaltungsexporte"
 
 - TOC

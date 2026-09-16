@@ -5,6 +5,9 @@ parent: Entities
 
 # Web Hooks
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/accountwebhooks).
+
 - TOC
 {:toc}
 

@@ -5,6 +5,9 @@ parent: Entities
 
 # Units / Teams
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/units).
+
 German: "Teams"
 
 - TOC

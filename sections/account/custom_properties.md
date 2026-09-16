@@ -7,6 +7,9 @@ grand_parent: Entities
 
 # Custom Properties
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/accountcustomproperties).
+
 German: "Eigene Felder"
 
 - TOC

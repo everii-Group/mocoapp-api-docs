@@ -6,6 +6,9 @@ nav_exclude: true
 
 # MOCO API Documentation
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1).
+
 This is the official API documentation for [mocoapp.com](https://www.mocoapp.com).
 
 * TOC
@@ -76,6 +79,3 @@ Sorting is controlled by the `sort_by` query parameter. Its value is the field n
 Example:
 
 - `https://{domain}.mocoapp.com/api/v1/offers?sort_by=title desc`
-  
-
-

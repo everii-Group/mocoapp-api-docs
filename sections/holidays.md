@@ -6,6 +6,9 @@ grand_parent: Entities
 
 # User Holidays
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/userholidays).
+
 German: "Urlaubsanspruch"
 
 - TOC
