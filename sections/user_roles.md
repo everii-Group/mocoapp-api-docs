@@ -5,6 +5,9 @@ parent: Entities
 
 # User permission roles
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/userroles).
+
 German: "Benutzerrollen"
 
 - TOC

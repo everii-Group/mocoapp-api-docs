@@ -7,6 +7,9 @@ grand_parent: Entities
 
 # Hourly Rates
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/accountrates).
+
 German: "Stundensätze"
 
 - TOC

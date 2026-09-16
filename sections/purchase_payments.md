@@ -6,6 +6,9 @@ grand_parent: Entities
 
 # Purchase Payments
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/purchasepayments).
+
 German: "Ausgaben / Zahlungen"
 
 - TOC

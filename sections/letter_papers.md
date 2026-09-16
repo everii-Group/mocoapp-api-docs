@@ -6,6 +6,9 @@ parent: Entities
 
 # Letter Papers
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/letterpapers).
+
 German: "Briefpapier"
 
 - TOC

@@ -5,6 +5,9 @@ parent: Entities
 
 # Schedules
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/schedules).
+
 German: "Absenz"
 
 - TOC

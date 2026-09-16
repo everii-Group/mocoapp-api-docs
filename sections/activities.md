@@ -5,6 +5,9 @@ parent: Entities
 
 # Activities
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/activities).
+
 German: "Zeiteinträge"
 
 - TOC

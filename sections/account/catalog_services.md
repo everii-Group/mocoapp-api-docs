@@ -7,6 +7,9 @@ grand_parent: Entities
 
 # Catalog Services
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/accountcatalogservices).
+
 German: "Leistungskatalog"
 
 - TOC

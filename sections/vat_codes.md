@@ -5,6 +5,9 @@ parent: Entities
 
 # VAT Codes
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec for sales vat codes](https://docs.mocoapp.com/api/docs/v1#tag/vatcodesales) and [purchase vat codes](https://docs.mocoapp.com/api/docs/v1#tag/vatcodepurchases).
+
 German: "Steuerschlüssel"
 
 - TOC

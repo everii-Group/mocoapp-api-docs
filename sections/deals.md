@@ -6,6 +6,9 @@ has_children: true
 
 # Deals / Leads
 
+{: .note }
+This documentation is outdated, please refer to [our OpenAPI spec](https://docs.mocoapp.com/api/docs/v1#tag/deals).
+
 German: "Leads"
 
 - TOC
